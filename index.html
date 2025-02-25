@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Collage</title>
+  <style>
+    /* Fixed frame */
+    #frame {
+      width: 1500px;
+      height: 1792px;
+      overflow: hidden;
+      position: relative;
+      margin: auto;
+      border: 2px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+    }
+    /* Collage container */
+    #collage { position: relative; width: 100%; height: 100%; }
+    /* Image layers */
+    .layer {
+      position: absolute;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    /* Focus effect */
+    .focused { transform: scale(1.1); }
+    /* Popup text: white box with rounded corners, centered */
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      color: black;
+      border-radius: 10px;
+      padding: 20px;
+      display: none;
+      z-index: 30;
+      max-width: 600px;
+      width: 80%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      align-items: center;
+      flex-direction: column;
+    }
+    /* YouTube Container */
+    #youtube-container {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 20;
+      background: black;
+      padding: 10px;
+    }
+    #youtube-container iframe {
+      width: 560px;
+      height: 315px;
+    }
+    /* Local Video Container */
+    #video-container {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 20;
+      background: black;
+      padding: 10px;
+    }
+    #video-container video {
+      width: 560px;
+      height: 315px;
+    }
+    /* Body */
+    body { background-color: black; margin: 0; padding: 0; }
+  </style>
+</head>
+<body>
+  <div id="frame">
+    <div id="collage"></div>
+  </div>
+  <div id="popup" class="popup"></div>
+  <div id="youtube-container" style="display:none;">
+    <button id="close-youtube" style="position:absolute; top:5px; right:5px;">X</button>
+    <iframe id="youtube-player" frameborder="0" allowfullscreen></iframe>
+    <button id="open-youtube" style="display:none; margin-top:10px;">Watch on YouTube</button>
+  </div>
+  <div id="video-container">
+    <button id="close-video" style="position:absolute; top:5px; right:5px;">X</button>
+    <video id="local-video" controls></video>
+  </div>
+
+  <script>
+    let audioPlayers = {};
+    let youtubeTimeout;
+    let youtubePlayer = null;
+    let youtubeContainer = null;
+    let openYouTubeButton = null;
+    let localVideo = null;
+    let videoContainer = null;
+    let popup = null;
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      const collage = document.getElementById("collage");
+      popup = document.getElementById("popup");
+      youtubeContainer = document.getElementById("youtube-container");
+      youtubePlayer = document.getElementById("youtube-player");
+      openYouTubeButton = document.getElementById("open-youtube");
+      const closeYouTube = document.getElementById("close-youtube");
+      videoContainer = document.getElementById("video-container");
+      localVideo = document.getElementById("local-video");
+      const closeVideo = document.getElementById("close-video");
+
+      closeYouTube.addEventListener("click", () => {
+        youtubeContainer.style.display = "none";
+        youtubePlayer.src = "";
+        clearTimeout(youtubeTimeout);
+      });
+
+      closeVideo.addEventListener("click", () => {
+        videoContainer.style.display = "none";
+        localVideo.pause();
+        localVideo.src = "";
+      });
+
+      openYouTubeButton.addEventListener("click", () => {
+        window.open(openYouTubeButton.dataset.url, "_blank");
+      });
+
+      try {
+        const response = await fetch("images.json");
+        const images = await response.json();
+        images.forEach(image => {
+          const img = document.createElement("img");
+          img.src = `images/${image.filename}`;
+          img.classList.add("layer");
+          img.style.left = `${image.x}px`;
+          img.style.top = `${image.y}px`;
+          img.style.width = `${image.width}px`;
+          img.style.height = `${image.height}px`;
+          if (image.opacity !== undefined) img.style.opacity = image.opacity;
+          if (image.visible === false) img.style.display = "none";
+          img.addEventListener("click", () => {
+            // Only toggle zoom if image.zoom is true in images.json
+            if (image.zoom) {
+              if (img.classList.contains("focused")) {
+                img.classList.remove("focused");
+              } else {
+                document.querySelectorAll(".layer").forEach(otherImg => otherImg.classList.remove("focused"));
+                img.classList.add("focused");
+              }
+            }
+            handleInteraction(image, img);
+          });
+          collage.appendChild(img);
+        });
+      } catch (error) {
+        console.error("Error loading images:", error);
+      }
+    });
+
+    function convertToSeconds(timeStr) {
+      if (!timeStr) return 0;
+      const parts = timeStr.split(":").map(Number);
+      if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+      if (parts.length === 2) return parts[0] * 60 + parts[1];
+      return Number(timeStr);
+    }
+
+    function handleInteraction(image, clickedImg) {
+      if (!image.interaction) return;
+      const { type, content, file, videoId, startTime, endTime, 
+              popupTitle, popupBody, popupTitleFont, popupTitleSize, 
+              popupBodyFont, popupBodySize, popupMessage, popupImage, url } = image.interaction;
+      
+      if (type === "text") {
+        popup.innerHTML = "";
+        const closeButton = document.createElement("button");
+        closeButton.innerText = "Close";
+        closeButton.style.position = "absolute";
+        closeButton.style.top = "5px";
+        closeButton.style.right = "5px";
+        closeButton.addEventListener("click", () => { popup.style.display = "none"; });
+        popup.appendChild(closeButton);
+        
+        // If title/body provided, create separate elements with editable styles
+        if (popupTitle || popupBody) {
+          if (popupTitle) {
+            const titleElem = document.createElement("h2");
+            titleElem.innerText = popupTitle;
+            if (popupTitleFont) titleElem.style.fontFamily = popupTitleFont;
+            if (popupTitleSize) titleElem.style.fontSize = popupTitleSize;
+            titleElem.style.margin = "0 0 10px 0";
+            popup.appendChild(titleElem);
+          }
+          if (popupBody) {
+            const bodyElem = document.createElement("p");
+            bodyElem.innerHTML = popupBody;
+            if (popupBodyFont) bodyElem.style.fontFamily = popupBodyFont;
+            if (popupBodySize) bodyElem.style.fontSize = popupBodySize;
+            bodyElem.style.margin = "0";
+            popup.appendChild(bodyElem);
+          }
+        } else {
+          // Fallback: use existing image/text layout
+          const imgContainer = document.createElement("div");
+          imgContainer.style.marginRight = "20px";
+          const refImg = document.createElement("img");
+          refImg.src = popupImage ? `images/${popupImage}` : clickedImg.src;
+          refImg.style.maxWidth = "150px";
+          refImg.style.maxHeight = "150px";
+          imgContainer.appendChild(refImg);
+          popup.appendChild(imgContainer);
+          
+          const textContainer = document.createElement("div");
+          textContainer.innerHTML = popupMessage ? popupMessage : content;
+          popup.appendChild(textContainer);
+        }
+        popup.style.display = "flex";
+      } else if (type === "audio") {
+        if (!audioPlayers[file]) audioPlayers[file] = new Audio(`audio/${file}`);
+        const audio = audioPlayers[file];
+        if (!audio.paused) { 
+          audio.pause(); 
+          audio.currentTime = 0; 
+        } else {
+          audio.play();
+        }
+      } else if (type === "youtube") {
+        const startSec = convertToSeconds(startTime);
+        youtubePlayer.src = `https://www.youtube.com/embed/${videoId}?start=${startSec}&autoplay=1&enablejsapi=1`;
+        youtubeContainer.style.display = "block";
+        if (endTime) {
+          const duration = (convertToSeconds(endTime) - startSec) * 1000;
+          youtubeTimeout = setTimeout(() => {
+            youtubeContainer.style.display = "none";
+            youtubePlayer.src = "";
+          }, duration);
+        }
+      } else if (type === "video") {
+        localVideo.src = `videos/${file}`;
+        videoContainer.style.display = "block";
+        localVideo.play();
+      } else if (type === "redirect") {
+        window.open(url, "_blank");
+      }
+    }
+  </script>
+</body>
+</html>
