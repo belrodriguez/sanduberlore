@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-  <style>
+ <style>
     /* Fixed frame */
     #frame {
       width: 1500px;
@@ -97,7 +97,6 @@
   </style>
 </head>
 <body>
-  
   <div id="frame">
     <div id="collage"></div>
   </div>
@@ -220,11 +219,16 @@
         
         // Add the reference image (or fallback to the clicked image)
         const imgContainer = document.createElement("div");
+        imgContainer.style.width = "50%";
+        imgContainer.style.height = "50%";
         imgContainer.style.marginBottom = "20px";
         const refImg = document.createElement("img");
         refImg.src = popupImage ? `images/${popupImage}` : clickedImg.src;
-        refImg.style.maxWidth = "150px";
-        refImg.style.maxHeight = "150px";
+        // Set image to fill 100% of its container
+        refImg.style.width = "50%";
+        refImg.style.height = "50%";
+        // Optional: ensure the image maintains its aspect ratio
+        refImg.style.objectFit = "contain";
         imgContainer.appendChild(refImg);
         container.appendChild(imgContainer);
         
