@@ -131,7 +131,7 @@
         "name": "troncal",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"portalmascotas1.mp3"
         }
     },
     {
@@ -157,7 +157,7 @@
         "name": "stars",
         "interaction":{
             "type":"video",
-            "file":""
+            "file":"cryptopulus.mp4"
         }
     },
     {
@@ -544,8 +544,12 @@
         "zoom": true,
         "name": "octopus",
         "interaction":{
-            "type":"redirect",
-            "url":"https://x.com/MatiasGarate15/"
+            "type":"text",
+            "popupTitle": "El Doctor Octopus Garate",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Si no lo estan siguiendo en X, estan mal. <br>MAL LES DIGO.<br> Siganlo <a href='https://x.com/MatiasGarate15' target='_blank'>AQUI</a> ",
+            "popupBodySize": "21px" 
         }
     },
     {
@@ -622,7 +626,12 @@
         "name": "jorge suspenso",
         "interaction":{
             "type":"text",
-            "content":"JORGE SUSPENSO"
+            "popupImage": "GhsC8PQXUAE9Irl.jpeg",
+            "popupTitle": "JORGE SUSPENSO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "SUSPENSO. JORGE SUSPENSO.",
+            "popupBodySize": "21px" 
         }
     },
     {
@@ -707,7 +716,11 @@
         "name": "adobe error",
         "interaction":{
             "type":"text",
-            "content":"en el vivo se vio el error pero ahora esta arreglado"
+            "popupTitle": "Adobe Error",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Cuenta la leyenda que el era el video mas emotivo de toda la internet, destinado a hacer llorar multitudes con la sutileza de sus imagenes y edicion. Pero un pequeño desliz hizo que solo se viera el error de Adobe duran el momento culmine de tal obra de arte.",
+            "popupBodySize": "21px" 
         }
     },
     {
@@ -722,9 +735,9 @@
         "name": "Rompa el vidrio.. Copiar",
         "interaction":{
             "type":"youtube",
-            "videoId":"",
-            "startTime":"",
-            "endTime":""
+            "videoId":"2i40hCROLU8",
+            "startTime":"00:02",
+            "endTime":"00:35"
         }
     },
     {
@@ -982,7 +995,11 @@
         "name": "palan",
         "interaction":{
             "type":"text",
-            "content":"la historia de palandri siendo landri"
+            "popupTitle": "Palandri",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "No importa como este subido, quien lo haya subido, cuantas marcas de agua tenga. PALANDRI SE QUEDARA CON TU CONTENIDO Y NO HAY NADA QUE PUEDAS HACER.",
+            "popupBodySize": "21px" 
         }
     },
     {
@@ -1383,8 +1400,10 @@
         "zoom": true,
         "name": "bandera italia",
         "interaction":{
-            "type":"redirect",
-            "url":"https://youtu.be/d0BM1y0Dzr8?si=TraOp1c-543Ej9uI"
+            "type":"youtube",
+            "videoId":"d0BM1y0Dzr8",
+            "startTime":"",
+            "endTime":""
         }
     },
     {
@@ -1396,7 +1415,13 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "espada1"
+        "name": "espada1",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"gqcQ8_Cf0Ww",
+            "startTime":"03:18:50",
+            "endTime":"03:23:39"
+        }
     },
     {
         "filename": "2c1dbdd046dc.png",
@@ -1510,7 +1535,12 @@
         "name": "troncovicini",
         "interaction":{
             "type":"text",
-            "content":"la profecia"
+            "popupImage": "troncovicini.png",
+            "popupTitle": "LA PROFECIA",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "En una marcha, 'alguien' mordera un microfono... <br>Troncovicini lo vio antes. ",
+            "popupBodySize": "21px" 
         }
     },
     {
@@ -1536,7 +1566,13 @@
         "name": "cerenito",
         "interaction": {
             "type": "text",
-            "content": "This is a hidden message!"
+            "popupImage": "cerenita.png",
+            "popupTitle": "CERENITA",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Su instagram es <a href='https://www.instagram.com/elianacere/' target='_blank'>@elianacere</a>.<br>C E R E como en cerebro, cereal, cerenito, la diosa Ceres, y hasta que no terminen de escribir todo su nombre de usuario, Instagram no se los va a sugerir porque tiene un shadowban.",
+            "popupBodySize": "21px" 
+           
         }
     },
     {
@@ -1705,7 +1741,12 @@
         "name": "lobo dientes",
         "interaction":{
             "type":"text",
-            "content":"lobo"
+            "popupImage": "d88986fa43e3.png",
+            "popupTitle": "LOBO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Cuando el lobo no quiere hacer nada, parece un ser adorable. Pero no deja de ser lobo.",
+            "popupBodySize": "21px"          
         }
 
     },
@@ -1806,7 +1847,11 @@
         "name": "el ecce de la paciencia",
         "interaction":{
             "type":"text",
-            "content":"la historia del jesus de la paciencia y como se cruzaron los cables y se convirtio en el ecce de la paciencia"
+            "popupTitle": "EL ECCE DE LA PACIENCIA",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "En una iglesia de San Justo hay un Jesus de la paciencia que parece que trae mucha paz, hasta las personas mas alteradas. Pero ese dia tambien hubo Postroncalidad y se hablo del Ecce Homo. Se cruzaron los canales y quedo el Ecce de la Paciencia.",
+            "popupBodySize": "21px" 
         }
     },
     {
@@ -1873,7 +1918,12 @@
         "name": "blackri",
         "interaction":{
             "type":"text",
-            "content":"lore de blackri cortando la loz"
+            "popupImage": "blackri.png",
+            "popupTitle": "EL CULPABLE",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Nadie lo vio. Nadie puede probarlo. Pero nadie tiene dudas de su culpabilidad.",
+            "popupBodySize": "21px" 
         }
     },
     {
@@ -1899,7 +1949,11 @@
         "name": "tiza",
         "interaction":{
             "type":"text",
-            "content":"tecnica toxica para medir si un auto se movio o no"
+            "popupTitle": "TIP TOXICO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Si hace una linea con tiza en la rueda de un auto hasta el pavimento, pueden controlar si ese auto se movio en un periodo de tiempo determinado. Usar con precaucion.",
+            "popupBodySize": "21px" 
         }
     },
     {
@@ -2046,8 +2100,10 @@
         "zoom": true,
         "name": "KUKAS..",
         "interaction":{
-            "type":"audio",
-            "file":""
+            "type":"youtube",
+            "videoId":"",
+            "startTime":"",
+            "endTime":""
         }
     },
     {

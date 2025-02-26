@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive Collage</title>
+  <title>Sanduber Lore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <style>
     /* Fixed frame */
     #frame {
@@ -27,23 +30,37 @@
     }
     /* Focus effect */
     .focused { transform: scale(1.1); }
-    /* Popup text: white box with rounded corners, centered */
-    .popup {
+    /* Popup overlay covers the whole viewport */
+    #popup-overlay {
       position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 30;
+    }
+    /* Popup box: white box with rounded corners */
+    .popup {
       background: white;
       color: black;
       border-radius: 10px;
       padding: 20px;
-      display: none;
-      z-index: 30;
       max-width: 600px;
       width: 80%;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      align-items: center;
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      font-family: "Special Elite", serif;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1.5
     }
     /* YouTube Container */
     #youtube-container {
@@ -80,10 +97,14 @@
   </style>
 </head>
 <body>
+  
   <div id="frame">
     <div id="collage"></div>
   </div>
-  <div id="popup" class="popup"></div>
+  <!-- Popup overlay container -->
+  <div id="popup-overlay">
+    <div id="popup" class="popup"></div>
+  </div>
   <div id="youtube-container" style="display:none;">
     <button id="close-youtube" style="position:absolute; top:5px; right:5px;">X</button>
     <iframe id="youtube-player" frameborder="0" allowfullscreen></iframe>
@@ -102,10 +123,12 @@
     let openYouTubeButton = null;
     let localVideo = null;
     let videoContainer = null;
+    let popupOverlay = null;
     let popup = null;
 
     document.addEventListener("DOMContentLoaded", async () => {
       const collage = document.getElementById("collage");
+      popupOverlay = document.getElementById("popup-overlay");
       popup = document.getElementById("popup");
       youtubeContainer = document.getElementById("youtube-container");
       youtubePlayer = document.getElementById("youtube-player");
@@ -114,6 +137,14 @@
       videoContainer = document.getElementById("video-container");
       localVideo = document.getElementById("local-video");
       const closeVideo = document.getElementById("close-video");
+
+      // Clicking on the overlay (outside the popup) closes it.
+      popupOverlay.addEventListener("click", (e) => {
+        if (e.target === popupOverlay) {
+          popupOverlay.style.display = "none";
+          popup.innerHTML = "";
+        }
+      });
 
       closeYouTube.addEventListener("click", () => {
         youtubeContainer.style.display = "none";
@@ -174,53 +205,57 @@
     function handleInteraction(image, clickedImg) {
       if (!image.interaction) return;
       const { type, content, file, videoId, startTime, endTime, 
-              popupTitle, popupBody, popupTitleFont, popupTitleSize, 
-              popupBodyFont, popupBodySize, popupMessage, popupImage, url } = image.interaction;
+              popupTitle, popupTitleFont, popupTitleSize, 
+              popupBody, popupBodyFont, popupBodySize, 
+              popupImage, popupMessage, url } = image.interaction;
       
       if (type === "text") {
         popup.innerHTML = "";
-        const closeButton = document.createElement("button");
-        closeButton.innerText = "Close";
-        closeButton.style.position = "absolute";
-        closeButton.style.top = "5px";
-        closeButton.style.right = "5px";
-        closeButton.addEventListener("click", () => { popup.style.display = "none"; });
-        popup.appendChild(closeButton);
+        // Create a container for the popup content
+        const container = document.createElement("div");
+        container.style.display = "flex";
+        container.style.flexDirection = "column";
+        container.style.alignItems = "center";
+        container.style.textAlign = "center";
         
-        // If title/body provided, create separate elements with editable styles
-        if (popupTitle || popupBody) {
-          if (popupTitle) {
-            const titleElem = document.createElement("h2");
-            titleElem.innerText = popupTitle;
-            if (popupTitleFont) titleElem.style.fontFamily = popupTitleFont;
-            if (popupTitleSize) titleElem.style.fontSize = popupTitleSize;
-            titleElem.style.margin = "0 0 10px 0";
-            popup.appendChild(titleElem);
-          }
-          if (popupBody) {
-            const bodyElem = document.createElement("p");
-            bodyElem.innerHTML = popupBody;
-            if (popupBodyFont) bodyElem.style.fontFamily = popupBodyFont;
-            if (popupBodySize) bodyElem.style.fontSize = popupBodySize;
-            bodyElem.style.margin = "0";
-            popup.appendChild(bodyElem);
-          }
-        } else {
-          // Fallback: use existing image/text layout
-          const imgContainer = document.createElement("div");
-          imgContainer.style.marginRight = "20px";
-          const refImg = document.createElement("img");
-          refImg.src = popupImage ? `images/${popupImage}` : clickedImg.src;
-          refImg.style.maxWidth = "150px";
-          refImg.style.maxHeight = "150px";
-          imgContainer.appendChild(refImg);
-          popup.appendChild(imgContainer);
-          
-          const textContainer = document.createElement("div");
-          textContainer.innerHTML = popupMessage ? popupMessage : content;
-          popup.appendChild(textContainer);
+        // Add the reference image (or fallback to the clicked image)
+        const imgContainer = document.createElement("div");
+        imgContainer.style.marginBottom = "20px";
+        const refImg = document.createElement("img");
+        refImg.src = popupImage ? `images/${popupImage}` : clickedImg.src;
+        refImg.style.maxWidth = "150px";
+        refImg.style.maxHeight = "150px";
+        imgContainer.appendChild(refImg);
+        container.appendChild(imgContainer);
+        
+        // Create a text container for title and body
+        const textContainer = document.createElement("div");
+        if (popupTitle) {
+          const titleElem = document.createElement("h2");
+          titleElem.innerText = popupTitle;
+          if (popupTitleFont) titleElem.style.fontFamily = popupTitleFont;
+          if (popupTitleSize) titleElem.style.fontSize = popupTitleSize;
+          titleElem.style.margin = "0 0 10px 0";
+          textContainer.appendChild(titleElem);
         }
-        popup.style.display = "flex";
+        if (popupBody) {
+          const bodyElem = document.createElement("p");
+          bodyElem.innerHTML = popupBody;
+          if (popupBodyFont) bodyElem.style.fontFamily = popupBodyFont;
+          if (popupBodySize) bodyElem.style.fontSize = popupBodySize;
+          bodyElem.style.margin = "0";
+          textContainer.appendChild(bodyElem);
+        }
+        // Fallback if no title/body provided
+        if (!popupTitle && !popupBody) {
+          const fallbackElem = document.createElement("div");
+          fallbackElem.innerHTML = popupMessage ? popupMessage : content;
+          textContainer.appendChild(fallbackElem);
+        }
+        container.appendChild(textContainer);
+        popup.appendChild(container);
+        // Display the popup overlay
+        popupOverlay.style.display = "flex";
       } else if (type === "audio") {
         if (!audioPlayers[file]) audioPlayers[file] = new Audio(`audio/${file}`);
         const audio = audioPlayers[file];
