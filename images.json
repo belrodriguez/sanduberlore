@@ -55,9 +55,9 @@
         "name": "obi",
         "interaction":{
             "type":"youtube",
-            "videoId":"",
-            "startTime":"",
-            "endTime":""
+            "videoId":"X7eZswujaAA",
+            "startTime":"0:00",
+            "endTime":"1:49"
         }
     },
     {
@@ -188,7 +188,7 @@
         "name": "Lo voy a evaluar... Copiar",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"adorni.mp3"
         }
     },
     {
@@ -305,9 +305,9 @@
         "name": "bionda",
         "interaction":{
             "type":"youtube",
-            "videoId":"",
-            "startTime":"",
-            "endTime":""
+            "videoId":"6yJVXFu-kqg",
+            "startTime":"00:00",
+            "endTime":"02:18"
         }
     },
     {
@@ -322,7 +322,7 @@
         "name": "pulpo",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"pennywise.mp3"
         }
     },
     {
@@ -403,7 +403,7 @@
         "name": "BOOOOKEEEEEE\nBOOOKEEEEE.. Copiar",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"boke.mp3"
         }
     },
     {
@@ -418,7 +418,7 @@
         "name": "MORENISSSSTAAAAAAA.. Copiar",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"morenista.mp3"
         }
     },
     {
@@ -800,7 +800,7 @@
         "name": "NO SON MAS QUE NOSOTROS..",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"nosonmasquenosotros.mp3"
         }
     },
     {
@@ -981,25 +981,6 @@
         "interaction":{
             "type":"redirect",
             "url":"https://www.youtube.com/live/Ln6gpZXTqZI?si=mqjyG7PxJl_gNPSV"
-        }
-    },
-    {
-        "filename": "75c18fc24e40.png",
-        "x": 385,
-        "y": 1510,
-        "width": 192,
-        "height": 197,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "palan",
-        "interaction":{
-            "type":"text",
-            "popupTitle": "Palandri",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "No importa como este subido, quien lo haya subido, cuantas marcas de agua tenga. PALANDRI SE QUEDARA CON TU CONTENIDO Y NO HAY NADA QUE PUEDAS HACER.",
-            "popupBodySize": "21px" 
         }
     },
     {
@@ -1228,32 +1209,6 @@
         }
     },
     {
-        "filename": "97549cb244d5.png",
-        "x": 1241,
-        "y": 986,
-        "width": 140,
-        "height": 112,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "bandera arg"
-    },
-    {
-        "filename": "c33d8b8b4965.png",
-        "x": 1233,
-        "y": 966,
-        "width": 140,
-        "height": 193,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "banderin neura",
-        "interaction":{
-            "type":"redirect",
-            "url":"https://www.youtube.com/@NeuraMedia"
-        }
-    },
-    {
         "filename": "8460a0674657.png",
         "x": 758,
         "y": 1462,
@@ -1476,6 +1431,48 @@
         }
     },
     {
+        "filename": "75cfa81c4d9f.png",
+        "x": 1237,
+        "y": 892,
+        "width": 166,
+        "height": 219,
+        "opacity": 1,
+        "visible": true,
+        "zoom": false,
+        "name": "ipad sarubbi"
+    },
+    
+    {
+        "filename": "c33d8b8b4965.png",
+        "x": 1234,
+        "y": 963,
+        "width": 138,
+        "height": 142,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "banderin neura",
+        "interaction":{
+            "type":"redirect",
+            "url":"https://www.youtube.com/@NeuraMedia"
+        }
+    },
+    {
+        "filename": "97549cb244d5.png",
+        "x": 1241,
+        "y": 986,
+        "width": 140,
+        "height": 112,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "bandera arg",
+        "interaction":{
+            "type":"redirect",
+            "url":"https://www.youtube.com/live/OwMnNEu8oyU?si=m-0e0unFKrWXI2Z6"
+        }
+    },    
+    {
         "filename": "11a29d344d6b.png",
         "x": 1295,
         "y": 1053,
@@ -1489,17 +1486,6 @@
             "type":"redirect",
             "url":"https://www.instagram.com/cafebantu/?hl=es"
         }
-    },
-    {
-        "filename": "75cfa81c4d9f.png",
-        "x": 1237,
-        "y": 897,
-        "width": 166,
-        "height": 219,
-        "opacity": 1,
-        "visible": true,
-        "zoom": false,
-        "name": "ipad sarubbi"
     },
     {
         "filename": "b6168d024ac5.png",
@@ -1772,8 +1758,10 @@
         "zoom": true,
         "name": "hey optimus prime",
         "interaction":{
-            "type":"audio",
-            "file":""
+            "type":"youtube",
+            "videoId":"IvTAHQCenss",
+            "startTime":"30:24",
+            "endTime":"30:56"
         }
     },
     {
@@ -1826,14 +1814,33 @@
     },
     {
         "filename": "e659a976457d.png",
-        "x": 456,
-        "y": 1440,
+        "x": 482,
+        "y": 1413,
         "width": 284,
         "height": 352,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "kansas"
+    },
+    {
+        "filename": "75c18fc24e40.png",
+        "x": 385,
+        "y": 1510,
+        "width": 192,
+        "height": 197,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "palan",
+        "interaction":{
+            "type":"text",
+            "popupTitle": "Palandri",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "No importa como este subido, quien lo haya subido, cuantas marcas de agua tenga. PALANDRI SE QUEDARA CON TU CONTENIDO Y NO HAY NADA QUE PUEDAS HACER.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "6979a591484f.png",
@@ -1882,7 +1889,7 @@
     },
     {
         "filename": "b59692104fd9.png",
-        "x": 696,
+        "x": 713,
         "y": 1506,
         "width": 158,
         "height": 209,
@@ -1968,7 +1975,7 @@
         "name": "Alberto, cerra el orto, A.. Copiar",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"alberto.mp3"
         }
     },
     {
@@ -2038,7 +2045,7 @@
         "name": "pablo cornet",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"publinota.mp3"
         }
     },
     {
@@ -2064,7 +2071,7 @@
         "name": "juan de jesus",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"juandejesus.mp3"
         }
     },
     {
@@ -2101,9 +2108,9 @@
         "name": "KUKAS..",
         "interaction":{
             "type":"youtube",
-            "videoId":"",
-            "startTime":"",
-            "endTime":""
+            "videoId":"Ln6gpZXTqZI",
+            "startTime":"4:28:32",
+            "endTime":"4:28:48"
         }
     },
     {

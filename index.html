@@ -7,7 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
- <style>
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+  <style>
     /* Fixed frame */
     #frame {
       width: 1500px;
@@ -30,7 +34,7 @@
     }
     /* Focus effect */
     .focused { transform: scale(1.1); }
-    /* Popup overlay covers the whole viewport */
+    /* Popup overlay */
     #popup-overlay {
       position: fixed;
       top: 0;
@@ -43,7 +47,7 @@
       justify-content: center;
       z-index: 30;
     }
-    /* Popup box: white box with rounded corners */
+    /* Popup box */
     .popup {
       background: white;
       color: black;
@@ -58,9 +62,7 @@
       text-align: center;
       position: relative;
       font-family: "Special Elite", serif;
-      font-weight: 400;
-      font-style: normal;
-      line-height: 1.5
+      line-height: 1.5;
     }
     /* YouTube Container */
     #youtube-container {
@@ -100,11 +102,11 @@
   <div id="frame">
     <div id="collage"></div>
   </div>
-  <!-- Popup overlay container -->
+  <!-- Popup overlay -->
   <div id="popup-overlay">
     <div id="popup" class="popup"></div>
   </div>
-  <div id="youtube-container" style="display:none;">
+  <div id="youtube-container">
     <button id="close-youtube" style="position:absolute; top:5px; right:5px;">X</button>
     <iframe id="youtube-player" frameborder="0" allowfullscreen></iframe>
     <button id="open-youtube" style="display:none; margin-top:10px;">Watch on YouTube</button>
@@ -116,14 +118,23 @@
 
   <script>
     let audioPlayers = {};
-    let youtubeTimeout;
-    let youtubePlayer = null;
-    let youtubeContainer = null;
-    let openYouTubeButton = null;
-    let localVideo = null;
-    let videoContainer = null;
-    let popupOverlay = null;
-    let popup = null;
+    let youtubeTimeout, youtubePlayer, youtubeContainer, openYouTubeButton;
+    let localVideo, videoContainer, popupOverlay, popup;
+
+    // Returns true if the pixel at the click position is fully transparent.
+    function isTransparent(e, img) {
+      if (!img.complete || img.naturalWidth === 0) return false;
+      const canvas = document.createElement("canvas");
+      canvas.width = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0);
+      const rect = img.getBoundingClientRect();
+      const x = (e.clientX - rect.left) * (img.naturalWidth / rect.width);
+      const y = (e.clientY - rect.top) * (img.naturalHeight / rect.height);
+      const pixel = ctx.getImageData(x, y, 1, 1).data;
+      return pixel[3] === 0;
+    }
 
     document.addEventListener("DOMContentLoaded", async () => {
       const collage = document.getElementById("collage");
@@ -132,33 +143,27 @@
       youtubeContainer = document.getElementById("youtube-container");
       youtubePlayer = document.getElementById("youtube-player");
       openYouTubeButton = document.getElementById("open-youtube");
-      const closeYouTube = document.getElementById("close-youtube");
       videoContainer = document.getElementById("video-container");
       localVideo = document.getElementById("local-video");
-      const closeVideo = document.getElementById("close-video");
 
-      // Clicking on the overlay (outside the popup) closes it.
+      document.getElementById("close-youtube").addEventListener("click", () => {
+        youtubeContainer.style.display = "none";
+        youtubePlayer.src = "";
+        clearTimeout(youtubeTimeout);
+      });
+      document.getElementById("close-video").addEventListener("click", () => {
+        videoContainer.style.display = "none";
+        localVideo.pause();
+        localVideo.src = "";
+      });
+      openYouTubeButton.addEventListener("click", () => {
+        window.open(openYouTubeButton.dataset.url, "_blank");
+      });
       popupOverlay.addEventListener("click", (e) => {
         if (e.target === popupOverlay) {
           popupOverlay.style.display = "none";
           popup.innerHTML = "";
         }
-      });
-
-      closeYouTube.addEventListener("click", () => {
-        youtubeContainer.style.display = "none";
-        youtubePlayer.src = "";
-        clearTimeout(youtubeTimeout);
-      });
-
-      closeVideo.addEventListener("click", () => {
-        videoContainer.style.display = "none";
-        localVideo.pause();
-        localVideo.src = "";
-      });
-
-      openYouTubeButton.addEventListener("click", () => {
-        window.open(openYouTubeButton.dataset.url, "_blank");
       });
 
       try {
@@ -174,23 +179,37 @@
           img.style.height = `${image.height}px`;
           if (image.opacity !== undefined) img.style.opacity = image.opacity;
           if (image.visible === false) img.style.display = "none";
-          img.addEventListener("click", () => {
-            // Only toggle zoom if image.zoom is true in images.json
-            if (image.zoom) {
-              if (img.classList.contains("focused")) {
-                img.classList.remove("focused");
-              } else {
-                document.querySelectorAll(".layer").forEach(otherImg => otherImg.classList.remove("focused"));
-                img.classList.add("focused");
-              }
-            }
-            handleInteraction(image, img);
-          });
+          // Store image data for later reference.
+          img.myData = image;
           collage.appendChild(img);
         });
       } catch (error) {
         console.error("Error loading images:", error);
       }
+
+      // Use a single click handler on the collage to determine which image was actually clicked.
+      collage.addEventListener("click", (e) => {
+        const elems = document.elementsFromPoint(e.clientX, e.clientY);
+        for (let elem of elems) {
+          if (elem.tagName.toLowerCase() === "img" && elem.classList.contains("layer")) {
+            if (!isTransparent(e, elem)) {
+              const data = elem.myData;
+              if (data) {
+                if (data.zoom) {
+                  if (elem.classList.contains("focused")) {
+                    elem.classList.remove("focused");
+                  } else {
+                    document.querySelectorAll(".layer").forEach(i => i.classList.remove("focused"));
+                    elem.classList.add("focused");
+                  }
+                }
+                handleInteraction(data, elem);
+              }
+              break;
+            }
+          }
+        }
+      });
     });
 
     function convertToSeconds(timeStr) {
@@ -210,29 +229,22 @@
       
       if (type === "text") {
         popup.innerHTML = "";
-        // Create a container for the popup content
         const container = document.createElement("div");
         container.style.display = "flex";
         container.style.flexDirection = "column";
         container.style.alignItems = "center";
         container.style.textAlign = "center";
-        
-        // Add the reference image (or fallback to the clicked image)
         const imgContainer = document.createElement("div");
         imgContainer.style.width = "50%";
         imgContainer.style.height = "50%";
         imgContainer.style.marginBottom = "20px";
         const refImg = document.createElement("img");
         refImg.src = popupImage ? `images/${popupImage}` : clickedImg.src;
-        // Set image to fill 100% of its container
         refImg.style.width = "50%";
         refImg.style.height = "50%";
-        // Optional: ensure the image maintains its aspect ratio
         refImg.style.objectFit = "contain";
         imgContainer.appendChild(refImg);
         container.appendChild(imgContainer);
-        
-        // Create a text container for title and body
         const textContainer = document.createElement("div");
         if (popupTitle) {
           const titleElem = document.createElement("h2");
@@ -250,7 +262,6 @@
           bodyElem.style.margin = "0";
           textContainer.appendChild(bodyElem);
         }
-        // Fallback if no title/body provided
         if (!popupTitle && !popupBody) {
           const fallbackElem = document.createElement("div");
           fallbackElem.innerHTML = popupMessage ? popupMessage : content;
@@ -258,14 +269,13 @@
         }
         container.appendChild(textContainer);
         popup.appendChild(container);
-        // Display the popup overlay
         popupOverlay.style.display = "flex";
       } else if (type === "audio") {
         if (!audioPlayers[file]) audioPlayers[file] = new Audio(`audio/${file}`);
         const audio = audioPlayers[file];
-        if (!audio.paused) { 
-          audio.pause(); 
-          audio.currentTime = 0; 
+        if (!audio.paused) {
+          audio.pause();
+          audio.currentTime = 0;
         } else {
           audio.play();
         }
