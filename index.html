@@ -115,7 +115,9 @@
 </head>
 <body>
   <div id="loading-screen">
-    <div id="loading-container">
+    <!-- Start button image -->
+    <img id="start-button" src="images/neura.png" alt="Start">
+    <div id="loading-container" style="display: none;">
       <img id="loading-img1" class="loading-image" src="images/lore.png" alt="Loading Image 1">
       <img id="loading-img2" class="loading-image" src="images/sanduber.png" alt="Loading Image 2">
     </div>
@@ -134,6 +136,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    /* Start button image styling */
+    #start-button {
+      cursor: pointer;
+      margin-bottom: 20px;
+      /* Adjust size as needed */
+      width: 200px;
     }
     #loading-container {
       display: flex;
@@ -171,21 +180,31 @@
   </style>
   
   <script>
-    // When the window loads, play the loading audio and remove the loading screen when audio ends.
-    window.addEventListener("load", function() {
-      const loadingAudio = new Audio("audio/lorerings.mp3"); // Path to your loading audio file.
-      loadingAudio.play();
-      loadingAudio.addEventListener("ended", function() {
-        const loadingScreen = document.getElementById("loading-screen");
-        // Fade out the loading screen.
-        loadingScreen.style.transition = "opacity 1s ease";
-        loadingScreen.style.opacity = "0";
-        setTimeout(() => {
-          if (loadingScreen.parentNode) {
-            loadingScreen.parentNode.removeChild(loadingScreen);
-          }
-        }, 1000);
-      });
+    // Get references.
+    const loadingScreen = document.getElementById("loading-screen");
+    const startButton = document.getElementById("start-button");
+    const loadingContainer = document.getElementById("loading-container");
+    // Create a loading audio instance.
+    const loadingAudio = new Audio("audio/lorerings.mp3");
+
+    // When the start button is clicked:
+    startButton.addEventListener("click", () => {
+      // Hide the start button.
+      startButton.style.display = "none";
+      // Show the loading images.
+      loadingContainer.style.display = "flex";
+      // Try to play the audio (will succeed since we have a user gesture).
+      loadingAudio.play().catch(e => console.log("Audio play error:", e));
+    });
+
+    // When the audio ends, fade out the loading screen.
+    loadingAudio.addEventListener("ended", () => {
+      loadingScreen.classList.add("fade-out");
+      setTimeout(() => {
+        if (loadingScreen.parentNode) {
+          loadingScreen.parentNode.removeChild(loadingScreen);
+        }
+      }, 1000); // wait for fade-out transition
     });
   </script>
   <div id="frame">
