@@ -40,8 +40,12 @@
         "height": 609,
         "opacity": 1,
         "visible": true,
-        "zoom": false,
-        "name": "troncon"
+        "zoom": true,
+        "name": "troncon",
+        "interaction":{
+            "type":"audio",
+            "file":"poweranger.mp3"
+        }
     },
     {
         "filename": "a766bab24f10.png",
@@ -95,7 +99,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "EL MERCADO.. Copiar"
+        "name": "EL MERCADO.. Copiar",
+        "interaction":{
+            "type":"audio",
+            "file":"diablo.mp3"
+        }
     },
     {
         "filename": "2eb5b01640cb.png",
@@ -188,7 +196,7 @@
         "name": "Lo voy a evaluar... Copiar",
         "interaction":{
             "type":"audio",
-            "file":"adorni.mp3"
+            "file":"adorni_.mp3"
         }
     },
     {
@@ -203,7 +211,7 @@
         "name": "Pongan el crudo.. Copiar",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"crudo.mp3"
         }
     },
     {
@@ -215,7 +223,13 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "sindicato"
+        "name": "sindicato",
+        "interaction":{
+            "type":"audio",
+            "file":"bombos.mp3"
+        }
+
+
     },
     {
         "filename": "2b8bb5704bf6.png",
@@ -226,7 +240,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "abuela link"
+        "name": "abuela link",
+        "interaction":{
+            "type":"audio",
+            "file":"linkzelda.mp3"
+        }
     },
     {
         "filename": "a1d180854797.png",
@@ -252,7 +270,12 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "soga"
+        "name": "soga",
+        "interaction":{
+            "type":"video",
+            "file":"soga.mp4"
+        }
+        
     },
     {
         "filename": "ac5a90204039.png",
@@ -280,7 +303,17 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "joneshualas"
+        "name": "joneshualas",
+        "interaction":{
+            "type":"text",
+            "popupImage": "yones.png",
+            "popupTitle": "SE BUSCA",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Si ve algo, diga algo.",
+            "popupBodySize": "21px" 
+
+        }
     },
     {
         "filename": "80409be34ee2.png",
@@ -290,8 +323,13 @@
         "height": 738,
         "opacity": 0.68,
         "visible": true,
-        "zoom": false,
-        "name": "Thundera eye"
+        "zoom": true,
+        "name": "Thundera eye",
+        "interaction":{
+            "type":"audio",
+            "file":"thunder.mp3"
+
+        }
     },
     {
         "filename": "2d08b4394406.png",
@@ -334,7 +372,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "bandera carpeta"
+        "name": "bandera carpeta",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"YI27tT4yp-M"
+        }
     },
     {
         "filename": "878e9d9048b2.png",
@@ -356,7 +398,15 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "arquero"
+        "name": "arquero",
+        "interaction":{
+            "type":"text",
+            "popupTitle": "MANOS",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Si alguien conoce al dueño de estas manos, <br>comuniquese al 1138253190",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "c5f89fff47a2.png",
@@ -367,7 +417,16 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "gafas"
+        "name": "gafas",
+        "interaction":{
+            "type":"text",
+            "popupImage": "facha.png",
+            "popupTitle": "GAFAS",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "FACHA",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "6efabf184033.png",
@@ -505,7 +564,12 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "ojo"
+        "name": "ojo",
+        "interaction": {
+            "type": "growCenter",
+            "duration": "5000",
+            "maxScale": "5"
+          }
     },
     {
         "filename": "30cf9879417b.png",
@@ -516,7 +580,12 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "miniatura"
+        "name": "miniatura",
+        "interaction": {
+            "type": "shrinkCenter",
+            "duration": "5000",
+            "minScale": "0.1"            
+  }
     },
     {
         "filename": "4c51b35945f1.png",
@@ -544,12 +613,8 @@
         "zoom": true,
         "name": "octopus",
         "interaction":{
-            "type":"text",
-            "popupTitle": "El Doctor Octopus Garate",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "Si no lo estan siguiendo en X, estan mal. <br>MAL LES DIGO.<br> Siganlo <a href='https://x.com/MatiasGarate15' target='_blank'>AQUI</a> ",
-            "popupBodySize": "21px" 
+            "type":"redirect",
+            "url": "https://x.com/MatiasGarate15"
         }
     },
     {
@@ -590,7 +655,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "gagaiden"
+        "name": "gagaiden",
+        "interaction":{
+            "type":"audio",
+            "file":"ronquido.mp3"
+        }
     },
     {
         "filename": "1910b7c241e2.png",
@@ -669,7 +738,10 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "fumata"
+        "name": "fumata",
+        "interaction":{
+            "type":"centerCircle"
+        }
     },
     {
         "filename": "bf1b83e64464.png",
@@ -680,7 +752,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "bondi maridaje"
+        "name": "bondi maridaje",
+        "interaction":{
+            "type":"audio",
+            "file":"maridaje.mp3"
+        }
     },
     {
         "filename": "d88986fa43e3.png",
@@ -812,7 +888,14 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "niños cantores"
+        "name": "niños cantores",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"Ln6gpZXTqZI",
+            "startTime":"11:54:24",
+            "endTime":"11:54:48"
+
+        }
     },
     {
         "filename": "9c58ac0e46c9.png",
@@ -897,7 +980,16 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "gran dt"
+        "name": "gran dt",
+        "interaction":{
+            "type":"text",
+            "popupImage": "passetdt.png",
+            "popupTitle": "EL GRAN DT",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Datos. No relato.<br>(by <a href='https://x.com/EvilNeura' target='_blank'>@EvilNeura</a>)",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "38a38b63439a.png",
@@ -949,7 +1041,15 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "luna coin"
+        "name": "luna coin",
+        "interaction":{
+            "type":"text",
+            "popupTitle": "LUNA COIN",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Se cree que un solo argentino compro esta moneda antes de la debacle. <br>Todos sabemos quien es.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "a82b87ef4f81.png",
@@ -1036,7 +1136,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "sujeto 4"
+        "name": "sujeto 4",
+        "interaction":{
+            "type":"redirect",
+            "url":"https://x.com/enelojodelpoder"
+        }
     },
     {
         "filename": "7101affe4304.png",
@@ -1062,7 +1166,16 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "adorni boleta"
+        "name": "adorni boleta",
+        "interaction":{
+            "type":"text",
+            "popupImage": "adorni.png",
+            "popupTitle": "ADORNI - MENEM",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Menem - Adorni",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "1d49b0394e39.png",
@@ -1084,7 +1197,16 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "navidad venezuela"
+        "name": "navidad venezuela",
+        "interaction":{
+            "type":"text",
+            "popupImage": "navivenez.png",
+            "popupTitle": "Navidad Venezolana",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Porque al dictador de ese pais se le canto adelantar la navidad a Octubre.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "f424a85f420f.png",
@@ -1095,7 +1217,13 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "malcom young"
+        "name": "malcom young",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"TWPSd2mu9Jk",
+            "startTime":"3:46",
+            "endTime":"4:01"
+        }
     },
     {
         "filename": "f913aaf147fe.png",
@@ -1106,7 +1234,16 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "privatice"
+        "name": "privatice",
+        "interaction":{
+            "type":"text",
+            "popupImage": "99za57.jpg",
+            "popupTitle": "PRIVATICESE",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "SI.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "cd8ba90043aa.png",
@@ -1165,7 +1302,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "fatal error"
+        "name": "fatal error",
+        "interaction":{
+            "type":"alarm",
+            "file":"alarm.mp3"
+        }
     },
     {
         "filename": "97b784d44eaf.png",
@@ -1176,7 +1317,16 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "KE ES UN \nCRAUNING PE.."
+        "name": "KE ES UN \nCRAUNING PE..",
+        "interaction":{
+            "type":"text",
+            "popupImage": "cronipe.png",
+            "popupTitle": "CRAUNIN PE",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Destruidos. Acabados.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "e432885d4593.png",
@@ -1217,7 +1367,16 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "mascara harto"
+        "name": "mascara harto",
+        "interaction": {
+            "type": "centerFire",
+            "moveDuration": "3000",        
+            "stayDuration": "7000",
+            "rotationDuration": "5000",
+            "rotationDegree":"55",         
+            "gif": "images/blue-flame2.gif",              
+            "file": "dronin.mp3"         
+  }
     },
     {
         "filename": "07e899284fb4.png",
@@ -1230,9 +1389,19 @@
         "zoom": true,
         "name": "salud oyentes",
         "interaction":{
-            "type":"redirect",
-            "url":"https://www.instagram.com/dra.leyla_abboud/"
+            "actions": [
+                {
+
+                    "type":"redirect",
+                    "url":"https://www.instagram.com/dra.leyla_abboud/"
+                },
+                {
+                    "type":"audio",
+                    "file":"salud.mp3"
+                }
+            ]
         }
+        
     },
     {
         "filename": "07cf982f48d1.png",
@@ -1265,7 +1434,13 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "manzana"
+        "name": "manzana",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"78fsQIONoJc",
+            "startTime":"1:50:30",
+            "endTime":"2:01:20"
+        }
     },
     {
         "filename": "0a119a044e98.png",
@@ -1276,7 +1451,16 @@
         "opacity": 1,
         "visible": true,
         "zoom": false,
-        "name": "image.png"
+        "name": "zucho de la paciencia.png",
+        "interaction":{
+            "type":"text",
+            "popupImage": "",
+            "popupTitle": "El Zucho de la paciencia",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Por algun motivo, Zucho se parece al Jesus de la paciencia segun Tronco.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "9906823a4a32.png",
@@ -1342,7 +1526,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "kiropractico"
+        "name": "kiropractico",
+        "interaction":{
+            "type":"redirect",
+            "url":"https://x.com/TraductorTeAma/status/1892981638000160907"
+        }
     },
     {
         "filename": "f45fa8044fbd.png",
@@ -1412,7 +1600,7 @@
         "name": "dark neura",
         "interaction":{
             "type":"redirect",
-            "url":"https://www.youtube.com/@DarkNeura"
+            "url":"https://www.youtube.com/@DarkNeura/videos"
         }
     },
     {
@@ -1441,22 +1629,6 @@
         "zoom": false,
         "name": "ipad sarubbi"
     },
-    
-    {
-        "filename": "c33d8b8b4965.png",
-        "x": 1234,
-        "y": 963,
-        "width": 138,
-        "height": 142,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "banderin neura",
-        "interaction":{
-            "type":"redirect",
-            "url":"https://www.youtube.com/@NeuraMedia"
-        }
-    },
     {
         "filename": "97549cb244d5.png",
         "x": 1241,
@@ -1470,6 +1642,21 @@
         "interaction":{
             "type":"redirect",
             "url":"https://www.youtube.com/live/OwMnNEu8oyU?si=m-0e0unFKrWXI2Z6"
+        }
+    },
+    {
+        "filename": "c33d8b8b4965.png",
+        "x": 1234,
+        "y": 963,
+        "width": 138,
+        "height": 142,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "banderin neura",
+        "interaction":{
+            "type":"redirect",
+            "url":"https://www.youtube.com/@NeuraMedia"
         }
     },    
     {
@@ -1642,7 +1829,7 @@
         "name": "MI GEOPOLITICA \nNO VALE??..",
         "interaction":{
             "type":"audio",
-            "file":""
+            "file":"geopolitica.mp3"
         }
     },
     {
@@ -1667,8 +1854,15 @@
         "zoom": true,
         "name": "mahyra",
         "interaction":{
-            "type":"redirect",
-            "content":"ig de mahyra"
+            "type":"warningRedirect", 
+            "warningTitle": "PRECAUCION",
+            "warningTitleFont": "Arial, sans-serif",
+            "warningTitleSize": "24px",
+            "warningBody": "Usted esta por ser redirigido al IG de Mahyra.<br><br> Si esta en una situacion publica, haga click en cualquier lugar de la imagen.<br><br> Si no, aguarde y sera redirigido en: <br>",
+            "warningBodyFont": "Special Elite   , serif",
+            "warningBodySize": "21px",
+            "redirectUrl": "https://www.instagram.com/mahyra_ojeda/",
+            "file": "warning.mp3"
         }
     },
     {
@@ -1680,7 +1874,12 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "shinobi"
+        "name": "shinobi",
+        "interaction":{
+            "type":"audio",
+            "file":"Yie Ar Kung Fu.mp3"
+
+        }
     },
     {
         "filename": "9076b2874b95.png",
@@ -1745,7 +1944,15 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "solanas"
+        "name": "solanas",
+        "interaction":{
+            "type":"text",
+            "popupTitle": "SOLANAS",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Segun entendi, aca se podia comprar Libra, que es una moneda encriptada diseñada por el diablo. Pero desde que cerraron Telam no me entero bien de nada.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "e2a9a13b477b.png",
@@ -1773,7 +1980,15 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "kici avion"
+        "name": "kici avion",
+        "interaction":{
+            "type":"text",
+            "popupTitle": "ÑEEEE",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "'Voy a comprar los avioncitos porque eso es lo que neceista la provincia para salir adelante! Eh? Patrulleros? No, estos son avioncitos!'",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "0449bc1e4c1e.png",
@@ -1784,7 +1999,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "zombies"
+        "name": "zombies",
+        "interaction":{
+            "type":"audio",
+            "file":"zombies.mp3"
+        }
     },
     {
         "filename": "9e88ae0a4d3e.png",
@@ -1821,7 +2040,13 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "kansas"
+        "name": "kansas",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"Ln6gpZXTqZI",
+            "startTime":"9:42:43",
+            "endTime":"11:54:56"
+        }
     },
     {
         "filename": "75c18fc24e40.png",
@@ -1869,8 +2094,16 @@
         "height": 243,
         "opacity": 1,
         "visible": true,
-        "zoom": false,
-        "name": "INGRATO"
+        "zoom": true,
+        "name": "INGRATO",
+        "interaction":{
+            "type":"text",
+            "popupTitle": "INGRATOS",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Que se hace con los ingratos?",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "49c183234176.png",
@@ -1896,7 +2129,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "microfono zombie"
+        "name": "microfono zombie",
+        "interaction":{
+            "type":"walk",
+            "file":"zombiemic_.mp3"
+        }
     },
     {
         "filename": "0b7e9751474f.png",
@@ -1998,7 +2235,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "peluditos"
+        "name": "peluditos",
+        "interaction":{
+            "type":"redirect",
+            "url":"https://www.instagram.com/fenixsithstore/"
+        }
     },
     {
         "filename": "b4169ed3468c.png",
@@ -2031,7 +2272,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "edesur"
+        "name": "edesur",
+        "interaction":{
+            "type":"blackout",
+            "file":"electric.wav"
+        }
     },
     {
         "filename": "70f1b4274bc7.png",
@@ -2057,7 +2302,15 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "dos de oro"
+        "name": "dos de oro",
+        "interaction":{
+            "type":"text",
+            "popupTitle": "AGENTE M",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "El Agente M fue enviado a destruir una dictadura desde dentro pero termino embelezado por las dadivas del dictador y se convirtio en un traidor inmundo.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "89fea0564db7.png",
@@ -2083,7 +2336,11 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "mosca kuka"
+        "name": "mosca kuka",
+        "interaction":{
+            "type":"circle",
+            "file":"mosca.mp3"
+        }
     },
     {
         "filename": "029c95dd437a.png",
@@ -2094,7 +2351,16 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "blokum"
+        "name": "blokum",
+        "interaction":{
+            "type":"text",
+            "popupImage": "blokium.png",
+            "popupTitle": "BLOKIUM",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Lo dio todo para mantener en pie a Tronco 12 horas de stream",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "fe53a02d4a04.png",
