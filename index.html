@@ -114,6 +114,80 @@
   </style>
 </head>
 <body>
+  <div id="loading-screen">
+    <div id="loading-container">
+      <img id="loading-img1" class="loading-image" src="images/lore.png" alt="Loading Image 1">
+      <img id="loading-img2" class="loading-image" src="images/sanduber.png" alt="Loading Image 2">
+    </div>
+  </div>
+  
+  <style>
+    /* Loading screen styles */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .loading-image {
+  clip-path: inset(0 0 0 0);
+  -webkit-mask-image: linear-gradient(90deg, black 0%, black 49%, transparent 51%, transparent 100%);
+  mask-image: linear-gradient(90deg, black 0%, black 49%, transparent 51%, transparent 100%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 250% 100%;
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+  opacity: 1;
+  animation: maskReveal 7s ease forwards;
+}
+
+#loading-img2 {
+  margin-top: 20px;
+  animation-delay: 4s;
+}
+
+@keyframes maskReveal {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+  </style>
+  
+  <script>
+    // When the window loads, play the loading audio and remove the loading screen when audio ends.
+    window.addEventListener("load", function() {
+      const loadingAudio = new Audio("audio/lorerings.mp3"); // Path to your loading audio file.
+      loadingAudio.play();
+      loadingAudio.addEventListener("ended", function() {
+        const loadingScreen = document.getElementById("loading-screen");
+        // Fade out the loading screen.
+        loadingScreen.style.transition = "opacity 1s ease";
+        loadingScreen.style.opacity = "0";
+        setTimeout(() => {
+          if (loadingScreen.parentNode) {
+            loadingScreen.parentNode.removeChild(loadingScreen);
+          }
+        }, 1000);
+      });
+    });
+  </script>
   <div id="frame">
     <div id="collage"></div>
   </div>
