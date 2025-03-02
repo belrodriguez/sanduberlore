@@ -2166,7 +2166,7 @@
             "popupTitle": "EL CULPABLE",
             "popupTitleFont": "Arial, sans-serif",
             "popupTitleSize": "24px",
-            "popupBody": "Nadie lo vio. Nadie puede probarlo. Pero nadie tiene dudas de su culpabilidad.",
+            "popupBody": "Nadie lo vio. Nadie puede probarlo. <br>Pero nadie tiene dudas de su culpabilidad.",
             "popupBodySize": "21px" 
         }
     },
