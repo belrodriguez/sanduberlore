@@ -67,14 +67,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       e.preventDefault();
     }
   }, true);
-
   popupOverlay.addEventListener("click", (e) => {
     if (e.target === popupOverlay) {
       popupOverlay.style.display = "none";
       popup.innerHTML = "";
     }
   });
-
   document.getElementById("close-youtube").addEventListener("click", () => {
     youtubeContainer.style.display = "none";
     youtubePlayer.src = "";
@@ -93,7 +91,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("images.json");
     const images = await response.json();
-    const baseWidth = 1500, baseHeight = 1792;
+    const baseWidth = 1600, baseHeight = 1900;
     images.forEach(image => {
       const img = document.createElement("img");
       img.src = `images/${image.filename}`;
@@ -248,7 +246,7 @@ function processAction(action, clickedImg) {
     };
     flicker();
     audio.play();
-  } else if (action.type === "circle") {
+  }else if (action.type === "circle") {
     if (clickedImg._circleActive) {
       clickedImg._circleActive.cancel();
       delete clickedImg._circleActive;
@@ -284,7 +282,7 @@ function processAction(action, clickedImg) {
       }
     };
     audio.play();
-  } else if (action.type === "walk") {
+  }else if (action.type === "walk") {
     if (clickedImg._walkActive) {
       clickedImg._walkActive.cancel();
       delete clickedImg._walkActive;
@@ -292,15 +290,19 @@ function processAction(action, clickedImg) {
     }
     const audio = new Audio(`audio/${action.file}`);
     const originalTransform = clickedImg.style.transform || "";
+    const originalZ = clickedImg.style.zIndex || "";
+    // Bring image to the top layer for the duration of the walk
+    clickedImg.style.zIndex = "10000";
     const animDuration = 6000;
     const frameElem = document.getElementById("frame");
-    const frameWidth = frameElem.clientWidth;
     const frameRect = frameElem.getBoundingClientRect();
+    const frameWidth = frameElem.clientWidth;
     const imgRect = clickedImg.getBoundingClientRect();
     const currentLeft = imgRect.left - frameRect.left;
     const distance = frameWidth - currentLeft + 100;
     const startAnim = performance.now();
     let cancelled = false;
+    
     function animateWalk(timestamp) {
       if (cancelled) return;
       let progress = (timestamp - startAnim) / animDuration;
@@ -311,21 +313,26 @@ function processAction(action, clickedImg) {
       if (progress < 1) {
         clickedImg._walkActive.id = requestAnimationFrame(animateWalk);
       } else {
+        // Animation complete: restore original transform and z-index
         clickedImg.style.transform = originalTransform;
+        clickedImg.style.zIndex = originalZ;
         delete clickedImg._walkActive;
       }
     }
+    
     clickedImg._walkActive = {
       id: requestAnimationFrame(animateWalk),
       cancel: function() {
         cancelled = true;
         cancelAnimationFrame(this.id);
         clickedImg.style.transform = originalTransform;
+        clickedImg.style.zIndex = originalZ;
         audio.pause();
       }
     };
+    
     audio.play();
-  } else if (action.type === "centerCircle") {
+  }else if (action.type === "centerCircle") {
     if (clickedImg._centerCircleActive) {
       clickedImg._centerCircleActive.cancel();
       delete clickedImg._centerCircleActive;
@@ -391,7 +398,7 @@ function processAction(action, clickedImg) {
       });
     });
     if (audio) audio.play();
-  } else if (action.type === "alarm") {
+  }else if (action.type === "alarm") {
     const collageElem = document.getElementById("collage");
     const audio = new Audio(`audio/${action.file}`);
     let startTimeAnim = Date.now();
@@ -423,7 +430,7 @@ function processAction(action, clickedImg) {
     };
     flashAlarm();
     audio.play();
-  } else if (action.type === "warningRedirect") {
+  }else if (action.type === "warningRedirect") {
     warningOverlay.innerHTML = "";
     const warningContainer = document.createElement("div");
     warningContainer.style.background = "white";
@@ -473,7 +480,7 @@ function processAction(action, clickedImg) {
         warningOverlay.innerHTML = "";
       }
     }, 1000);
-  } else if (action.type === "growCenter") {
+  }else if (action.type === "growCenter") {
     if (clickedImg._growCenterActive) {
       clickedImg._growCenterActive.cancel();
       delete clickedImg._growCenterActive;
@@ -529,7 +536,7 @@ function processAction(action, clickedImg) {
       const audio = new Audio(`audio/${action.file}`);
       audio.play();
     }
-  } else if (action.type === "shrinkCenter") {
+  }else if (action.type === "shrinkCenter") {
     if (clickedImg._shrinkCenterActive) {
       clickedImg._shrinkCenterActive.cancel();
       delete clickedImg._shrinkCenterActive;
@@ -585,7 +592,7 @@ function processAction(action, clickedImg) {
       const audio = new Audio(`audio/${action.file}`);
       audio.play();
     }
-  } else if (action.type === "centerFire") {
+  }else if (action.type === "centerFire") {
     if (clickedImg._centerFireActive) {
       clickedImg._centerFireActive.cancel();
       delete clickedImg._centerFireActive;
@@ -677,7 +684,158 @@ function processAction(action, clickedImg) {
       }
     }
     requestAnimationFrame(animateToCenter);
-  }
+  }else if (action.type === "fall") {
+    // Save current z-index and transform
+    const originalZ = clickedImg.style.zIndex || "";
+    const originalTransform = clickedImg.style.transform || "";
+  
+    // Bring the image to the top layer
+    clickedImg.style.zIndex = 10000;
+  
+    // Get the height of the frame so we know how far to fall
+    const frame = document.getElementById("frame");
+    const frameHeight = frame.clientHeight;
+  
+    // Duration of the fall in milliseconds
+    const animDuration = 3000; // 3 seconds
+    const startTime = performance.now();
+  
+    // Play the audio associated with the fall action
+    const fallAudio = new Audio(`audio/${action.file}`);
+    fallAudio.play();
+  
+    // Animate the fall using requestAnimationFrame
+    function animateFall(timestamp) {
+      let progress = (timestamp - startTime) / animDuration;
+      if (progress > 1) progress = 1;
+  
+      // Move the image downward.
+      // We add the original transform (if any) plus a translateY that moves it out of frame.
+      // We use the frame's height plus the image's height so it completely goes out.
+      clickedImg.style.transform = `${originalTransform} translateY(${progress * (frameHeight + clickedImg.clientHeight)}px)`;
+  
+      if (progress < 1) {
+        requestAnimationFrame(animateFall);
+      } else {
+        // Once the fall animation completes, wait for the audio to finish.
+        fallAudio.addEventListener("ended", () => {
+          // Reset the image to its original position and z-index.
+          clickedImg.style.transform = originalTransform;
+          clickedImg.style.zIndex = originalZ;
+        });
+      }
+    }
+    requestAnimationFrame(animateFall);
+  }else if (action.type === "overlayFade") {
+    const collageElem = document.getElementById("collage");
+    const frameElem = document.getElementById("frame");
+  
+    // Dim the entire collage to 50%
+    collageElem.style.transition = "filter 0.5s ease";
+    collageElem.style.filter = "brightness(50%)";
+  
+    // Create the overlay image element
+    const overlayImg = document.createElement("img");
+    overlayImg.src = action.overlayImage ? `images/${action.overlayImage}` : clickedImg.src;
+    overlayImg.style.position = "absolute";
+    overlayImg.style.top = "50%";
+    overlayImg.style.left = "50%";
+    overlayImg.style.width = "150%";
+    overlayImg.style.height = "auto";
+    overlayImg.style.opacity = "0"; // start invisible
+    overlayImg.style.zIndex = "9999";
+    overlayImg.style.transform = "translate(-50%, -50%)";
+    overlayImg.style.transition = "opacity 1s ease";
+  
+    frameElem.appendChild(overlayImg);
+  
+    // Trigger fade in on next frame
+    requestAnimationFrame(() => {
+      overlayImg.style.opacity = "0.5";
+    });
+  
+    // Play the audio associated with this action
+    const audio = new Audio(`audio/${action.file}`);
+    audio.play();
+  
+    // Define a function to cancel the overlay interaction
+    function cancelOverlay() {
+      document.removeEventListener("click", cancelOverlay);
+      audio.pause();
+      audio.currentTime = 0;
+      overlayImg.style.opacity = "0";
+      overlayImg.addEventListener("transitionend", () => {
+        collageElem.style.filter = "";
+        if (overlayImg.parentElement) {
+          overlayImg.parentElement.removeChild(overlayImg);
+        }
+      }, { once: true });
+    }
+  
+    // Delay adding the document-level click listener (e.g., 100ms) so the triggering click isn't caught.
+    setTimeout(() => {
+      document.addEventListener("click", cancelOverlay, { once: true });
+    }, 100);
+  
+    // Also cancel the interaction when the audio ends
+    audio.addEventListener("ended", cancelOverlay);
+  
+    
+  }else if (action.type === "liftTop") {
+    const collageElem = document.getElementById("collage");
+  
+    // Hide the original image
+    clickedImg.style.visibility = "hidden";
+  
+    // Create a clone for the top overlay
+    const liftImg = clickedImg.cloneNode(true);
+    // Ensure the clone is visible even though the original is hidden
+    liftImg.style.visibility = "visible";
+    liftImg.style.position = "absolute";
+    liftImg.style.top = "0";
+    liftImg.style.left = "0";
+    liftImg.style.width = "100%";
+    liftImg.style.height = "auto";
+    liftImg.style.zIndex = "10000";
+    // Start with opacity 0 for a fade-in effect
+    liftImg.style.opacity = "0";
+    liftImg.style.transition = "opacity 0.5s ease";
+  
+    // Append the clone to the collage
+    collageElem.appendChild(liftImg);
+  
+    // Trigger the fade in on the next frame
+    requestAnimationFrame(() => {
+      liftImg.style.opacity = "1";
+    });
+  
+    // Play the associated audio
+    const audio = new Audio(`audio/${action.file}`);
+    audio.play();
+  
+    // Define a function to end the lift interaction
+    function endLift() {
+      // Fade out the overlay
+      liftImg.style.opacity = "0";
+      // After the fade-out, remove the overlay and restore the original image
+      setTimeout(() => {
+        if (liftImg.parentNode) {
+          liftImg.parentNode.removeChild(liftImg);
+        }
+        clickedImg.style.visibility = "visible";
+      }, 500);
+    }
+  
+    // Allow cancellation by clicking on the lifted image
+    liftImg.addEventListener("click", () => {
+      audio.pause();
+      audio.currentTime = 0;
+      endLift();
+    });
+  
+    // When the audio ends, finish the interaction
+    audio.addEventListener("ended", endLift);
+  }  
 }
 
 // Handle image interactions

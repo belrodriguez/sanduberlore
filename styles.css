@@ -17,9 +17,9 @@
   
   /* 3) #frame preserves a 1500×1792 aspect ratio, centered by flex parent */
   #frame {
-    aspect-ratio: 1500 / 1792;
+    aspect-ratio: 1600 / 1900;
     width: 90vw;          /* scales down on small devices */
-    max-width: 1500px;    /* never exceed original width on large desktops */
+    max-width: 1600px;    /* never exceed original width on large desktops */
     background-color: black;
     overflow: hidden;     /* hide anything beyond boundaries */
     position: relative;   /* needed for absolutely positioned collage items */
