@@ -835,6 +835,97 @@ function processAction(action, clickedImg) {
   
     // When the audio ends, finish the interaction
     audio.addEventListener("ended", endLift);
+  }else if (action.type === "flyingSaucer") {
+    // Hide the original image.
+    clickedImg.style.visibility = "hidden";
+    
+    // Get the clicked image's bounding rectangle and compute its center.
+    const rect = clickedImg.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    
+    // Create a new image element using action.flyingImage if provided; otherwise, fallback to clickedImg.src.
+    const flyingImg = document.createElement("img");
+    flyingImg.src = action.flyingImage ? `images/${action.flyingImage}` : clickedImg.src;
+    flyingImg.style.position = "fixed";
+    flyingImg.style.zIndex = "10000";
+    flyingImg.style.visibility = "visible";
+    flyingImg.style.transform = "";
+    
+    // Append it to the document body so it isn't clipped by any container.
+    document.body.appendChild(flyingImg);
+    
+    // When the replacement image loads, set its size.
+    flyingImg.onload = function() {
+      // Use custom dimensions if provided; otherwise, use natural size.
+      const repWidth = action.flyingWidth ? action.flyingWidth : flyingImg.naturalWidth;
+      const repHeight = action.flyingHeight ? action.flyingHeight : flyingImg.naturalHeight;
+      flyingImg.style.width = repWidth + "px";
+      flyingImg.style.height = repHeight + "px";
+      
+      // Center the replacement image at the clicked image's center.
+      flyingImg.style.left = (centerX - repWidth / 2) + "px";
+      flyingImg.style.top  = (centerY - repHeight / 2) + "px";
+      
+      // Calculate distance: move left until the right edge is off-screen.
+      const currentLeft = centerX - repWidth / 2;
+      const distance = currentLeft + repWidth + 50; // extra 50px clearance
+  
+      const animDuration = 7000; 
+      const startTime = performance.now();
+      let cancelled = false;
+      
+      function animateFlying(timestamp) {
+        if (cancelled) return;
+        let progress = (timestamp - startTime) / animDuration;
+        if (progress > 1) progress = 1;
+        
+        // Move left (negative translateX) and add vertical wobble.
+        const translateX = -progress * distance;
+        const wobbleY = 20 * Math.sin(progress * 2 * Math.PI * 3);
+        flyingImg.style.transform = `translate(${translateX}px, ${wobbleY}px)`;
+        
+        if (progress < 1) {
+          flyingImg._flyingSaucer = { id: requestAnimationFrame(animateFlying), cancel: cancelFlying };
+        } else {
+          delete flyingImg._flyingSaucer;
+        }
+      }
+      
+      function cancelFlying() {
+        cancelled = true;
+        cancelAnimationFrame(flyingImg._flyingSaucer.id);
+        flyingImg.style.transform = "";
+        if (flyingImg.parentNode) {
+          document.body.removeChild(flyingImg);
+        }
+        clickedImg.style.visibility = "visible";
+        audio.pause();
+        audio.currentTime = 0;
+      }
+      
+      flyingImg._flyingSaucer = { id: requestAnimationFrame(animateFlying), cancel: cancelFlying };
+      
+      // Play the audio.
+      const audio = new Audio(`audio/${action.file}`);
+      audio.play();
+      
+      // Allow cancellation by clicking on the replacement image.
+      flyingImg.addEventListener("click", function cancelHandler(e) {
+        if (flyingImg._flyingSaucer) {
+          flyingImg._flyingSaucer.cancel();
+          flyingImg.removeEventListener("click", cancelHandler);
+        }
+      });
+      
+      // When the audio ends, remove the replacement image and restore the original.
+      audio.addEventListener("ended", () => {
+        if (flyingImg.parentNode) {
+          document.body.removeChild(flyingImg);
+        }
+        clickedImg.style.visibility = "visible";
+      });
+    };
   }  
 }
 

@@ -48,6 +48,25 @@
         }
     },
     {
+        "filename": "climamaslaton.png",
+        "x": 452,
+        "y": -17,
+        "width": 329,
+        "height": 154,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "climamaslaton",
+        "interaction": {
+            "type":"text",
+            "popupTitle": "CLIMA ASQUEROSO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Se deberia instalar el concepto de clima Maslechon, cuando esta todo bien asqueroso.",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
         "filename": "a766bab24f10.png",
         "x": 624,
         "y": 1,
@@ -136,6 +155,17 @@
         "name": "siempre me la mando"
     },
     {
+        "filename": "son una verga.png",
+        "x": 291,
+        "y": 157,
+        "width": 199,
+        "height": 57,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "son una verga"
+    },
+    {
         "filename": "208f8ebb49eb.png",
         "x": -93,
         "y": -62,
@@ -148,7 +178,7 @@
     },
     {
         "filename": "771a88c1407b.png",
-        "x": 37,
+        "x": 34,
         "y": 127,
         "width": 134,
         "height": 191,
@@ -159,6 +189,24 @@
         "interaction":{
             "type":"audio",
             "file":"portalmascotas1.mp3"
+        }
+    },
+    {
+        "filename": "alienpro.png",
+        "x": 1422,
+        "y": 0,
+        "width": 178,
+        "height": 161,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "alienpro",
+        "interaction": {
+            "type": "flyingSaucer",
+            "file": "larreta.mp3",
+            "flyingImage": "alienpro_.png",
+            "flyingWidth": 258,
+            "flyingHeight": 161
         }
     },
     {
@@ -347,14 +395,32 @@
     },
     {
         "filename": "hormiguita.png",
-        "x": 189,
-        "y": 868,
+        "x": 206,
+        "y": 797,
         "width": 196,
         "height": 101,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "hormiguita"
+    },{
+        "filename": "MedituPija.png",
+        "x": 269,
+        "y": 893,
+        "width": 132,
+        "height": 26,
+        "opacity": 1,
+        "visible": true,
+        "name": "MedituPija",
+        "interaction": {
+            "type": "text",
+            "popupImage": "jastas.png",
+            "popupTitle": "EL JASHTA",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Se pensaba que no se iba a poder pero se pudio. #MediTuPija",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "21abb6894ea4.png",
@@ -629,6 +695,21 @@
         "name": "arbol BA"
     },
     {
+        "filename": "MANE.png",
+        "x": 1380,
+        "y": 198,
+        "width": 169,
+        "height": 103,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "MANE",
+        "interaction": {
+            "type":"audio",
+            "file":"mane.mp3"
+        }
+    },
+    {
         "filename": "08b886d34054.png",
         "x": 1413,
         "y": 280,
@@ -678,9 +759,20 @@
         "width": 62,
         "height": 128,
         "opacity": 1,
-        "visible": true,
+        "visible": false,
         "zoom": false,
         "name": "vacaciones.png"
+    },
+    {
+        "filename": "salchichi.png",
+        "x": 1411,
+        "y": 422,
+        "width": 111,
+        "height": 129,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "salchichi"
     },
     {
         "filename": "80c2b3644036.png",
@@ -1024,6 +1116,21 @@
         "name": "comida perros"
     },
     {
+        "filename": "camionciruja.png",
+        "x": 299,
+        "y": 1072,
+        "width": 121,
+        "height": 111,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "camionciruja",
+        "interaction": {
+            "type": "audio",
+            "file":"cirujeo.mp3"
+        }
+    },
+    {
         "filename": "nut.png",
         "x": 75,
         "y": 1013,
@@ -1091,7 +1198,7 @@
         "height": 69,
         "opacity": 1,
         "visible": true,
-        "zoom": false,
+        "zoom": true,
         "name": "fabricas"
     },
     {
@@ -1102,7 +1209,7 @@
         "height": 255,
         "opacity": 1,
         "visible": true,
-        "zoom": false,
+        "zoom": true,
         "name": "caracol galactico",
         "interaction":{
             "type": "overlayFade",
@@ -1118,7 +1225,7 @@
         "height": 117,
         "opacity": 1,
         "visible": true,
-        "zoom": false,
+        "zoom": true,
         "name": "akenaton"
     },
     {
@@ -1129,7 +1236,7 @@
         "height": 517,
         "opacity": 1,
         "visible": true,
-        "zoom": false,
+        "zoom": true,
         "name": "MERCH OFICIAL  DEL SUJETO 4",
         "interaction":{
             "type":"text",
@@ -1148,7 +1255,7 @@
         "height": 214,
         "opacity": 1,
         "visible": true,
-        "zoom": false,
+        "zoom": true,
         "name": "toga",
         "interaction":{
             "type":"youtube",
@@ -1170,6 +1277,25 @@
         "interaction":{
             "type":"audio",
             "file":"nosonmasquenosotros.mp3"
+        }
+    },
+    {
+        "filename": "whapsbot.png",
+        "x": 604,
+        "y": 1166,
+        "width": 77,
+        "height": 123,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "whapsbot",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "WHATSAPP BOT",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "El bot espera con paciencia eterna algun dia poder pasarle algo relevante a Tronco desde el grupo.",
+            "popupBodySize": "21px" 		
         }
     },
     {
@@ -1197,7 +1323,7 @@
         "height": 133,
         "opacity": 1,
         "visible": true,
-        "zoom": false,
+        "zoom": true,
         "name": "abuela"
     },
     {
@@ -1239,10 +1365,10 @@
     },
     {
         "filename": "3a2197e64e09.png",
-        "x": 305,
-        "y": 1118,
-        "width": 102,
-        "height": 134,
+        "x": 302,
+        "y": 1146,
+        "width": 89,
+        "height": 116,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1275,6 +1401,28 @@
         "name": "zombikuka"
     },
     {
+        "filename": "conito.png",
+        "x": 526,
+        "y": 1320,
+        "width": 52,
+        "height": 70,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "conito"
+    },
+    {
+        "filename": "conito2.png",
+        "x": 577,
+        "y": 1309,
+        "width": 44,
+        "height": 60,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "conito2"
+    },
+    {
         "filename": "feea8fd540b5.png",
         "x": 313,
         "y": 1409,
@@ -1297,13 +1445,24 @@
     {
         "filename": "38a38b63439a.png",
         "x": 393,
-        "y": 1402,
+        "y": 1384,
         "width": 119,
         "height": 155,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "carta biden"
+    },
+    {
+        "filename": "goofy.png",
+        "x": 392,
+        "y": 1482,
+        "width": 112,
+        "height": 221,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "goofy"
     },
     {
         "filename": "bf138b6e4996.png",
@@ -1329,8 +1488,8 @@
     },
     {
         "filename": "686f86554255.png",
-        "x": 596,
-        "y": 1255,
+        "x": 608,
+        "y": 1253,
         "width": 54,
         "height": 81,
         "opacity": 1,
@@ -1365,8 +1524,8 @@
     },
     {
         "filename": "bolsapan.png",
-        "x": 596,
-        "y": 1303,
+        "x": 797,
+        "y": 1409,
         "width": 104,
         "height": 180,
         "opacity": 1,
@@ -1384,8 +1543,8 @@
     },
     {
         "filename": "martin4.png",
-        "x": 761,
-        "y": 1219,
+        "x": 757,
+        "y": 1205,
         "width": 99,
         "height": 162,
         "opacity": 1,
@@ -1399,8 +1558,8 @@
     },
     {
         "filename": "peloenpolvo.png",
-        "x": 715,
-        "y": 1272,
+        "x": 697,
+        "y": 1259,
         "width": 48,
         "height": 80,
         "opacity": 1,
@@ -1415,11 +1574,31 @@
         }
     },
     {
+        "filename": "jodete lunatti.png",
+        "x": 614,
+        "y": 1303,
+        "width": 240,
+        "height": 149,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "jodete lunatti",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "LUNATTI - LANUTTI",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Jodete.",
+            "popupBodySize": "21px" 
+			
+        }
+    },
+    {
         "filename": "a82b87ef4f81.png",
-        "x": 679,
-        "y": 1355,
-        "width": 187,
-        "height": 265,
+        "x": 655,
+        "y": 1418,
+        "width": 162,
+        "height": 231,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1542,7 +1721,34 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "tetaz"
+        "name": "tetaz",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "DUENDECILLO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Un duendecillo que polula por entre los cables del estudio de Neura. Cuidado con sus impuestos si lo ven. <br>Igual le queda poco tiempo.",
+            "popupBodySize": "21px" 	
+        }
+    },
+    {
+        "filename": "mini corresponsal.png",
+        "x": 1372,
+        "y": 1407,
+        "width": 150,
+        "height": 162,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "mini corresponsal",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "CORRESPONSAL TALLA BAJA",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "La proxima mandenlo con un banquito asi puede filmar.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "4db8ac384e4c.png",
@@ -1561,8 +1767,8 @@
     },
     {
         "filename": "7101affe4304.png",
-        "x": 1143,
-        "y": 1404,
+        "x": 1160,
+        "y": 1417,
         "width": 123,
         "height": 116,
         "opacity": 1,
@@ -1595,9 +1801,29 @@
         }
     },
     {
+        "filename": "PERLAS.png",
+        "x": 994,
+        "y": 1509,
+        "width": 134,
+        "height": 106,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "PERLAS",
+        "interaction": {
+            "type": "text",
+            "popupImage": "perlaslibro.png",
+            "popupTitle": "TE VOY A HACER PERLAS",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "El libro de ficcion que nadie estaba esperando, pero que todos nos tenemos que fumar.",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
         "filename": "1d49b0394e39.png",
-        "x": 1085,
-        "y": 1417,
+        "x": 1076,
+        "y": 1402,
         "width": 103,
         "height": 116,
         "opacity": 1,
@@ -1700,7 +1926,7 @@
         "name": "carpetas"
     },
     {
-        "filename": "2ff5995a4549.png",
+        "filename": "zapatillabart.png",
         "x": 1231,
         "y": 1140,
         "width": 44,
@@ -1708,7 +1934,7 @@
         "opacity": 1,
         "visible": true,
         "zoom": false,
-        "name": "image.png"
+        "name": "zapatillabart.png"
     },
     {
         "filename": "024d905e4c4d.png",
@@ -2021,6 +2247,17 @@
         }
     },
     {
+        "filename": "ranita.png",
+        "x": 1367,
+        "y": 1513,
+        "width": 70,
+        "height": 59,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "ranita"
+    },
+    {
         "filename": "f92d86614701.png",
         "x": 1330,
         "y": 1089,
@@ -2051,21 +2288,6 @@
         }
     },
     {
-        "filename": "11a29d344d6b.png",
-        "x": 1398,
-        "y": 1067,
-        "width": 60,
-        "height": 72,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "bantu",
-        "interaction":{
-            "type":"redirect",
-            "url":"https://www.instagram.com/cafebantu/?hl=es"
-        }
-    },
-    {
         "filename": "75cfa81c4d9f.png",
         "x": 1350,
         "y": 895,
@@ -2093,6 +2315,32 @@
         "interaction":{
             "type":"redirect",
             "url":"https://www.youtube.com/live/OwMnNEu8oyU?si=m-0e0unFKrWXI2Z6"
+        }
+    },
+    {
+        "filename": "mate bantu.png",
+        "x": 1432,
+        "y": 1027,
+        "width": 43,
+        "height": 93,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "mate bantu"
+    },
+    {
+        "filename": "11a29d344d6b.png",
+        "x": 1398,
+        "y": 1067,
+        "width": 60,
+        "height": 72,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "bantu",
+        "interaction":{
+            "type":"redirect",
+            "url":"https://www.instagram.com/cafebantu/?hl=es"
         }
     },
     {
@@ -2171,6 +2419,21 @@
         "visible": true,
         "zoom": false,
         "name": "klingon"
+    },
+    {
+        "filename": "perrobombero.png",
+        "x": 119,
+        "y": 1351,
+        "width": 92,
+        "height": 101,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "perrobombero",
+        "interaction": {
+            "type": "audio",
+            "file": "sus.mp3"
+        }
     },
     {
         "filename": "pasaporto.png",
@@ -2292,7 +2555,7 @@
         "height": 104,
         "opacity": 1,
         "visible": true,
-        "zoom": false,
+        "zoom": true,
         "name": "palta"
     },
     {
@@ -2395,7 +2658,25 @@
             "popupBody": "Cuando el lobo no quiere hacer nada, parece un ser adorable. Pero no deja de ser lobo.",
             "popupBodySize": "21px"          
         }
-
+    },
+    {
+        "filename": "tatu martin.png",
+        "x": 1135,
+        "y": 1377,
+        "width": 73,
+        "height": 146,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "tatu martin",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "HORUS",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "El tatuaje misterioso del Sujeto 4.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "pescamagic.png",
@@ -2435,6 +2716,17 @@
             "popupBody": "Segun entendi, aca se podia comprar Libra, que es una moneda encriptada diseñada por el diablo. Pero desde que cerraron Telam no me entero bien de nada.",
             "popupBodySize": "21px" 
         }
+    },
+    {
+        "filename": "alerta de sobre.png",
+        "x": 1435,
+        "y": 1517,
+        "width": 178,
+        "height": 70,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "alerta de sobre"
     },
     {
         "filename": "alfrexona.png",
@@ -2586,7 +2878,26 @@
             "type": "audio",
             "file": "pacofornica.mp3"
         }
-    },    
+    },
+    {
+        "filename": "BELLIBONI.png",
+        "x": 188,
+        "y": 1613,
+        "width": 86,
+        "height": 130,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "BELLIBONI",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "RESMA DE ORO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Porque tampoco hay otra forma que una resma salga 1.900.000 pesulis.",
+            "popupBodySize": "21px" 
+        }
+    },
     {
         "filename": "0b7e9751474f.png",
         "x": 61,
@@ -2620,17 +2931,6 @@
             "popupBody": "Porque es la unica forma que esta cosa salga 56 palos.",
             "popupBodySize": "21px" 
         }
-    },
-    {
-        "filename": "ranita.png",
-        "x": 1036,
-        "y": 1519,
-        "width": 70,
-        "height": 59,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "ranita"
     },
     {
         "filename": "6956bf184086.png",
@@ -2762,10 +3062,10 @@
     },
     {
         "filename": "f44994084136.png",
-        "x": 972,
-        "y": 1480,
+        "x": 969,
+        "y": 1464,
         "width": 96,
-        "height": 42,
+        "height": 41,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -2908,5 +3208,19 @@
         "visible": true,
         "zoom": false,
         "name": "NO.."
+    },
+    {
+        "filename": "HERMAAAAANOOOOOO.png",
+        "x": 658,
+        "y": 466,
+        "width": 295,
+        "height": 184,
+        "opacity": 1,
+        "visible": true,
+        "name": "HERMAAAAANOOOOOO",
+        "interaction": {
+            "type":"audio",
+            "file":"hermano.mp3"
+        }
     }
 ]
