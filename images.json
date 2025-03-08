@@ -192,6 +192,25 @@
         }
     },
     {
+        "filename": "trolco.png",
+        "x": 32,
+        "y": 289,
+        "width": 136,
+        "height": 129,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "trolco",
+        "interaction":{
+            "type":"text",
+            "popupTitle": "T.R.O.L.C.O.",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Grupo paraestatal creado por la mente de un periodista que claramente no tiene mucho para informar y prefiere invertarse noticias.",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
         "filename": "alienpro.png",
         "x": 1422,
         "y": 0,
@@ -207,7 +226,7 @@
             "flyingImage": "alienpro_.png",
             "flyingWidth": 258,
             "flyingHeight": 161
-        }
+         }
     },
     {
         "filename": "532a8d7449f3.png",
@@ -222,10 +241,10 @@
     },
     {
         "filename": "tincho.png",
-        "x": -18,
-        "y": 272,
-        "width": 87,
-        "height": 182,
+        "x": -115,
+        "y": 246,
+        "width": 171,
+        "height": 188,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -370,7 +389,7 @@
             "popupTitle": "COTO LANUS",
             "popupTitleFont": "Arial, sans-serif",
             "popupTitleSize": "24px",
-            "popupBody": "Los antiguos egipcios creian que lo mas memorable que uno podia hacer era morirse. <br>Pero tambien tenian de estos para pasar el tiempo hasta que pasara lo inevitable",
+            "popupBody": "Los antiguos egipcios creian que lo mas memorable que uno podia hacer era morirse. <br>Pero tambien tenian de estos para pasar el tiempo hasta que pasara lo inevitable.",
             "popupBodySize": "21px" 
         }
     },
@@ -394,19 +413,50 @@
         }
     },
     {
+        "filename": "utep.png",
+        "x": 300,
+        "y": 910,
+        "width": 91,
+        "height": 50,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "utep"
+    },
+    {
+        "filename": "ciclocaca.png",
+        "x": 163,
+        "y": 804,
+        "width": 108,
+        "height": 109,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "ciclocaca",
+        "interaction":{
+            "type":"text",
+            "popupTitle": "CICLO DE CACA",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Empieza y no termina. Caca, caca, caca.",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
         "filename": "hormiguita.png",
-        "x": 206,
-        "y": 797,
+        "x": 171,
+        "y": 771,
         "width": 196,
         "height": 101,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "hormiguita"
-    },{
+    },
+    {
         "filename": "MedituPija.png",
-        "x": 269,
-        "y": 893,
+        "x": 270,
+        "y": 885,
         "width": 132,
         "height": 26,
         "opacity": 1,
@@ -439,8 +489,8 @@
     },
     {
         "filename": "ac5a90204039.png",
-        "x": 1173,
-        "y": -14,
+        "x": 1138,
+        "y": -15,
         "width": 367,
         "height": 396,
         "opacity": 0.52,
@@ -456,8 +506,8 @@
     },
     {
         "filename": "50aca2674c40.png",
-        "x": 672,
-        "y": 1217,
+        "x": 521,
+        "y": 1226,
         "width": 107,
         "height": 47,
         "opacity": 1,
@@ -471,6 +521,26 @@
             "popupTitleFont": "Arial, sans-serif",
             "popupTitleSize": "24px",
             "popupBody": "Si ve algo, diga algo.",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
+        "filename": "botonmute.png",
+        "x": 671,
+        "y": 1218,
+        "width": 100,
+        "height": 79,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "botonmute",
+        "interaction":{
+            "type":"text",
+            "popupImage": "botonmute_.png",
+            "popupTitle": "BOTON ANTI-PERDIDA DE TIEMPO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "¿Quien no querria un boton para silenciar gente que simplemente no hace otra cosa mas que malgastar el tiempo de los demas?",
             "popupBodySize": "21px" 
         }
     },
@@ -491,8 +561,8 @@
     },
     {
         "filename": "2d08b4394406.png",
-        "x": 914,
-        "y": -44,
+        "x": 895,
+        "y": -45,
         "width": 361,
         "height": 344,
         "opacity": 0.57,
@@ -517,8 +587,16 @@
         "zoom": true,
         "name": "pulpo",
         "interaction":{
-            "type":"audio",
-            "file":"pennywise.mp3"
+            "actions": [
+                {
+                    "type":"redirect",
+                    "url":"https://x.com/pulpoliberal"
+                },
+                {
+                     "type":"audio",
+                    "file":"pennywise.mp3"
+                }
+            ]
         }
     },
     {
@@ -693,6 +771,17 @@
         "visible": false,
         "zoom": false,
         "name": "arbol BA"
+    },
+    {
+        "filename": "NO VAS A SER PRESIDENTE.png",
+        "x": 1383,
+        "y": 119,
+        "width": 120,
+        "height": 106,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "NO VAS A SER PRESIDENTE"
     },
     {
         "filename": "MANE.png",
@@ -1131,6 +1220,24 @@
         }
     },
     {
+        "filename": "hibrido.png",
+        "x": 109,
+        "y": 1063,
+        "width": 201,
+        "height": 97,
+        "opacity": 1,
+        "visible": true,
+        "name": "hibrido",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "AUTO HIBRIDO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Anda por el agua y la tierra y usa gas, nafta y electricidad. Era asi, ¿no?",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
         "filename": "nut.png",
         "x": 75,
         "y": 1013,
@@ -1202,9 +1309,40 @@
         "name": "fabricas"
     },
     {
+        "filename": "carcel.png",
+        "x": 295,
+        "y": 1147,
+        "width": 133,
+        "height": 114,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "carcel",
+        "interaction":{
+            "type":"text",
+            "popupImage": "carcel_.png",
+            "popupTitle": "CARCEL TUNEADA",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Una idea algo poco convencional de parte del Sujeto 4 para que sea mas redituable el tema de las carceles. ¿Oportunidad de negocio? ¿Plagio de Los Simpsons? ¿Un poco de esto y un poco de aquello?",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
+        "filename": "3a2197e64e09.png",
+        "x": 216,
+        "y": 1180,
+        "width": 64,
+        "height": 80,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "gomitas"
+    },
+    {
         "filename": "caracol galactico.png",
-        "x": 181,
-        "y": 1054,
+        "x": 196,
+        "y": 1074,
         "width": 161,
         "height": 255,
         "opacity": 1,
@@ -1291,6 +1429,7 @@
         "name": "whapsbot",
         "interaction": {
             "type": "text",
+            "popupImage": "whapsbot_.png",
             "popupTitle": "WHATSAPP BOT",
             "popupTitleFont": "Arial, sans-serif",
             "popupTitleSize": "24px",
@@ -1350,8 +1489,8 @@
     },
     {
         "filename": "4f8ab0e74ae9.png",
-        "x": 438,
-        "y": 1239,
+        "x": 409,
+        "y": 1228,
         "width": 147,
         "height": 98,
         "opacity": 1,
@@ -1362,17 +1501,6 @@
             "type":"redirect",
             "url":"https://www.youtube.com/playlist?list=PLTKOvuIbXYqHGzpXqPA-OgC6E-8vu1oZR"
         }
-    },
-    {
-        "filename": "3a2197e64e09.png",
-        "x": 302,
-        "y": 1146,
-        "width": 89,
-        "height": 116,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "gomitas"
     },
     {
         "filename": "d23a92de4d45.png",
@@ -1558,10 +1686,10 @@
     },
     {
         "filename": "peloenpolvo.png",
-        "x": 697,
-        "y": 1259,
-        "width": 48,
-        "height": 80,
+        "x": 692,
+        "y": 1267,
+        "width": 68,
+        "height": 77,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1646,8 +1774,8 @@
     },
     {
         "filename": "termo.png",
-        "x": 1263,
-        "y": 1271,
+        "x": 1274,
+        "y": 1280,
         "width": 33,
         "height": 135,
         "opacity": 1,
@@ -2476,7 +2604,7 @@
     },
     {
         "filename": "8657b7694611.png",
-        "x": 1301,
+        "x": 1309,
         "y": 1283,
         "width": 76,
         "height": 73,
@@ -2758,6 +2886,21 @@
             "videoId":"IvTAHQCenss",
             "startTime":"30:24",
             "endTime":"30:56"
+        }
+    },
+    {
+        "filename": "violines.png",
+        "x": 1186,
+        "y": 1645,
+        "width": 128,
+        "height": 154,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "violines",
+        "interaction":{
+            "type":"audio",
+            "file":"violines.mp3"
         }
     },
     {
@@ -3085,6 +3228,17 @@
             "type":"blackout",
             "file":"electric.wav"
         }
+    },
+    {
+        "filename": "cormick.png",
+        "x": 941,
+        "y": 330,
+        "width": 255,
+        "height": 135,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "cormick"
     },
     {
         "filename": "70f1b4274bc7.png",
