@@ -206,7 +206,7 @@
             "popupTitle": "T.R.O.L.C.O.",
             "popupTitleFont": "Arial, sans-serif",
             "popupTitleSize": "24px",
-            "popupBody": "Grupo paraestatal creado por la mente de un periodista que claramente no tiene mucho para informar y prefiere invertarse noticias.",
+            "popupBody": "Grupo paraestatal creado por la mente de un periodista que claramente no tiene mucho para informar y prefiere inventarse noticias.",
             "popupBodySize": "21px" 
         }
     },
@@ -2172,7 +2172,7 @@
     },
     {
         "filename": "81d3a8de4372.png",
-        "x": 1192,
+        "x": 1492,
         "y": 1155,
         "width": 40,
         "height": 48,

@@ -4,24 +4,43 @@ let audioPlayers = {};
 let youtubeTimeout, youtubePlayer, youtubeContainer, openYouTubeButton;
 let localVideo, videoContainer, popupOverlay, popup, warningOverlay;
 
-// Loading screen
-const loadingScreen = document.getElementById("loading-screen");
-const startButton = document.getElementById("start-button");
-const loadingContainer = document.getElementById("loading-container");
-const loadingAudio = new Audio("audio/lorerings.mp3");
+document.addEventListener("DOMContentLoaded", () => {
+  // Loading screen elements
+  const loadingScreen = document.getElementById("loading-screen");
+  const startButton = document.getElementById("start-button");
+  const loadingContainer = document.getElementById("loading-container");
+  const loadingAudio = new Audio("audio/lorerings.mp3");
 
-startButton.addEventListener("click", () => {
-  startButton.style.display = "none";
-  loadingContainer.style.display = "flex";
-  loadingAudio.play().catch(e => console.log("Audio play error:", e));
+  // Fade in background and start button if a background image exists
+  const loadingBg = document.getElementById("loading-bg");
+  if (loadingBg) {
+    requestAnimationFrame(() => {
+      loadingBg.style.opacity = 1;
+    });
+    setTimeout(() => {
+      startButton.style.opacity = 1;
+    }, 1000);
+  }
+
+  startButton.addEventListener("click", () => {
+    // Fade the background image to black immediately
+    if (loadingBg) {
+      loadingBg.style.transition = "opacity 0.5s ease";
+      loadingBg.style.opacity = 0;
+    }
+    startButton.style.display = "none";
+    loadingContainer.style.display = "flex";
+    loadingAudio.play().catch(e => console.log("Audio play error:", e));
+  });
+
+  loadingAudio.addEventListener("ended", () => {
+    loadingScreen.classList.add("fade-out");
+    setTimeout(() => {
+      if (loadingScreen.parentNode) loadingScreen.parentNode.removeChild(loadingScreen);
+    }, 1000);
+  });
 });
 
-loadingAudio.addEventListener("ended", () => {
-  loadingScreen.classList.add("fade-out");
-  setTimeout(() => {
-    if (loadingScreen.parentNode) loadingScreen.parentNode.removeChild(loadingScreen);
-  }, 1000);
-});
 
 // Utility: Check transparent pixel
 function isTransparent(e, img) {
@@ -146,49 +165,64 @@ function convertToSeconds(timeStr) {
 // Process actions (full code from original)
 function processAction(action, clickedImg) {
   if (action.type === "text") {
-    popup.innerHTML = "";
-    const container = document.createElement("div");
-    container.style.display = "flex";
-    container.style.flexDirection = "row";
-    container.style.alignItems = "center";
-    container.style.justifyContent = "center";
-    const imgContainer = document.createElement("div");
-    imgContainer.style.flex = "0 0 auto";
-    imgContainer.style.marginRight = "20px";
-    const refImg = document.createElement("img");
-    refImg.src = action.popupImage ? `images/${action.popupImage}` : clickedImg.src;
-    refImg.style.width = "150px";
-    refImg.style.height = "auto";
-    refImg.style.objectFit = "contain";
-    imgContainer.appendChild(refImg);
-    container.appendChild(imgContainer);
-    const textContainer = document.createElement("div");
-    textContainer.style.flex = "1";
-    textContainer.style.textAlign = "center";
-    if (action.popupTitle) {
-      const titleElem = document.createElement("h2");
-      titleElem.innerText = action.popupTitle;
-      if (action.popupTitleFont) titleElem.style.fontFamily = action.popupTitleFont;
-      if (action.popupTitleSize) titleElem.style.fontSize = action.popupTitleSize;
-      titleElem.style.margin = "0 0 10px 0";
-      textContainer.appendChild(titleElem);
-    }
-    if (action.popupBody) {
-      const bodyElem = document.createElement("p");
-      bodyElem.innerHTML = action.popupBody;
-      if (action.popupBodyFont) bodyElem.style.fontFamily = action.popupBodyFont;
-      if (action.popupBodySize) bodyElem.style.fontSize = action.popupBodySize;
-      bodyElem.style.margin = "0";
-      textContainer.appendChild(bodyElem);
-    }
-    if (!action.popupTitle && !action.popupBody) {
-      const fallbackElem = document.createElement("div");
-      fallbackElem.innerHTML = action.popupMessage ? action.popupMessage : action.content;
-      textContainer.appendChild(fallbackElem);
-    }
-    container.appendChild(textContainer);
-    popup.appendChild(container);
-    popupOverlay.style.display = "flex";
+    // Clear previous popup content
+  popup.innerHTML = "";
+
+  // Main flex container for the image + text
+  const container = document.createElement("div");
+  container.classList.add("popup-content"); 
+  // .popup-content will be styled with display: flex, etc. in your CSS
+
+  // Image container
+  const imgContainer = document.createElement("div");
+  imgContainer.classList.add("popup-img-container");
+
+  // Actual popup image
+  const refImg = document.createElement("img");
+  refImg.classList.add("popup-img");
+  // Fallback to clicked image if no popupImage is specified
+  refImg.src = action.popupImage ? `images/${action.popupImage}` : clickedImg.src;
+
+  imgContainer.appendChild(refImg);
+  container.appendChild(imgContainer);
+
+  // Text container
+  const textContainer = document.createElement("div");
+  textContainer.classList.add("popup-text-container");
+
+  // Optional popup title
+  if (action.popupTitle) {
+    const titleElem = document.createElement("h2");
+    titleElem.innerText = action.popupTitle;
+    // If you want to apply fonts/sizes from your action data, do so here:
+     if (action.popupTitleFont) titleElem.style.fontFamily = action.popupTitleFont;
+   //  if (action.popupTitleSize) titleElem.style.fontSize = action.popupTitleSize;
+    textContainer.appendChild(titleElem);
+  }
+
+  // Optional popup body
+  if (action.popupBody) {
+    const bodyElem = document.createElement("p");
+    bodyElem.innerHTML = action.popupBody;
+     if (action.popupBodyFont) bodyElem.style.fontFamily = action.popupBodyFont;
+    // if (action.popupBodySize) bodyElem.style.fontSize = action.popupBodySize;
+    textContainer.appendChild(bodyElem);
+  }
+
+  // Fallback if no title/body specified
+  if (!action.popupTitle && !action.popupBody) {
+    const fallbackElem = document.createElement("div");
+    fallbackElem.innerHTML = action.popupMessage ? action.popupMessage : action.content;
+    textContainer.appendChild(fallbackElem);
+  }
+
+  container.appendChild(textContainer);
+
+  // Add everything to the main popup container
+  popup.appendChild(container);
+
+  // Finally, show the popup overlay
+  popupOverlay.style.display = "flex";
   }else if (action.type === "audio") {
     if (!audioPlayers[action.file]) audioPlayers[action.file] = new Audio(`audio/${action.file}`);
     const audio = audioPlayers[action.file];
@@ -435,7 +469,7 @@ function processAction(action, clickedImg) {
     const warningContainer = document.createElement("div");
     warningContainer.style.background = "white";
     warningContainer.style.color = "black";
-    warningContainer.style.border = "2px solid red";
+    warningContainer.style.border = "4px solid red";
     warningContainer.style.padding = "20px";
     warningContainer.style.borderRadius = "10px";
     warningContainer.style.textAlign = "center";
