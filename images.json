@@ -641,6 +641,26 @@
         "name": "columna"
     },
     {
+        "filename": "tarjeta.png",
+        "x": 381,
+        "y": 662,
+        "width": 87,
+        "height": 98,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "tarjeta",
+        "interaction":{
+            "type": "text",
+            "popupTitle": "FIGURITA DIFICIL",
+            "popupImage": "tarjeta_.png",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Figurita dificil....de vender.",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
         "filename": "b2558ff34d2c.png",
         "x": 417,
         "y": 703,
@@ -1740,8 +1760,8 @@
     },
     {
         "filename": "b59692104fd9.png",
-        "x": 812,
-        "y": 1526,
+        "x": 822,
+        "y": 1522,
         "width": 158,
         "height": 204,
         "opacity": 1,
@@ -1751,6 +1771,25 @@
         "interaction":{
             "type":"walk",
             "file":"zombiemic_.mp3"
+        }
+    },
+    {
+        "filename": "che tronco.png",
+        "x": 785,
+        "y": 1580,
+        "width": 173,
+        "height": 218,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "che tronco",
+        "interaction":{
+            "type": "text",
+            "popupTitle": "CHE TRONCO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Excelente mail, querido productor. Despues lo leo.",
+            "popupBodySize": "21px" 
         }
     },
     {
@@ -1874,7 +1913,7 @@
             "popupTitle": "CORRESPONSAL TALLA BAJA",
             "popupTitleFont": "Arial, sans-serif",
             "popupTitleSize": "24px",
-            "popupBody": "La proxima mandenlo con un banquito asi puede filmar.",
+            "popupBody": "La proxima manden al corresponsal de la Rosada con un banquito asi puede filmar.",
             "popupBodySize": "21px" 
         }
     },
