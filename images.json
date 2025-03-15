@@ -84,6 +84,21 @@
         }
     },
     {
+        "filename": "be5289e343ac.png",
+        "x": 449,
+        "y": 163,
+        "width": 191,
+        "height": 170,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "EL MERCADO.. Copiar",
+        "interaction":{
+            "type":"audio",
+            "file":"diablo.mp3"
+        }
+    },
+    {
         "filename": "9b5e8a884323.png",
         "x": 450,
         "y": 145,
@@ -126,21 +141,6 @@
         "interaction":{
             "type":"redirect",
             "url":"https://www.youtube.com/playlist?list=PLTKOvuIbXYqEYZscIaYpigtCHZdrfMe0E"
-        }
-    },
-    {
-        "filename": "be5289e343ac.png",
-        "x": 514,
-        "y": 215,
-        "width": 191,
-        "height": 170,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "EL MERCADO.. Copiar",
-        "interaction":{
-            "type":"audio",
-            "file":"diablo.mp3"
         }
     },
     {
@@ -360,6 +360,26 @@
         }
     },
     {
+        "filename": "casita flaco.png",
+        "x": 489,
+        "y": 403,
+        "width": 155,
+        "height": 301,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "casita flaco",
+        "interaction":{
+			"type": "text",
+			"popupImage": "casita flaco_.png",
+            "popupTitle": "CASITA",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Imagenes exclusivas a la propiedad del Flaco Passet en las cercanias del estudio de Neura. Los vecinos nos informan que a veces ni llega a salir de Neura para volver a la casa.",
+            "popupBodySize": "21px" 
+		}
+    },
+    {
         "filename": "a1d180854797.png",
         "x": 390,
         "y": 582,
@@ -376,8 +396,8 @@
     },
     {
         "filename": "gloryhole.png",
-        "x": -32,
-        "y": 732,
+        "x": -34,
+        "y": 634,
         "width": 196,
         "height": 262,
         "opacity": 1,
@@ -434,12 +454,20 @@
         "zoom": true,
         "name": "ciclocaca",
         "interaction":{
-            "type":"text",
-            "popupTitle": "CICLO DE CACA",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "Empieza y no termina. Caca, caca, caca.",
-            "popupBodySize": "21px" 
+            "actions": [
+                {
+                    "type":"text",
+                    "popupTitle": "CICLO DE CACA",
+                    "popupTitleFont": "Arial, sans-serif",
+                    "popupTitleSize": "24px",
+                    "popupBody": "Empieza y no termina. Caca, caca, caca.",
+                    "popupBodySize": "21px" 
+                },
+                {
+                    "type": "audio",
+                    "file": "fart.mp3"
+                }
+            ]
         }
     },
     {
@@ -819,6 +847,30 @@
         }
     },
     {
+        "filename": "black screen.png",
+        "x": 1413,
+        "y": 280,
+        "width": 200,
+        "height": 152,
+        "opacity": 1,
+        "visible": true,
+        "zoom": false,
+        "name": "black screen",
+        "id": "hiddenImg2"
+    },
+    {
+        "filename": "blue screen.png",
+        "x": 1413,
+        "y": 280,
+        "width": 200,
+        "height": 152,
+        "opacity": 1,
+        "visible": true,
+        "zoom": false,
+        "name": "blue screen",
+        "id": "hiddenImg1"
+    },
+    {
         "filename": "08b886d34054.png",
         "x": 1413,
         "y": 280,
@@ -826,13 +878,20 @@
         "height": 152,
         "opacity": 1,
         "visible": true,
-        "zoom": true,
-        "name": "munipacam"
+        "zoom": false,
+        "name": "munipacam",
+        "interaction": {
+            "type": "stackSwitch",
+            "file": "munipacam.mp3",
+            "switchDelay": 3000,
+            "secondaryImageId": "hiddenImg1",
+            "tertiaryImageId": "hiddenImg2"
+         }
     },
     {
         "filename": "O sooole miooo.png",
         "x": 473,
-        "y": 281,
+        "y": 288,
         "width": 327,
         "height": 147,
         "opacity": 1,
@@ -916,6 +975,26 @@
         }
     },
     {
+        "filename": "RATONOVICH.png",
+        "x": 1540,
+        "y": 368,
+        "width": 81,
+        "height": 69,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "RATONOVICH",
+        "interaction":{
+			"type": "text",
+			"popupImage": "ratonovich_.png",
+            "popupTitle": "RATONOVICH",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "No tengo pruebas, pero tampoco dudas que esos bombones fueron comprados en un Open 25 antes de llegar a Neura.",
+            "popupBodySize": "21px" 
+        }
+    },    
+    {
         "filename": "bb8ba3a14c7d.png",
         "x": 945,
         "y": 465,
@@ -975,6 +1054,21 @@
 
     },
     {
+        "filename": "nipleman.png",
+        "x": 871,
+        "y": 648,
+        "width": 133,
+        "height": 245,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "nipleman",
+        "interaction":{
+            "type":"video",
+            "file":"nipleman.mp4"
+        }
+    },
+    {
         "filename": "4107b0ba4c16.png",
         "x": 539,
         "y": 565,
@@ -987,8 +1081,8 @@
     },
     {
         "filename": "b484b5e44bee.png",
-        "x": 734,
-        "y": 664,
+        "x": 736,
+        "y": 660,
         "width": 167,
         "height": 166,
         "opacity": 1,
@@ -1001,9 +1095,28 @@
         }
     },
     {
+        "filename": "cowboy 4.png",
+        "x": 602,
+        "y": 673,
+        "width": 193,
+        "height": 137,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "cowboy 4",
+        "interaction":{
+            "type": "text",
+            "popupTitle": "CUATRO THE KID",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Quizas es un poco extremo en algunos aspectos, pero todos en el fondo pensamos como Sujeto 4.",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
         "filename": "pollito.png",
-        "x": 678,
-        "y": 653,
+        "x": 858,
+        "y": 694,
         "width": 43,
         "height": 180,
         "opacity": 1,
@@ -1204,7 +1317,7 @@
     },
     {
         "filename": "8e6bb2a44cb3.png",
-        "x": 496,
+        "x": 513,
         "y": 444,
         "width": 223,
         "height": 120,
@@ -1289,10 +1402,10 @@
     },
     {
         "filename": "diploma.png",
-        "x": 209,
-        "y": 1446,
-        "width": 287,
-        "height": 198,
+        "x": 217,
+        "y": 1462,
+        "width": 280,
+        "height": 192,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1523,6 +1636,46 @@
         }
     },
     {
+        "filename": "ruben.png",
+        "x": 968,
+        "y": 1469,
+        "width": 161,
+        "height": 105,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "ruben",
+        "interaction":{
+            "type": "text",
+			"popupImage": "dibujitos.png",
+            "popupTitle": "RUBEN",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "A la hora de sacar el registro, Ruben no ha tenido un buen dia. Y el Flaco menos.",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
+        "filename": "feea8fd540b5.png",
+        "x": 325,
+        "y": 1416,
+        "width": 147,
+        "height": 75,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "gran dt",
+        "interaction":{
+            "type":"text",
+            "popupImage": "passetdt.png",
+            "popupTitle": "EL GRAN DT",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Datos. No relato.<br>(by <a href='https://x.com/EvilNeura' target='_blank'>@EvilNeura</a>)",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
         "filename": "d23a92de4d45.png",
         "x": 127,
         "y": 1184,
@@ -1536,7 +1689,27 @@
             "type":"audio",
             "file":"mandriles.mp3"
         }
-    },    
+    },
+    {
+        "filename": "padawan 4.png",
+        "x": 409,
+        "y": 1235,
+        "width": 171,
+        "height": 240,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "padawan 4",
+        "interaction":{
+            "type": "text",
+			"popupImage": "procer.jpeg",
+            "popupTitle": "PERROWAN",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Aunque signifique autopercibirse perro, el Sujeto 4 no abandona la esperanza de convertirse en el padawan de Tronco.",
+            "popupBodySize": "21px" 
+        }
+    },
     {
         "filename": "9d14ae8443ae.png",
         "x": 465,
@@ -1571,29 +1744,9 @@
         "name": "conito2"
     },
     {
-        "filename": "feea8fd540b5.png",
-        "x": 313,
-        "y": 1409,
-        "width": 147,
-        "height": 75,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "gran dt",
-        "interaction":{
-            "type":"text",
-            "popupImage": "passetdt.png",
-            "popupTitle": "EL GRAN DT",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "Datos. No relato.<br>(by <a href='https://x.com/EvilNeura' target='_blank'>@EvilNeura</a>)",
-            "popupBodySize": "21px" 
-        }
-    },
-    {
         "filename": "38a38b63439a.png",
-        "x": 393,
-        "y": 1384,
+        "x": 387,
+        "y": 1387,
         "width": 119,
         "height": 155,
         "opacity": 1,
@@ -1668,6 +1821,23 @@
             "popupTitleSize": "24px",
             "popupBody": "Se cree que un solo argentino compro esta moneda antes de la debacle. <br>Todos sabemos quien es.",
             "popupBodySize": "21px" 
+        }
+    },
+    {
+        "filename": "taser.png",
+        "x": 197,
+        "y": 1508,
+        "width": 107,
+        "height": 92,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "taser",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"tS9B3cJOI1M",
+            "startTime":"1:03:50",
+            "endTime":"1:04:04"
         }
     },
     {
@@ -1812,31 +1982,11 @@
         }
     },
     {
-        "filename": "termo.png",
-        "x": 1274,
-        "y": 1280,
-        "width": 33,
-        "height": 135,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "termo",
-        "interaction":{
-            "type":"text",
-            "popupImage": "troncotermo.jpeg",
-            "popupTitle": "TERMO",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "Porque a veces en la vida hay que ser un poco termo.",
-            "popupBodySize": "21px" 
-        }
-    },
-    {
         "filename": "2e3c8f1b411b.png",
-        "x": 448,
-        "y": 1250,
-        "width": 209,
-        "height": 394,
+        "x": 451,
+        "y": 1296,
+        "width": 206,
+        "height": 348,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1856,6 +2006,26 @@
         "visible": true,
         "zoom": true,
         "name": "pelopincho sin stock"
+    },
+    {
+        "filename": "termo.png",
+        "x": 1274,
+        "y": 1280,
+        "width": 33,
+        "height": 135,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "termo",
+        "interaction":{
+            "type":"text",
+            "popupImage": "troncotermo.jpeg",
+            "popupTitle": "TERMO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Porque a veces en la vida hay que ser un poco termo.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "5868a7b04e07.png",
@@ -1894,7 +2064,7 @@
             "popupTitle": "DUENDECILLO",
             "popupTitleFont": "Arial, sans-serif",
             "popupTitleSize": "24px",
-            "popupBody": "Un duendecillo que polula por entre los cables del estudio de Neura. Cuidado con sus impuestos si lo ven. <br>Igual le queda poco tiempo.",
+            "popupBody": "Un duendecillo que polula por entre los cables del estudio de Neura. <br>Cuidado con sus impuestos si lo ven. <br>Igual le queda poco tiempo.",
             "popupBodySize": "21px" 	
         }
     },
@@ -1913,7 +2083,7 @@
             "popupTitle": "CORRESPONSAL TALLA BAJA",
             "popupTitleFont": "Arial, sans-serif",
             "popupTitleSize": "24px",
-            "popupBody": "La proxima manden al corresponsal de la Rosada con un banquito asi puede filmar.",
+            "popupBody": "La proxima manden al corresponsal a la Rosada con un banquito asi puede filmar.",
             "popupBodySize": "21px" 
         }
     },
@@ -1949,8 +2119,8 @@
     },
     {
         "filename": "b0b08ab34b15.png",
-        "x": 937,
-        "y": 1568,
+        "x": 950,
+        "y": 1628,
         "width": 258,
         "height": 107,
         "opacity": 1,
@@ -1969,8 +2139,8 @@
     },
     {
         "filename": "PERLAS.png",
-        "x": 994,
-        "y": 1509,
+        "x": 1006,
+        "y": 1554,
         "width": 134,
         "height": 106,
         "opacity": 1,
@@ -2091,6 +2261,43 @@
         "visible": true,
         "zoom": true,
         "name": "carpetas"
+    },
+    {
+        "filename": "214bbf394a74.png",
+        "x": 1165,
+        "y": 1058,
+        "width": 80,
+        "height": 81,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "manzana",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"78fsQIONoJc",
+            "startTime":"1:50:30",
+            "endTime":"2:01:20"
+        }
+    },
+    {
+        "filename": "ayuda.png",
+        "x": 1198,
+        "y": 1085,
+        "width": 67,
+        "height": 78,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "ayuda",
+        "interaction":{
+            "type": "text",
+			"popupImage": "ayuda_.png",
+            "popupTitle": "#AYUDENATRONCO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Ayudenlo antes que no quiera hacer mas el Sanduber.",
+            "popupBodySize": "21px" 
+        }
     },
     {
         "filename": "zapatillabart.png",
@@ -2221,23 +2428,6 @@
         "name": "image.png"
     },
     {
-        "filename": "214bbf394a74.png",
-        "x": 1165,
-        "y": 1058,
-        "width": 80,
-        "height": 81,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "manzana",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"78fsQIONoJc",
-            "startTime":"1:50:30",
-            "endTime":"2:01:20"
-        }
-    },
-    {
         "filename": "0a119a044e98.png",
         "x": 972,
         "y": 1022,
@@ -2303,8 +2493,8 @@
     },
     {
         "filename": "viudasnegras.png",
-        "x": 18,
-        "y": 1203,
+        "x": 36,
+        "y": 1200,
         "width": 153,
         "height": 155,
         "opacity": 1,
@@ -2440,9 +2630,28 @@
         }
     },
     {
+        "filename": "truchada.png",
+        "x": -20,
+        "y": 1494,
+        "width": 216,
+        "height": 68,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "truchada",
+        "interaction":{
+			"type": "text",
+            "popupTitle": "SORNY",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Pff, tonterias! Reconoceria una Adadas, una Mike y una Mapupu original en cualquier lado!",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
         "filename": "e432885d4593.png",
-        "x": -21,
-        "y": 1308,
+        "x": -20,
+        "y": 1267,
         "width": 150,
         "height": 232,
         "opacity": 1,
@@ -2604,8 +2813,8 @@
     },
     {
         "filename": "pasaporto.png",
-        "x": 134,
-        "y": 1415,
+        "x": 142,
+        "y": 1413,
         "width": 107,
         "height": 131,
         "opacity": 1,
@@ -2624,8 +2833,8 @@
     },
     {
         "filename": "llamametralla.png",
-        "x": 0,
-        "y": 1508,
+        "x": -3,
+        "y": 1513,
         "width": 185,
         "height": 183,
         "opacity": 1,
@@ -2643,10 +2852,10 @@
     },
     {
         "filename": "8657b7694611.png",
-        "x": 1309,
-        "y": 1283,
+        "x": 1303,
+        "y": 1282,
         "width": 76,
-        "height": 73,
+        "height": 76,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -2654,6 +2863,31 @@
         "interaction":{
             "type":"redirect",
             "url":"https://leivajoyas.com.ar/"
+        }
+    },
+    {
+        "filename": "oraculo.png",
+        "x": 558,
+        "y": 253,
+        "width": 143,
+        "height": 127,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "oraculo",
+        "interaction": {
+            "type": "hoverGlowStack",
+            "audioFile": "oraculo.mp3",
+            "hoverImage": "oraculo_.png",
+            "hoverWidth": 581,
+            "hoverHeight": 516,
+            "hoverOffset": 187,
+            "underWidth": 601,
+            "underHeight": 296,
+            "underImage1": "under1.png",
+            "underImage2": "under2.png",
+            "underImage3": "under3.png",
+            "totalDuration": 15000
         }
     },
     {
@@ -2690,21 +2924,40 @@
     },
     {
         "filename": "9f3181ad40d3.png",
-        "x": -10,
-        "y": 678,
-        "width": 191,
-        "height": 165,
+        "x": -17,
+        "y": 648,
+        "width": 144,
+        "height": 124,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "BATALLA\nCULTURAL.. Copiar"
     },
     {
+        "filename": "eabofni.png",
+        "x": -8,
+        "y": 832,
+        "width": 155,
+        "height": 76,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "eabofni",
+        "interaction":{
+            "type": "text",
+            "popupTitle": "EABOFNI",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": ".ʅɐᴉɹǝʇɐɯ ʅǝ ɹod ǝɐqoɟuI sɐᴉɔɐɹꓨ",
+            "popupBodySize": "21px" 
+        }
+    },
+    {
         "filename": "a74bb0d64e38.png",
         "x": -10,
-        "y": 870,
-        "width": 241,
-        "height": 117,
+        "y": 883,
+        "width": 213,
+        "height": 104,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -2943,6 +3196,17 @@
         }
     },
     {
+        "filename": "wok back.png",
+        "x": 1399,
+        "y": 1566,
+        "width": 120,
+        "height": 152,
+        "opacity": 1,
+        "visible": true,
+        "zoom": false,
+        "name": "wok back"
+    },
+    {
         "filename": "2a2ab81d4531.png",
         "x": 1305,
         "y": 1544,
@@ -2959,6 +3223,23 @@
             "popupTitleSize": "24px",
             "popupBody": "'Voy a comprar los avioncitos porque eso es lo que neceista la provincia para salir adelante! Eh? Patrulleros? No, estos son avioncitos!'",
             "popupBodySize": "21px" 
+        }
+    },
+    {
+        "filename": "wok.png",
+        "x": 1399,
+        "y": 1566,
+        "width": 120,
+        "height": 152,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "wok",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"i6wAByt5l3Q",
+            "startTime":"1:24:55",
+            "endTime":"1:27:54"
         }
     },
     {
@@ -2993,6 +3274,25 @@
         "interaction":{
             "type":"audio",
             "file":"zombies.mp3"
+        }
+    },
+    {
+        "filename": "pauta.png",
+        "x": 1461,
+        "y": 1833,
+        "width": 139,
+        "height": 67,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "pauta",
+        "interaction":{
+            "type": "text",
+            "popupTitle": "PAUTA",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Y si te ofrecen la pauta de Verga Torcida, Chubut? Eh?? Que haces ahi??",
+            "popupBodySize": "21px" 
         }
     },
     {
@@ -3143,7 +3443,13 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "minicam"
+        "name": "minicam",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"n3BKgnLjIwY",
+            "startTime":"1:36:20",
+            "endTime":"1:36:48"
+        }
     },
     {
         "filename": "5e028d234f00.png",
@@ -3173,7 +3479,7 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "Alberto, cerra el orto, A.. Copiar",
+        "name": "Alberto, cerra el orto",
         "interaction":{
             "type":"audio",
             "file":"alberto.mp3"
@@ -3345,8 +3651,8 @@
     },
     {
         "filename": "029c95dd437a.png",
-        "x": 1147,
-        "y": 1085,
+        "x": 1144,
+        "y": 1093,
         "width": 69,
         "height": 61,
         "opacity": 1,

@@ -203,6 +203,16 @@
       mask-position: 0 0;
     }
   }
+  @keyframes hoverFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes glowPulse {
+    0% { filter: drop-shadow(0 0 5px #00ffff); }
+    50% { filter: drop-shadow(0 0 20px #00ffff); }
+    100% { filter: drop-shadow(0 0 5px #00ffff); }
+  }
     
   /* 6) Mobile adjustments: keep #loading-img2 bigger than #loading-img1 */
   @media (max-width: 600px) {

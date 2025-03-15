@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       img.style.height = (image.height / baseHeight) * 100 + "%";
       if (image.opacity !== undefined) img.style.opacity = image.opacity;
       if (image.visible === false) img.style.display = "none";
+      if (image.id) img.id = image.id; // Set the id from JSON
       img.myData = image;
       collage.appendChild(img);
     });
@@ -960,6 +961,204 @@ function processAction(action, clickedImg) {
         clickedImg.style.visibility = "visible";
       });
     };
+  }else if (action.type === "stackSwitch") {
+    // Retrieve the secondary and tertiary images by ID (these must be defined in images.json)
+    const secondaryImg = document.getElementById(action.secondaryImageId);
+    const tertiaryImg = document.getElementById(action.tertiaryImageId);
+
+    if (!secondaryImg) {
+      console.error("Secondary image not found for id:", action.secondaryImageId);
+    }
+    if (!tertiaryImg) {
+      console.error("Tertiary image not found for id:", action.tertiaryImageId);
+    }
+    
+    // Save current visibility states (assume primary is clickedImg, visible by default)
+    const originalPrimaryVis = clickedImg.style.visibility || "visible";
+    const originalSecondaryVis = secondaryImg ? secondaryImg.style.visibility : "";
+    const originalTertiaryVis = tertiaryImg ? tertiaryImg.style.visibility : "";
+    
+    // Define a function to restore the initial state.
+    function revertStack() {
+      audio.pause();
+      audio.currentTime = 0;
+      clearTimeout(timeoutSwitch);
+      clickedImg.style.visibility = "visible";
+      if (secondaryImg) secondaryImg.style.visibility = "hidden";
+      if (tertiaryImg) tertiaryImg.style.visibility = "hidden";
+      // Remove cancellation listeners from all three.
+      clickedImg.removeEventListener("click", cancelHandler);
+      if (secondaryImg) secondaryImg.removeEventListener("click", cancelHandler);
+      if (tertiaryImg) tertiaryImg.removeEventListener("click", cancelHandler);
+    }
+    
+    // Define a cancellation handler.
+    function cancelHandler(e) {
+      revertStack();
+    }
+    
+    // Add click listeners to all three images so that clicking any cancels the interaction.
+    clickedImg.addEventListener("click", cancelHandler);
+    if (secondaryImg) secondaryImg.addEventListener("click", cancelHandler);
+    if (tertiaryImg) tertiaryImg.addEventListener("click", cancelHandler);
+    
+    // Create and play the audio.
+    const audio = new Audio(`audio/${action.file}`);
+    audio.play();
+    
+    // Start the sequence:
+    // Immediately hide primary and show secondary.
+    clickedImg.style.visibility = "hidden";
+    if (secondaryImg) secondaryImg.style.visibility = "visible";
+    
+    // After a delay (default 3000ms), hide secondary and show tertiary.
+    const timeoutSwitch = setTimeout(() => {
+      if (secondaryImg) secondaryImg.style.visibility = "hidden";
+      if (tertiaryImg) tertiaryImg.style.visibility = "visible";
+    }, action.switchDelay || 3000);
+    
+    // When the audio ends, revert all images.
+    audio.addEventListener("ended", () => {
+      revertStack();
+    });
+  }else if (action.type === "hoverGlowStack") {
+    // Hide the primary image.
+    clickedImg.style.visibility = "hidden";
+    
+    // Get the collage container (assumed to be #frame) and its dimensions.
+    const frame = document.getElementById("frame");
+    const frameWidth = frame.clientWidth;
+    const frameHeight = frame.clientHeight;
+    const centerX = frameWidth / 2;
+    const centerY = frameHeight / 2;
+    
+    // ------------- Create the Hover Image -------------
+    const hoverImg = document.createElement("img");
+    hoverImg.src = action.hoverImage ? `images/${action.hoverImage}` : clickedImg.src;
+    hoverImg.style.position = "absolute";
+    // Use provided hover dimensions or default.
+    const hoverW = action.hoverWidth || 300;
+    const hoverH = action.hoverHeight || 225;
+    hoverImg.style.width = hoverW + "px";
+    hoverImg.style.height = hoverH + "px";
+    // Position: center horizontally, and vertically place it above center by hoverOffset (default 100px).
+    const hoverOffset = (action.hoverOffset !== undefined) ? action.hoverOffset : 100;
+    hoverImg.style.left = (centerX - hoverW / 2) + "px";
+    hoverImg.style.top = (centerY - hoverOffset - hoverH) + "px";
+    hoverImg.style.zIndex = "100"; // Higher than the under overlays.
+    // Set initial opacity to 0, then fade in.
+    hoverImg.style.opacity = "0";
+    hoverImg.style.transition = "opacity 1s ease";
+    // Apply floating and glowing animations.
+    // (Ensure your CSS defines keyframes for hoverFloat and glowPulse.)
+    hoverImg.style.animation = "hoverFloat 3s ease-in-out infinite, glowPulse 2s ease-in-out infinite";
+    frame.appendChild(hoverImg);
+    requestAnimationFrame(() => { hoverImg.style.opacity = "1"; });
+    
+    // ------------- Under Overlays -------------
+    // All under overlays will appear at the center of the collage.
+    const underW = action.underWidth || hoverW;
+    const underH = action.underHeight || hoverH;
+    const underX = centerX - underW / 2;
+    const underY = centerY - underH / 2;
+    
+    // Utility: Create an under overlay image with fade in once loaded.
+    function createUnderOverlay(src) {
+      const img = document.createElement("img");
+      img.src = src ? `images/${src}` : "";
+      img.style.position = "absolute";
+      img.style.width = underW + "px";
+      img.style.height = underH + "px";
+      img.style.left = underX + "px";
+      img.style.top = underY + "px";
+      img.style.zIndex = "90"; // beneath hover image
+      img.style.opacity = "0";
+      img.style.transition = "opacity 1s ease";
+      // When the image loads, fade it in.
+      img.onload = () => {
+        requestAnimationFrame(() => { img.style.opacity = "1"; });
+      };
+      // Add cancellation handler.
+      img.addEventListener("click", cancelInteraction);
+      frame.appendChild(img);
+      return img;
+    }
+    
+    // Create under1 (appears immediately beneath hoverImg).
+    let under1 = createUnderOverlay(action.underImage1);
+    // After 4 seconds, fade out under1 and replace with under2.
+    const t2 = setTimeout(() => {
+      under1.style.opacity = "0";
+      setTimeout(() => {
+        if (under1.parentNode) {
+          frame.removeChild(under1);
+        }
+        under1 = null;
+        var under2 = createUnderOverlay(action.underImage2);
+        // under2 will fade in on load.
+        // After 3 seconds, replace under2 with under3.
+        const t3 = setTimeout(() => {
+          under2.style.opacity = "0";
+          setTimeout(() => {
+            if (under2.parentNode) {
+              frame.removeChild(under2);
+            }
+            under2 = null;
+            var under3 = createUnderOverlay(action.underImage3);
+            // under3 remains until end.
+            currentUnder = under3;
+          }, 1000);
+        }, 5000);
+        currentUnder = under2;
+        underTimer = t3;
+      }, 1000);
+    }, 6000);
+    let underTimer; // timer for under2->under3 transition
+    let currentUnder = under1; // track current under overlay
+    
+    // ------------- Audio & Reversion -------------
+    const totalDuration = action.totalDuration || 15000;
+    const tRevert = setTimeout(() => {
+      // Fade out the current under overlay.
+      if (currentUnder) {
+        currentUnder.style.opacity = "0";
+        setTimeout(() => { if (currentUnder.parentNode) frame.removeChild(currentUnder); }, 1000);
+      }
+      // Fade out hover image.
+      hoverImg.style.opacity = "0";
+      setTimeout(() => {
+        if (hoverImg.parentNode) frame.removeChild(hoverImg);
+        clickedImg.style.visibility = "visible";
+      }, 1000);
+      audio.pause();
+      audio.currentTime = 0;
+    }, totalDuration);
+    
+    // Create and play the audio (use action.audioFile if provided).
+    const audioSrc = action.audioFile ? action.audioFile : action.file;
+    const audio = new Audio(`audio/${audioSrc}`);
+    audio.play();
+    
+    // ------------- Cancellation -------------
+    function cancelInteraction() {
+      clearTimeout(t2);
+      clearTimeout(underTimer);
+      clearTimeout(tRevert);
+      audio.pause();
+      audio.currentTime = 0;
+      // Remove hover image and any under overlay.
+      if (hoverImg.parentNode) frame.removeChild(hoverImg);
+      if (under1 && under1.parentNode) frame.removeChild(under1);
+      if (currentUnder && currentUnder.parentNode) frame.removeChild(currentUnder);
+      clickedImg.style.visibility = "visible";
+    }
+    
+    // Add cancellation event listeners to hoverImg and under overlays.
+    hoverImg.addEventListener("click", cancelInteraction);
+    // The createUnderOverlay function already adds a click listener to each under overlay.
+    
+    // Also cancel if audio ends prematurely.
+    audio.addEventListener("ended", cancelInteraction);
   }  
 }
 
