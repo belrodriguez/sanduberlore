@@ -1029,6 +1029,8 @@ function processAction(action, clickedImg) {
     const frame = document.getElementById("frame");
     const frameWidth = frame.clientWidth;
     const frameHeight = frame.clientHeight;
+    const baseFrameWidth = 1600;
+    const scaleFactor = frameWidth / baseFrameWidth;
     const centerX = frameWidth / 2;
     const centerY = frameHeight / 2;
     
@@ -1036,29 +1038,28 @@ function processAction(action, clickedImg) {
     const hoverImg = document.createElement("img");
     hoverImg.src = action.hoverImage ? `images/${action.hoverImage}` : clickedImg.src;
     hoverImg.style.position = "absolute";
-    // Use provided hover dimensions or default.
-    const hoverW = action.hoverWidth || 300;
-    const hoverH = action.hoverHeight || 225;
+    // Use scaled hover dimensions.
+    const hoverW = (action.hoverWidth || 300) * scaleFactor;
+    const hoverH = (action.hoverHeight || 225) * scaleFactor;
     hoverImg.style.width = hoverW + "px";
     hoverImg.style.height = hoverH + "px";
-    // Position: center horizontally, and vertically place it above center by hoverOffset (default 100px).
-    const hoverOffset = (action.hoverOffset !== undefined) ? action.hoverOffset : 100;
+    // Vertical offset (scaled) - how far above center the hover image appears.
+    const hoverOffset = (action.hoverOffset !== undefined ? action.hoverOffset : 100) * scaleFactor;
     hoverImg.style.left = (centerX - hoverW / 2) + "px";
     hoverImg.style.top = (centerY - hoverOffset - hoverH) + "px";
-    hoverImg.style.zIndex = "100"; // Higher than the under overlays.
-    // Set initial opacity to 0, then fade in.
+    hoverImg.style.zIndex = "100"; // Higher than under overlays.
+    // Start hidden; fade in.
     hoverImg.style.opacity = "0";
     hoverImg.style.transition = "opacity 1s ease";
-    // Apply floating and glowing animations.
-    // (Ensure your CSS defines keyframes for hoverFloat and glowPulse.)
+    // Apply floating and glowing animations (make sure keyframes exist in your CSS).
     hoverImg.style.animation = "hoverFloat 3s ease-in-out infinite, glowPulse 2s ease-in-out infinite";
     frame.appendChild(hoverImg);
     requestAnimationFrame(() => { hoverImg.style.opacity = "1"; });
-    
+      
     // ------------- Under Overlays -------------
     // All under overlays will appear at the center of the collage.
-    const underW = action.underWidth || hoverW;
-    const underH = action.underHeight || hoverH;
+    const underW = (action.underWidth || hoverW) * scaleFactor;
+    const underH = (action.underHeight || hoverH) * scaleFactor;
     const underX = centerX - underW / 2;
     const underY = centerY - underH / 2;
     
