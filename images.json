@@ -1108,10 +1108,10 @@
     },
     {
         "filename": "RATONOVICH.png",
-        "x": 1534,
-        "y": 377,
-        "width": 81,
-        "height": 69,
+        "x": 1419,
+        "y": 467,
+        "width": 82,
+        "height": 68,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1470,7 +1470,7 @@
         "interaction": {
             "type":"text",
             "popupTitle": "POBRE PAPA",
-            "popupImage": "prayers_.jpeg",
+            "popupImage": "prayers_.png",
             "popupTitleFont": "Arial, sans-serif",
             "popupTitleSize": "24px",
             "popupBody": "Ahora resulta que no hay que quemar ninguna iglesia y <br>pobre el Papa que se muere sin haber venido ni una sola vez a Argentina.",
