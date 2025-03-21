@@ -81,7 +81,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       videoContainer.style.display = "none";
       localVideo.pause();
       localVideo.src = "";
-      videoClosing = true; // Set flag so that this same click does not trigger image interaction
+      videoClosing = true;
+      setTimeout(() => {
+        videoClosing = false;
+      }, 500); // blocks for 500ms (0.5 seconds) // Set flag so that this same click does not trigger image interaction
       e.stopPropagation();
       e.preventDefault();
     }
@@ -110,7 +113,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("images.json");
     const images = await response.json();
-    const baseWidth = 1600, baseHeight = 1900;
+    const baseWidth = 1600, baseHeight = 2000;
     images.forEach(image => {
       const img = document.createElement("img");
       img.src = `images/${image.filename}`;
@@ -167,63 +170,109 @@ function convertToSeconds(timeStr) {
 function processAction(action, clickedImg) {
   if (action.type === "text") {
     // Clear previous popup content
-  popup.innerHTML = "";
-
-  // Main flex container for the image + text
-  const container = document.createElement("div");
-  container.classList.add("popup-content"); 
-  // .popup-content will be styled with display: flex, etc. in your CSS
-
-  // Image container
-  const imgContainer = document.createElement("div");
-  imgContainer.classList.add("popup-img-container");
-
-  // Actual popup image
-  const refImg = document.createElement("img");
-  refImg.classList.add("popup-img");
-  // Fallback to clicked image if no popupImage is specified
-  refImg.src = action.popupImage ? `images/${action.popupImage}` : clickedImg.src;
-
-  imgContainer.appendChild(refImg);
-  container.appendChild(imgContainer);
-
-  // Text container
-  const textContainer = document.createElement("div");
-  textContainer.classList.add("popup-text-container");
-
-  // Optional popup title
-  if (action.popupTitle) {
-    const titleElem = document.createElement("h2");
-    titleElem.innerText = action.popupTitle;
-    // If you want to apply fonts/sizes from your action data, do so here:
-     if (action.popupTitleFont) titleElem.style.fontFamily = action.popupTitleFont;
-   //  if (action.popupTitleSize) titleElem.style.fontSize = action.popupTitleSize;
-    textContainer.appendChild(titleElem);
-  }
-
-  // Optional popup body
-  if (action.popupBody) {
-    const bodyElem = document.createElement("p");
-    bodyElem.innerHTML = action.popupBody;
-     if (action.popupBodyFont) bodyElem.style.fontFamily = action.popupBodyFont;
-    // if (action.popupBodySize) bodyElem.style.fontSize = action.popupBodySize;
-    textContainer.appendChild(bodyElem);
-  }
-
-  // Fallback if no title/body specified
-  if (!action.popupTitle && !action.popupBody) {
-    const fallbackElem = document.createElement("div");
-    fallbackElem.innerHTML = action.popupMessage ? action.popupMessage : action.content;
-    textContainer.appendChild(fallbackElem);
-  }
-
-  container.appendChild(textContainer);
-
-  // Add everything to the main popup container
-  popup.appendChild(container);
-
-  // Finally, show the popup overlay
-  popupOverlay.style.display = "flex";
+    popup.innerHTML = "";
+  
+    // Main flex container for the image + text
+    const container = document.createElement("div");
+    container.classList.add("popup-content");
+  
+    // Image container
+    const imgContainer = document.createElement("div");
+    imgContainer.classList.add("popup-img-container");
+  
+    // Actual popup image
+    const refImg = document.createElement("img");
+    refImg.classList.add("popup-img");
+    // Use popupImage if provided; otherwise, fallback to clicked image.
+    refImg.src = action.popupImage ? `images/${action.popupImage}` : clickedImg.src;
+  
+    // If the action specifies enlargement, add a click handler to refImg:
+    if (action.enlargePopupImage) {
+      refImg.style.cursor = "pointer"; // indicate it's clickable
+      refImg.addEventListener("click", () => {
+        // Hide the current popup overlay.
+        popupOverlay.style.display = "none";
+  
+        // Create a new overlay for the enlarged image.
+        const enlargedOverlay = document.createElement("div");
+        enlargedOverlay.style.position = "fixed";
+        enlargedOverlay.style.top = 0;
+        enlargedOverlay.style.left = 0;
+        enlargedOverlay.style.width = "100vw";
+        enlargedOverlay.style.height = "100vh";
+        enlargedOverlay.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+        enlargedOverlay.style.display = "flex";
+        enlargedOverlay.style.alignItems = "center";
+        enlargedOverlay.style.justifyContent = "center";
+        enlargedOverlay.style.zIndex = "9999";
+  
+        // Create the enlarged image.
+        const enlargedImg = document.createElement("img");
+        enlargedImg.src = refImg.src;
+        // Allow the image to show at its natural size up to a max.
+        enlargedImg.style.maxWidth = "90%";
+        enlargedImg.style.maxHeight = "90%";
+        //enlargedImg.style.boxShadow = "0 0 20px rgba(0,255,255,0.8)"; // example glowing effect
+        // (If you need a keyframe-based glow on the transparent edges, you can add that via CSS as well.)
+        
+        enlargedOverlay.appendChild(enlargedImg);
+        document.body.appendChild(enlargedOverlay);
+  
+        // Clicking outside the enlarged image (on the overlay) will remove the enlarged overlay and show the popup again.
+        enlargedOverlay.addEventListener("click", (e) => {
+          if (e.target === enlargedOverlay) {
+            document.body.removeChild(enlargedOverlay);
+            popupOverlay.style.display = "flex";
+          }
+        });
+      });
+    }
+  
+    imgContainer.appendChild(refImg);
+    container.appendChild(imgContainer);
+  
+    // Text container
+    const textContainer = document.createElement("div");
+    textContainer.classList.add("popup-text-container");
+  
+    // Optional popup title
+    if (action.popupTitle) {
+      const titleElem = document.createElement("h2");
+      titleElem.innerText = action.popupTitle;
+      if (action.popupTitleFont) titleElem.style.fontFamily = action.popupTitleFont;
+      if (action.popupTitleSize) titleElem.style.fontSize = action.popupTitleSize;
+      textContainer.appendChild(titleElem);
+    }
+  
+    // Optional popup body
+    if (action.popupBody) {
+      const bodyElem = document.createElement("p");
+      bodyElem.innerHTML = action.popupBody;
+      if (action.popupBodyFont) bodyElem.style.fontFamily = action.popupBodyFont;
+      if (action.popupBodySize) bodyElem.style.fontSize = action.popupBodySize;
+      textContainer.appendChild(bodyElem);
+    }
+  
+    // Fallback if no title/body specified
+    if (!action.popupTitle && !action.popupBody) {
+      const fallbackElem = document.createElement("div");
+      fallbackElem.innerHTML = action.popupMessage ? action.popupMessage : action.content;
+      textContainer.appendChild(fallbackElem);
+    }
+  
+    container.appendChild(textContainer);
+    popup.appendChild(container);
+  
+    // Finally, show the popup overlay.
+    popupOverlay.style.display = "flex";
+  
+    // When clicking outside the popup content, close the popup (as before).
+    popupOverlay.addEventListener("click", (e) => {
+      if (e.target === popupOverlay) {
+        popupOverlay.style.display = "none";
+        popup.innerHTML = "";
+      }
+    });
   }else if (action.type === "audio") {
     if (!audioPlayers[action.file]) audioPlayers[action.file] = new Audio(`audio/${action.file}`);
     const audio = audioPlayers[action.file];
@@ -1160,6 +1209,57 @@ function processAction(action, clickedImg) {
     
     // Also cancel if audio ends prematurely.
     audio.addEventListener("ended", cancelInteraction);
+  }else if (action.type === "sharpSwitch") {
+    // Hide the primary image immediately (sharp swap).
+    clickedImg.style.display = "none";
+    
+    // Get the collage container (assumed to be the element with id "collage").
+    const collage = document.getElementById("collage");
+    
+    // Create the under image element.
+    const underImg = document.createElement("img");
+    underImg.src = action.underImage ? `images/${action.underImage}` : clickedImg.src;
+    
+    // Set its position and size exactly equal to the primary image.
+    // (This assumes the primary image already has left, top, width, and height set.)
+    underImg.style.position = "absolute";
+    underImg.style.left = clickedImg.style.left;
+    underImg.style.top = clickedImg.style.top;
+    underImg.style.width = clickedImg.style.width;
+    underImg.style.height = clickedImg.style.height;
+    
+    // Insert the under image into the collage before the primary image.
+    collage.insertBefore(underImg, clickedImg);
+    
+    // Set its opacity to 1 (sharp display, no transition).
+    underImg.style.opacity = "1";
+    
+    // Create and play the audio.
+    const audioSrc = action.audioFile ? action.audioFile : action.file;
+    const audio = new Audio(`audio/${audioSrc}`);
+    audio.play();
+    
+    // Define a revert function to restore the original state.
+    function revertSharpSwitch() {
+      audio.pause();
+      audio.currentTime = 0;
+      if (underImg.parentNode) {
+        collage.removeChild(underImg);
+      }
+      clickedImg.style.display = "";
+    }
+    
+    // When the audio ends, revert automatically.
+    audio.addEventListener("ended", revertSharpSwitch);
+    
+    // Cancellation: clicking on the under image (or optionally the collage area) reverts the interaction.
+    underImg.addEventListener("click", revertSharpSwitch);
+    
+    // Optionally, you can add a click handler on the collage to cancel if the user clicks outside.
+    collage.addEventListener("click", function cancelHandler(e) {
+      revertSharpSwitch();
+      collage.removeEventListener("click", cancelHandler);
+    });
   }  
 }
 
