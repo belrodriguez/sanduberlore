@@ -17,9 +17,9 @@
   
   /* 3) #frame preserves a 1500×1792 aspect ratio, centered by flex parent */
   #frame {
-    aspect-ratio: 1600 / 2000;
+    aspect-ratio: 1800 / 2200;
     width: 90vw;          /* scales down on small devices */
-    max-width: 2000px;    /* never exceed original width on large desktops */
+    max-width: 2200px;    /* never exceed original width on large desktops */
     background-color: black;
     overflow: hidden;     /* hide anything beyond boundaries */
     position: relative;   /* needed for absolutely positioned collage items */
@@ -43,7 +43,7 @@
     transform: scale(1.1);
     transition: transform 0.3s ease;
   }
-  
+
   /* Popups & Overlays */
   #popup-overlay,
   #warning-overlay {
@@ -209,9 +209,9 @@
     100% { transform: translateY(0); }
   }
   @keyframes glowPulse {
-    0% { filter: drop-shadow(0 0 5px #00ffff); }
-    50% { filter: drop-shadow(0 0 20px #00ffff); }
-    100% { filter: drop-shadow(0 0 5px #00ffff); }
+    0% { filter: drop-shadow(0 0 5px #f9e08d); }
+    50% { filter: drop-shadow(0 0 20px #f9e08d); }
+    100% { filter: drop-shadow(0 0 5px #f9e08d); }
   }
     
   /* 6) Mobile adjustments: keep #loading-img2 bigger than #loading-img1 */

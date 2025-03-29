@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("images.json");
     const images = await response.json();
-    const baseWidth = 1600, baseHeight = 2000;
+    const baseWidth = 1800, baseHeight = 2200;
     images.forEach(image => {
       const img = document.createElement("img");
       img.src = `images/${image.filename}`;
@@ -1260,7 +1260,92 @@ function processAction(action, clickedImg) {
       revertSharpSwitch();
       collage.removeEventListener("click", cancelHandler);
     });
-  }  
+  }else if (action.type === "ghostSwitch") {
+    // Save original display state of the starting image and hide it.
+    const originalDisplay = clickedImg.style.display;
+    clickedImg.style.display = "none";
+    
+    // Locate the blank image element by its src.
+    const blankImg = document.querySelector(`img[src="images/${action.blankImage}"]`);
+    if (!blankImg) {
+      console.error("Blank image not found: images/" + action.blankImage);
+      return;
+    }
+    const originalBlankDisplay = blankImg.style.display;
+    // (Do not show the blank immediately.)
+  
+    // Get the sequence images (filenames from JSON; these images are assumed to be in the DOM and hidden)
+    const sequence = action.sequenceImages; // array of filenames
+    const displayDuration = action.displayDuration || 1000; // duration (ms) for each sequence image
+    let currentTimeout;
+    let currentIndex = 0;
+    let cancelled = false;
+    
+    // Function to cancel and revert the ghostSwitch interaction.
+    function cancelGhostSwitch() {
+      cancelled = true;
+      clearTimeout(currentTimeout);
+      // Hide all sequence images.
+      sequence.forEach(filename => {
+        const seqImg = document.querySelector(`img[src="images/${filename}"]`);
+        if (seqImg) {
+          seqImg.style.display = "none";
+        }
+      });
+      // Hide the blank image and restore the starting image.
+      blankImg.style.display = originalBlankDisplay;
+      clickedImg.style.display = originalDisplay;
+      // Remove cancellation listeners.
+      [blankImg, ...sequence.map(filename => document.querySelector(`img[src="images/${filename}"]`)).filter(el => el)]
+        .forEach(el => el.removeEventListener("click", cancelGhostSwitch));
+    }
+    
+    // Add click listeners for cancellation on the blank and each sequence image.
+    blankImg.addEventListener("click", cancelGhostSwitch);
+    sequence.forEach(filename => {
+      const seqImg = document.querySelector(`img[src="images/${filename}"]`);
+      if (seqImg) {
+        seqImg.addEventListener("click", cancelGhostSwitch);
+      }
+    });
+    
+    // Function to show the next sequence image.
+    function showNextImage() {
+      if (cancelled) return;
+      if (currentIndex < sequence.length) {
+        if (currentIndex === 0) {
+          // For the very first step, show the blank image (as background) at the same time as the first sequence image.
+          blankImg.style.display = "block";
+        }
+        // Select the current sequence image.
+        const currentImg = document.querySelector(`img[src="images/${sequence[currentIndex]}"]`);
+        if (currentImg) {
+          currentImg.style.display = "block";
+        }
+        // Play the step sound.
+        const stepAudio = new Audio(`audio/${action.soundFile}`);
+        stepAudio.play();
+        // After displayDuration, hide the current image and move on.
+        currentTimeout = setTimeout(() => {
+          if (currentImg) {
+            currentImg.style.display = "none";
+          }
+          currentIndex++;
+          showNextImage();
+        }, displayDuration);
+      } else {
+        // When all sequence images have been shown, remove the blank image and restore the starting image.
+        blankImg.style.display = originalBlankDisplay;
+        clickedImg.style.display = originalDisplay;
+        // Remove cancellation listeners.
+        [blankImg, ...sequence.map(filename => document.querySelector(`img[src="images/${filename}"]`)).filter(el => el)]
+          .forEach(el => el.removeEventListener("click", cancelGhostSwitch));
+      }
+    }
+    
+    // Start the interaction immediately.
+    showNextImage();
+  }    
 }
 
 // Handle image interactions
