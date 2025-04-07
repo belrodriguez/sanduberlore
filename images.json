@@ -1,9 +1,9 @@
 [
     {
         "filename": "85b58918444d.png",
-        "x": 87,
-        "y": 47,
-        "width": 1562,
+        "x": 220,
+        "y": 148,
+        "width": 1638,
         "height": 2084,
         "opacity": 1,
         "visible": true,
@@ -12,10 +12,10 @@
     },
     {
         "filename": "a963a7e04135.png",
-        "x": -26,
-        "y": -59,
-        "width": 1863,
-        "height": 2442,
+        "x": -24,
+        "y": -87,
+        "width": 2237,
+        "height": 2483,
         "opacity": 1,
         "visible": true,
         "zoom": false,
@@ -23,9 +23,9 @@
     },
     {
         "filename": "f2e4b48c488e.png",
-        "x": -37,
+        "x": -26,
         "y": 1436,
-        "width": 2107,
+        "width": 2296,
         "height": 807,
         "opacity": 1,
         "visible": true,
@@ -33,26 +33,35 @@
         "name": "image.png"
     },
     {
-        "filename": "troncarcel.png",
-        "x": 819,
-        "y": 240,
-        "width": 265,
-        "height": 505,
+        "filename": "malvinas.png",
+        "x": 325,
+        "y": 152,
+        "width": 207,
+        "height": 168,
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "troncarcel",
+        "name": "malvinas"
+    },
+    {
+        "filename": "troncon.png",
+        "x": 918,
+        "y": -87,
+        "width": 576,
+        "height": 484,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "troncon",
         "interaction": {
-            "type": "youtube",
-            "videoId": "ygUQbkzc2R8",
-            "startTime": "1:09:16",
-            "endTime": "1:09:44"
+            "type": "audio",
+            "file": "poweranger.mp3"
         }
     },
     {
         "filename": "Thundera eye.png",
-        "x": 736,
-        "y": 370,
+        "x": 924,
+        "y": 219,
         "width": 810,
         "height": 822,
         "opacity": 0.6,
@@ -65,24 +74,71 @@
         }
     },
     {
-        "filename": "troncon.png",
-        "x": 178,
-        "y": -10,
-        "width": 699,
-        "height": 609,
+        "filename": "Cardozo.png",
+        "x": 1309,
+        "y": 344,
+        "width": 190,
+        "height": 202,
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "troncon",
-        "interaction": {
-            "type": "audio",
-            "file": "poweranger.mp3"
+        "name": "Cardozo",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"DRtfW9TzUUU",
+            "startTime":"54:35",
+            "endTime":"55:29"
         }
     },
     {
+        "filename": "tuberias.png",
+        "x": 791,
+        "y": -69,
+        "width": 462,
+        "height": 262,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "tuberias",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"6GpPT2zaPQk",
+            "startTime":"1:07:00",
+            "endTime":"1:08:37"
+        }        
+    },
+    {
+        "filename": "troncarcel.png",
+        "x": 1074,
+        "y": 406,
+        "width": 280,
+        "height": 534,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "troncarcel",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "ygUQbkzc2R8",
+            "startTime": "1:09:16",
+            "endTime": "1:09:44"
+        }
+    },
+    {
+        "filename": "EMPATICEN LOCO.png",
+        "x": 933,
+        "y": 13,
+        "width": 86,
+        "height": 91,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "EMPATICEN LOCO"
+    },
+    {
         "filename": "ayudenatronco.png",
-        "x": 760,
-        "y": 2,
+        "x": 873,
+        "y": 0,
         "width": 217,
         "height": 40,
         "opacity": 1,
@@ -101,8 +157,8 @@
     },
     {
         "filename": "climamaslaton.png",
-        "x": 522,
-        "y": 0,
+        "x": 521,
+        "y": -10,
         "width": 329,
         "height": 154,
         "opacity": 1,
@@ -120,8 +176,8 @@
     },
     {
         "filename": "obi.png",
-        "x": 861,
-        "y": -3,
+        "x": 1279,
+        "y": 16,
         "width": 341,
         "height": 274,
         "opacity": 0.59,
@@ -137,8 +193,8 @@
     },
     {
         "filename": "bbb.png",
-        "x": 26,
-        "y": 181,
+        "x": 25,
+        "y": 171,
         "width": 268,
         "height": 85,
         "opacity": 1,
@@ -154,8 +210,8 @@
     },
     {
         "filename": "EL MERCADO.png",
-        "x": 721,
-        "y": 156,
+        "x": 447,
+        "y": 266,
         "width": 191,
         "height": 170,
         "opacity": 1,
@@ -169,8 +225,8 @@
     },
     {
         "filename": "INGRATO.png",
-        "x": 349,
-        "y": 143,
+        "x": 348,
+        "y": 133,
         "width": 64,
         "height": 209,
         "opacity": 1,
@@ -188,8 +244,8 @@
     },
     {
         "filename": "machine2.png",
-        "x": 307,
-        "y": -69,
+        "x": 306,
+        "y": -79,
         "width": 327,
         "height": 267,
         "opacity": 1,
@@ -199,8 +255,8 @@
     },
     {
         "filename": "programas.png",
-        "x": 60,
-        "y": -5,
+        "x": 59,
+        "y": -15,
         "width": 387,
         "height": 215,
         "opacity": 1,
@@ -214,8 +270,8 @@
     },
     {
         "filename": "machine1.png",
-        "x": -144,
-        "y": -56,
+        "x": -145,
+        "y": -66,
         "width": 332,
         "height": 268,
         "opacity": 1,
@@ -225,10 +281,10 @@
     },
     {
         "filename": "rakatak.png",
-        "x": 524,
-        "y": 127,
-        "width": 206,
-        "height": 112,
+        "x": 487,
+        "y": 109,
+        "width": 246,
+        "height": 134,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -242,8 +298,8 @@
     },
     {
         "filename": "siempre me la mando.png",
-        "x": 316,
-        "y": 349,
+        "x": 315,
+        "y": 339,
         "width": 142,
         "height": 244,
         "opacity": 1,
@@ -253,8 +309,8 @@
     },
     {
         "filename": "son una verga.png",
-        "x": 304,
-        "y": 316,
+        "x": 303,
+        "y": 306,
         "width": 199,
         "height": 57,
         "opacity": 1,
@@ -264,8 +320,8 @@
     },
     {
         "filename": "troncal.png",
-        "x": 33,
-        "y": 264,
+        "x": 32,
+        "y": 254,
         "width": 134,
         "height": 191,
         "opacity": 1,
@@ -279,8 +335,8 @@
     },
     {
         "filename": "trolco.png",
-        "x": 28,
-        "y": 420,
+        "x": 27,
+        "y": 410,
         "width": 136,
         "height": 129,
         "opacity": 1,
@@ -298,10 +354,10 @@
     },
     {
         "filename": "alienpro.png",
-        "x": 1618,
-        "y": 95,
-        "width": 258,
-        "height": 161,
+        "x": 932,
+        "y": -73,
+        "width": 59,
+        "height": 38,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -316,8 +372,8 @@
     },
     {
         "filename": "HARTO.png",
-        "x": 143,
-        "y": 249,
+        "x": 142,
+        "y": 239,
         "width": 175,
         "height": 245,
         "opacity": 1,
@@ -327,8 +383,8 @@
     },
     {
         "filename": "tincho.png",
-        "x": -99,
-        "y": 271,
+        "x": -100,
+        "y": 261,
         "width": 171,
         "height": 188,
         "opacity": 1,
@@ -342,8 +398,8 @@
     },
     {
         "filename": "gorrakick.png",
-        "x": 22,
-        "y": 261,
+        "x": 21,
+        "y": 251,
         "width": 61,
         "height": 57,
         "opacity": 1,
@@ -353,8 +409,8 @@
     },
     {
         "filename": "gatos.png",
-        "x": 4,
-        "y": 474,
+        "x": 3,
+        "y": 464,
         "width": 159,
         "height": 149,
         "opacity": 1,
@@ -370,8 +426,8 @@
     },
     {
         "filename": "rap master.png",
-        "x": 121,
-        "y": 451,
+        "x": 120,
+        "y": 441,
         "width": 151,
         "height": 175,
         "opacity": 1,
@@ -387,8 +443,8 @@
     },
     {
         "filename": "stars.png",
-        "x": 66,
-        "y": 485,
+        "x": 65,
+        "y": 475,
         "width": 175,
         "height": 206,
         "opacity": 1,
@@ -402,8 +458,8 @@
     },
     {
         "filename": "manes.png",
-        "x": 209,
-        "y": 489,
+        "x": 208,
+        "y": 479,
         "width": 191,
         "height": 183,
         "opacity": 1,
@@ -417,8 +473,8 @@
     },
     {
         "filename": "EL CRISTO GAY.png",
-        "x": 170,
-        "y": 562,
+        "x": 169,
+        "y": 552,
         "width": 120,
         "height": 129,
         "opacity": 1,
@@ -432,8 +488,8 @@
     },
     {
         "filename": "remeras.png",
-        "x": 531,
-        "y": 485,
+        "x": 614,
+        "y": 347,
         "width": 229,
         "height": 203,
         "opacity": 1,
@@ -449,8 +505,8 @@
     },
     {
         "filename": "luz_apagada.png",
-        "x": 522,
-        "y": 463,
+        "x": 605,
+        "y": 325,
         "width": 187,
         "height": 411,
         "opacity": 1,
@@ -460,8 +516,8 @@
     },
     {
         "filename": "luz_prendida.png",
-        "x": 522,
-        "y": 463,
+        "x": 605,
+        "y": 325,
         "width": 187,
         "height": 411,
         "opacity": 1,
@@ -475,9 +531,26 @@
         }
     },
     {
+        "filename": "facciones.png",
+        "x": 469,
+        "y": 504,
+        "width": 540,
+        "height": 327,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "facciones",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"R44ru-6ckiU",
+            "startTime":"30:46",
+            "endTime":"36:06"
+        }
+    },
+    {
         "filename": "chupetometro.png",
-        "x": 391,
-        "y": 385,
+        "x": 390,
+        "y": 375,
         "width": 151,
         "height": 273,
         "opacity": 1,
@@ -487,8 +560,8 @@
     },
     {
         "filename": "Lo voy a evaluar.png",
-        "x": 1,
-        "y": 550,
+        "x": 0,
+        "y": 540,
         "width": 148,
         "height": 144,
         "opacity": 1,
@@ -502,8 +575,8 @@
     },
     {
         "filename": "Pongan el crudo.png",
-        "x": 336,
-        "y": 501,
+        "x": 335,
+        "y": 491,
         "width": 160,
         "height": 188,
         "opacity": 1,
@@ -517,8 +590,8 @@
     },
     {
         "filename": "sindicato.png",
-        "x": -36,
-        "y": 592,
+        "x": -37,
+        "y": 582,
         "width": 599,
         "height": 252,
         "opacity": 1,
@@ -532,8 +605,8 @@
     },
     {
         "filename": "abuela link.png",
-        "x": 338,
-        "y": 732,
+        "x": 337,
+        "y": 722,
         "width": 135,
         "height": 141,
         "opacity": 1,
@@ -547,8 +620,8 @@
     },
     {
         "filename": "comida perros.png",
-        "x": 426,
-        "y": 1155,
+        "x": 384,
+        "y": 1253,
         "width": 294,
         "height": 168,
         "opacity": 1,
@@ -558,8 +631,8 @@
     },
     {
         "filename": "casita flaco.png",
-        "x": 616,
-        "y": 569,
+        "x": 800,
+        "y": 602,
         "width": 155,
         "height": 301,
         "opacity": 1,
@@ -579,7 +652,7 @@
     },
     {
         "filename": "ca\u00f1os.png",
-        "x": 526,
+        "x": 559,
         "y": 689,
         "width": 139,
         "height": 223,
@@ -590,8 +663,8 @@
     },
     {
         "filename": "alf.png",
-        "x": 425,
-        "y": 744,
+        "x": 424,
+        "y": 734,
         "width": 167,
         "height": 135,
         "opacity": 1,
@@ -605,8 +678,8 @@
     },
     {
         "filename": "gloryhole.png",
-        "x": -21,
-        "y": 855,
+        "x": -22,
+        "y": 845,
         "width": 196,
         "height": 262,
         "opacity": 1,
@@ -626,8 +699,8 @@
     },
     {
         "filename": "adobe error.png",
-        "x": 298,
-        "y": 810,
+        "x": 297,
+        "y": 800,
         "width": 346,
         "height": 401,
         "opacity": 1,
@@ -644,9 +717,43 @@
         }
     },
     {
+        "filename": "rexonaman.png",
+        "x": 701,
+        "y": 730,
+        "width": 108,
+        "height": 245,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "rexonaman",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"6GpPT2zaPQk",
+            "startTime":"1:38:51",
+            "endTime":"1:41:11"
+        }
+    },
+    {
+        "filename": "wiwiwi.png",
+        "x": 631,
+        "y": 831,
+        "width": 88,
+        "height": 220,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "wiwiwi",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"R44ru-6ckiU",
+            "startTime":"1:48:53",
+            "endTime":"1:52:20"
+        }
+    },
+    {
         "filename": "rayones.png",
-        "x": 287,
-        "y": 853,
+        "x": 381,
+        "y": 868,
         "width": 232,
         "height": 109,
         "opacity": 1,
@@ -666,8 +773,8 @@
     },
     {
         "filename": "utep.png",
-        "x": 495,
-        "y": 1100,
+        "x": 494,
+        "y": 1090,
         "width": 91,
         "height": 50,
         "opacity": 1,
@@ -676,9 +783,26 @@
         "name": "utep"
     },
     {
+        "filename": "estevanez.png",
+        "x": 2075,
+        "y": 126,
+        "width": 180,
+        "height": 159,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "estevanez",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"6GpPT2zaPQk",
+            "startTime":"40:17",
+            "endTime":"40:53"
+        }
+    },
+    {
         "filename": "ciclocaca.png",
-        "x": 338,
-        "y": 978,
+        "x": 358,
+        "y": 981,
         "width": 108,
         "height": 109,
         "opacity": 1,
@@ -704,8 +828,8 @@
     },
     {
         "filename": "hormiguita.png",
-        "x": 369,
-        "y": 969,
+        "x": 368,
+        "y": 959,
         "width": 196,
         "height": 101,
         "opacity": 1,
@@ -715,8 +839,8 @@
     },
     {
         "filename": "MedituPija.png",
-        "x": 465,
-        "y": 1075,
+        "x": 464,
+        "y": 1065,
         "width": 132,
         "height": 26,
         "opacity": 1,
@@ -734,10 +858,10 @@
     },
     {
         "filename": "soga.png",
-        "x": 1112,
-        "y": 1630,
-        "width": 102,
-        "height": 69,
+        "x": 1434,
+        "y": 1636,
+        "width": 103,
+        "height": 76,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -749,7 +873,7 @@
     },
     {
         "filename": "lalo.png",
-        "x": 1282,
+        "x": 1683,
         "y": -8,
         "width": 292,
         "height": 314,
@@ -766,8 +890,8 @@
     },
     {
         "filename": "joneshualas.png",
-        "x": 730,
-        "y": 1369,
+        "x": 836,
+        "y": 1419,
         "width": 107,
         "height": 47,
         "opacity": 1,
@@ -787,7 +911,7 @@
     },
     {
         "filename": "bionda.png",
-        "x": 1086,
+        "x": 1487,
         "y": -39,
         "width": 284,
         "height": 270,
@@ -803,41 +927,8 @@
         }
     },
     {
-        "filename": "telefono.png",
-        "x": 1157,
-        "y": 274,
-        "width": 137,
-        "height": 209,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "telefono",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"mJR-u7gqse8",
-            "startTime":"1:26:13",
-            "endTime":"1:26:56"
-        }
-    },
-    {
-        "filename": "profe.png",
-        "x": 1079,
-        "y": 402,
-        "width": 189,
-        "height": 190,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "profe",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"LUs2PkGeja4",
-            "startTime":"1:01:14"            
-        }
-    },
-    {
         "filename": "pulpo.png",
-        "x": 1193,
+        "x": 1594,
         "y": 1402,
         "width": 157,
         "height": 123,
@@ -859,8 +950,41 @@
         }
     },
     {
+        "filename": "telefono.png",
+        "x": 1539,
+        "y": 259,
+        "width": 149,
+        "height": 227,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "telefono",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "mJR-u7gqse8",
+            "startTime": "1:26:13",
+            "endTime": "1:26:56"
+        }
+    },
+    {
+        "filename": "profe.png",
+        "x": 1480,
+        "y": 402,
+        "width": 189,
+        "height": 190,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "profe",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "LUs2PkGeja4",
+            "startTime": "1:01:14"
+        }
+    },
+    {
         "filename": "assasin.png",
-        "x": 1582,
+        "x": 1983,
         "y": 145,
         "width": 135,
         "height": 180,
@@ -875,8 +999,8 @@
     },
     {
         "filename": "bandera carpeta.png",
-        "x": 1601,
-        "y": 703,
+        "x": 1904,
+        "y": 672,
         "width": 152,
         "height": 154,
         "opacity": 1,
@@ -889,101 +1013,32 @@
         }
     },
     {
-        "filename": "columna.png",
-        "x": 607,
-        "y": 877,
-        "width": 76,
-        "height": 367,
+        "filename": "monitorsofo.png",
+        "x": 1948,
+        "y": 744,
+        "width": 198,
+        "height": 414,
         "opacity": 1,
         "visible": true,
         "zoom": false,
-        "name": "columna"
-    },
-    {
-        "filename": "luces1.png",
-        "x": 1242,
-        "y": 483,
-        "width": 465,
-        "height": 182,
-        "opacity": 1,
-        "visible": false,
-        "zoom": false,
-        "name": "luces1"
-    },
-    {
-        "filename": "luces 2.png",
-        "x": 901,
-        "y": 512,
-        "width": 381,
-        "height": 152,
-        "opacity": 1,
-        "visible": false,
-        "zoom": false,
-        "name": "luces 2"
-    },
-    {
-        "filename": "tarjeta.png",
-        "x": 576,
-        "y": 852,
-        "width": 87,
-        "height": 98,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "tarjeta",
+        "name": "monitorsofo copy",
         "interaction": {
-            "type": "text",
-            "popupTitle": "FIGURITA DIFICIL",
-            "popupImage": "tarjeta_.png",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "Figurita dificil....de vender.",
-            "popupBodySize": "21px"
-        }
-    },
-    {
-        "filename": "arquero.png",
-        "x": 612,
-        "y": 893,
-        "width": 56,
-        "height": 78,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "arquero",
-        "interaction": {
-            "type": "text",
-            "popupTitle": "MANOS",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "Si alguien conoce al due\u00f1o de estas manos, <br>comuniquese al 1138253190",
-            "popupBodySize": "21px"
-        }
-    },
-    {
-        "filename": "gafas.png",
-        "x": 645,
-        "y": 886,
-        "width": 30,
-        "height": 60,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "gafas",
-        "interaction": {
-            "type": "text",
-            "popupImage": "facha.png",
-            "popupTitle": "GAFAS",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "FACHA",
-            "popupBodySize": "21px"
+            "type": "sequence",
+            "audio": "repost.mp3",
+            "images": [
+                "flatline.gif",
+                "repost.png",
+                "heartbeat.gif"
+                ],
+            "interval": 2000,
+            "x":1967,         
+            "y":743
         }
     },
     {
         "filename": "boke.png",
-        "x": 911,
-        "y": 375,
+        "x": 1276,
+        "y": 409,
         "width": 486,
         "height": 463,
         "opacity": 1,
@@ -997,8 +1052,8 @@
     },
     {
         "filename": "morenista.png",
-        "x": 1251,
-        "y": 227,
+        "x": 1618,
+        "y": 221,
         "width": 376,
         "height": 160,
         "opacity": 1,
@@ -1012,8 +1067,8 @@
     },
     {
         "filename": "granadero.png",
-        "x": 1549,
-        "y": 775,
+        "x": 1945,
+        "y": 791,
         "width": 95,
         "height": 229,
         "opacity": 1,
@@ -1027,7 +1082,7 @@
     },
     {
         "filename": "estampita.png",
-        "x": 1352,
+        "x": 1763,
         "y": 567,
         "width": 140,
         "height": 190,
@@ -1035,14 +1090,14 @@
         "visible": true,
         "zoom": true,
         "name": "estampita",
-        "interaction":{
-            "type":"audio",
-            "file":"libertronco.mp3"
+        "interaction": {
+            "type": "audio",
+            "file": "libertronco.mp3"
         }
     },
     {
         "filename": "swokify.png",
-        "x": 1397,
+        "x": 1799,
         "y": 694,
         "width": 136,
         "height": 181,
@@ -1056,19 +1111,8 @@
         }
     },
     {
-        "filename": "arbol BA.png",
-        "x": 1402,
-        "y": 738,
-        "width": 252,
-        "height": 474,
-        "opacity": 1,
-        "visible": false,
-        "zoom": false,
-        "name": "arbol BA"
-    },
-    {
         "filename": "NO VAS A SER PRESIDENTE.png",
-        "x": 1589,
+        "x": 1990,
         "y": 227,
         "width": 120,
         "height": 106,
@@ -1079,7 +1123,7 @@
     },
     {
         "filename": "farmacia.png",
-        "x": 1416,
+        "x": 1817,
         "y": 343,
         "width": 212,
         "height": 143,
@@ -1096,7 +1140,7 @@
     },
     {
         "filename": "moneymachine.png",
-        "x": 1685,
+        "x": 2086,
         "y": 249,
         "width": 124,
         "height": 198,
@@ -1113,7 +1157,7 @@
     },
     {
         "filename": "MANE.png",
-        "x": 1573,
+        "x": 1974,
         "y": 313,
         "width": 169,
         "height": 103,
@@ -1128,7 +1172,7 @@
     },
     {
         "filename": "black screen.png",
-        "x": 1609,
+        "x": 2010,
         "y": 479,
         "width": 200,
         "height": 152,
@@ -1140,7 +1184,7 @@
     },
     {
         "filename": "blue screen.png",
-        "x": 1609,
+        "x": 2010,
         "y": 479,
         "width": 200,
         "height": 152,
@@ -1152,7 +1196,7 @@
     },
     {
         "filename": "munipacam.png",
-        "x": 1606,
+        "x": 2007,
         "y": 404,
         "width": 200,
         "height": 152,
@@ -1170,8 +1214,8 @@
     },
     {
         "filename": "O sooole miooo.png",
-        "x": 546,
-        "y": 291,
+        "x": 872,
+        "y": 329,
         "width": 327,
         "height": 147,
         "opacity": 1,
@@ -1187,7 +1231,7 @@
     },
     {
         "filename": "colapintovich.png",
-        "x": 1606,
+        "x": 2007,
         "y": 535,
         "width": 190,
         "height": 120,
@@ -1202,7 +1246,7 @@
     },
     {
         "filename": "vacaciones.png",
-        "x": 1596,
+        "x": 1796,
         "y": 641,
         "width": 62,
         "height": 128,
@@ -1213,7 +1257,7 @@
     },
     {
         "filename": "salchichi.png",
-        "x": 1604,
+        "x": 2005,
         "y": 537,
         "width": 111,
         "height": 129,
@@ -1224,7 +1268,7 @@
     },
     {
         "filename": "ojo.png",
-        "x": 1609,
+        "x": 2010,
         "y": 602,
         "width": 156,
         "height": 108,
@@ -1240,7 +1284,7 @@
     },
     {
         "filename": "miniatura.png",
-        "x": 1671,
+        "x": 2072,
         "y": 669,
         "width": 129,
         "height": 99,
@@ -1256,7 +1300,7 @@
     },
     {
         "filename": "RATONOVICH.png",
-        "x": 1615,
+        "x": 2016,
         "y": 559,
         "width": 82,
         "height": 68,
@@ -1277,8 +1321,8 @@
     },
     {
         "filename": "sillazos.png",
-        "x": 1184,
-        "y": 684,
+        "x": 1571,
+        "y": 681,
         "width": 453,
         "height": 113,
         "opacity": 1,
@@ -1288,7 +1332,7 @@
     },
     {
         "filename": "troncoroom.png",
-        "x": 1667,
+        "x": 2068,
         "y": 733,
         "width": 110,
         "height": 251,
@@ -1296,16 +1340,16 @@
         "visible": true,
         "zoom": true,
         "name": "troncoroom",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"mJR-u7gqse8",
-            "startTime":"53:10",
-            "endTime":"55:59"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "mJR-u7gqse8",
+            "startTime": "53:10",
+            "endTime": "55:59"
         }
     },
     {
         "filename": "dodades.png",
-        "x": 1463,
+        "x": 1864,
         "y": 1244,
         "width": 130,
         "height": 128,
@@ -1320,7 +1364,7 @@
     },
     {
         "filename": "octopus.png",
-        "x": 655,
+        "x": 855,
         "y": 478,
         "width": 414,
         "height": 489,
@@ -1335,8 +1379,8 @@
     },
     {
         "filename": "carnaval.png",
-        "x": 1082,
-        "y": 770,
+        "x": 1273,
+        "y": 787,
         "width": 155,
         "height": 313,
         "opacity": 1,
@@ -1352,10 +1396,10 @@
     },
     {
         "filename": "felicidad.png",
-        "x": 1273,
-        "y": 692,
-        "width": 152,
-        "height": 164,
+        "x": 1675,
+        "y": 682,
+        "width": 158,
+        "height": 171,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1368,8 +1412,42 @@
         }
     },
     {
+        "filename": "rocky.png",
+        "x": 1400,
+        "y": 755,
+        "width": 240,
+        "height": 524,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "rocky",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"go5ZVc6QMTs",
+            "startTime":"12:04",
+            "endTime":"16:16"
+        }
+    },
+    {
+        "filename": "meado.png",
+        "x": 1392,
+        "y": 1050,
+        "width": 172,
+        "height": 299,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "meado",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"mJR-u7gqse8",
+            "startTime":"1:17:15",
+            "endTime":"1:18:32"
+        }
+    },
+    {
         "filename": "iG de la minita.png",
-        "x": 1211,
+        "x": 1612,
         "y": 780,
         "width": 139,
         "height": 224,
@@ -1380,7 +1458,7 @@
     },
     {
         "filename": "maestro.png",
-        "x": 1231,
+        "x": 1632,
         "y": 814,
         "width": 460,
         "height": 266,
@@ -1397,7 +1475,7 @@
     },
     {
         "filename": "nipleman.png",
-        "x": 1007,
+        "x": 1207,
         "y": 790,
         "width": 133,
         "height": 245,
@@ -1412,7 +1490,7 @@
     },
     {
         "filename": "tangueroalien.png",
-        "x": 800,
+        "x": 1000,
         "y": 702,
         "width": 172,
         "height": 192,
@@ -1429,7 +1507,7 @@
     },
     {
         "filename": "gagaiden.png",
-        "x": 725,
+        "x": 925,
         "y": 806,
         "width": 167,
         "height": 166,
@@ -1444,7 +1522,7 @@
     },
     {
         "filename": "cowboy 4.png",
-        "x": 602,
+        "x": 802,
         "y": 812,
         "width": 194,
         "height": 139,
@@ -1463,7 +1541,7 @@
     },
     {
         "filename": "Bilions.png",
-        "x": 823,
+        "x": 1023,
         "y": 794,
         "width": 186,
         "height": 178,
@@ -1480,7 +1558,7 @@
     },
     {
         "filename": "pollito.png",
-        "x": 987,
+        "x": 1187,
         "y": 854,
         "width": 43,
         "height": 180,
@@ -1495,7 +1573,7 @@
     },
     {
         "filename": "spinning.png",
-        "x": 624,
+        "x": 824,
         "y": 890,
         "width": 565,
         "height": 493,
@@ -1505,10 +1583,80 @@
         "name": "spinning"
     },
     {
+        "filename": "columna.png",
+        "x": 807,
+        "y": 872,
+        "width": 69,
+        "height": 530,
+        "opacity": 1,
+        "visible": true,
+        "zoom": false,
+        "name": "columna"
+    },
+    {
+        "filename": "tarjeta.png",
+        "x": 785,
+        "y": 853,
+        "width": 87,
+        "height": 98,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "tarjeta",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "FIGURITA DIFICIL",
+            "popupImage": "tarjeta_.png",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Figurita dificil....de vender.",
+            "popupBodySize": "21px"
+        }
+    },
+    {
+        "filename": "arquero.png",
+        "x": 821,
+        "y": 894,
+        "width": 56,
+        "height": 78,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "arquero",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "MANOS",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Si alguien conoce al due\u00f1o de estas manos, <br>comuniquese al 1138253190",
+            "popupBodySize": "21px"
+        }
+    },
+    {
+        "filename": "gafas.png",
+        "x": 855,
+        "y": 887,
+        "width": 30,
+        "height": 60,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "gafas",
+        "interaction": {
+            "type": "text",
+            "popupImage": "facha.png",
+            "popupTitle": "GAFAS",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "FACHA",
+            "popupBodySize": "21px"
+        }
+    },
+    {
         "filename": "lab microdetalle.png",
-        "x": 893,
+        "x": 1093,
         "y": 945,
-        "width": 324,
+        "width": 303,
         "height": 404,
         "opacity": 1,
         "visible": true,
@@ -1517,7 +1665,7 @@
     },
     {
         "filename": "jorge suspenso.png",
-        "x": 1685,
+        "x": 2086,
         "y": 828,
         "width": 155,
         "height": 207,
@@ -1538,7 +1686,7 @@
     },
     {
         "filename": "robbie.png",
-        "x": 1597,
+        "x": 1998,
         "y": 840,
         "width": 161,
         "height": 194,
@@ -1555,7 +1703,7 @@
     },
     {
         "filename": "zombie cripto.png",
-        "x": 1637,
+        "x": 2038,
         "y": 1401,
         "width": 283,
         "height": 220,
@@ -1570,7 +1718,7 @@
     },
     {
         "filename": "wally.png",
-        "x": 1491,
+        "x": 1892,
         "y": 1533,
         "width": 88,
         "height": 202,
@@ -1589,7 +1737,7 @@
     },
     {
         "filename": "fumata.png",
-        "x": 1543,
+        "x": 1944,
         "y": 1295,
         "width": 144,
         "height": 328,
@@ -1603,7 +1751,7 @@
     },
     {
         "filename": "bondi maridaje.png",
-        "x": 1534,
+        "x": 1935,
         "y": 1525,
         "width": 472,
         "height": 236,
@@ -1617,20 +1765,9 @@
         }
     },
     {
-        "filename": "sleeping-wolf-260nw-73267267.webp.png",
-        "x": 1378,
-        "y": 1524,
-        "width": 200,
-        "height": 123,
-        "opacity": 1,
-        "visible": false,
-        "zoom": true,
-        "name": "sleeping-wolf-260nw-73267267.webp"
-    },
-    {
         "filename": "thoughts and prayers.png",
-        "x": 0,
-        "y": 1111,
+        "x": -1,
+        "y": 1101,
         "width": 160,
         "height": 118,
         "opacity": 1,
@@ -1650,8 +1787,8 @@
     },
     {
         "filename": "rebel.png",
-        "x": 475,
-        "y": 917,
+        "x": 549,
+        "y": 909,
         "width": 74,
         "height": 74,
         "opacity": 1,
@@ -1673,8 +1810,8 @@
     },
     {
         "filename": "lucille.png",
-        "x": 158,
-        "y": 1063,
+        "x": 157,
+        "y": 1053,
         "width": 158,
         "height": 89,
         "opacity": 1,
@@ -1690,7 +1827,7 @@
     },
     {
         "filename": "julie underwood.png",
-        "x": 557,
+        "x": 757,
         "y": 489,
         "width": 188,
         "height": 101,
@@ -1700,24 +1837,40 @@
         "name": "julie underwood"
     },
     {
-        "filename": "camionciruja.png",
-        "x": 285,
-        "y": 1196,
-        "width": 175,
-        "height": 160,
+        "filename": "sillandri.png",
+        "x": 937,
+        "y": 1165,
+        "width": 178,
+        "height": 241,
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "camionciruja",
-        "interaction": {
-            "type": "audio",
-            "file": "cirujeo.mp3"
+        "name": "sillandri",
+        "interaction":{
+            "type":"redirect",
+            "url":"https://x.com/LHDA16"
+        }
+    },
+    {
+        "filename": "tito.png",
+        "x": 812,
+        "y": 1220,
+        "width": 211,
+        "height": 214,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "tito",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"go5ZVc6QMTs",
+            "startTime":"29:26"           
         }
     },
     {
         "filename": "nut.png",
-        "x": 91,
-        "y": 1143,
+        "x": 90,
+        "y": 1133,
         "width": 456,
         "height": 313,
         "opacity": 0.65,
@@ -1731,10 +1884,10 @@
     },
     {
         "filename": "daiana.png",
-        "x": 750,
-        "y": 40,
-        "width": 226,
-        "height": 175,
+        "x": 721,
+        "y": 168,
+        "width": 274,
+        "height": 80,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1745,9 +1898,25 @@
         }
     },
     {
+        "filename": "asteroide.png",
+        "x": 1237,
+        "y": -107,
+        "width": 225,
+        "height": 294,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "asteroide",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"DRtfW9TzUUU",
+            "startTime":"1:26:35"
+        }
+    },
+    {
         "filename": "diploma.png",
-        "x": 357,
-        "y": 1664,
+        "x": 356,
+        "y": 1654,
         "width": 278,
         "height": 192,
         "opacity": 1,
@@ -1767,7 +1936,7 @@
     },
     {
         "filename": "blanqueo.png",
-        "x": 602,
+        "x": 802,
         "y": 1058,
         "width": 83,
         "height": 139,
@@ -1778,8 +1947,8 @@
     },
     {
         "filename": "fabricas.png",
-        "x": 160,
-        "y": 1334,
+        "x": 130,
+        "y": 1364,
         "width": 58,
         "height": 69,
         "opacity": 1,
@@ -1789,8 +1958,8 @@
     },
     {
         "filename": "carcel.png",
-        "x": 321,
-        "y": 1307,
+        "x": 320,
+        "y": 1297,
         "width": 194,
         "height": 166,
         "opacity": 1,
@@ -1810,8 +1979,8 @@
     },
     {
         "filename": "caracol galactico.png",
-        "x": 190,
-        "y": 1188,
+        "x": 189,
+        "y": 1178,
         "width": 161,
         "height": 255,
         "opacity": 1,
@@ -1826,8 +1995,8 @@
     },
     {
         "filename": "anfibio.png",
-        "x": 147,
-        "y": 1383,
+        "x": 135,
+        "y": 1392,
         "width": 201,
         "height": 97,
         "opacity": 1,
@@ -1844,8 +2013,8 @@
     },
     {
         "filename": "gomitas.png",
-        "x": 174,
-        "y": 1461,
+        "x": 107,
+        "y": 1555,
         "width": 72,
         "height": 93,
         "opacity": 1,
@@ -1855,8 +2024,8 @@
     },
     {
         "filename": "geopolitica.png",
-        "x": -14,
-        "y": 1197,
+        "x": -34,
+        "y": 1050,
         "width": 173,
         "height": 85,
         "opacity": 1,
@@ -1870,10 +2039,10 @@
     },
     {
         "filename": "akenaton.png",
-        "x": -13,
-        "y": 1205,
-        "width": 81,
-        "height": 117,
+        "x": -11,
+        "y": 1195,
+        "width": 82,
+        "height": 119,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1881,8 +2050,8 @@
     },
     {
         "filename": "MERCH OFICIAL  DEL SUJETO 4.png",
-        "x": 780,
-        "y": 937,
+        "x": 621,
+        "y": 946,
         "width": 190,
         "height": 517,
         "opacity": 1,
@@ -1901,7 +2070,7 @@
     },
     {
         "filename": "toga.png",
-        "x": 907,
+        "x": 1107,
         "y": 1153,
         "width": 115,
         "height": 214,
@@ -1917,9 +2086,20 @@
         }
     },
     {
+        "filename": "grillete.png",
+        "x": 1103,
+        "y": 1356,
+        "width": 105,
+        "height": 45,
+        "opacity": 1,
+        "visible": true,
+        "zoom": false,
+        "name": "grillete"
+    },
+    {
         "filename": "nosonmasquenosotros.png",
-        "x": 473,
-        "y": 1153,
+        "x": 430,
+        "y": 1164,
         "width": 324,
         "height": 316,
         "opacity": 1,
@@ -1933,8 +2113,8 @@
     },
     {
         "filename": "whapsbot.png",
-        "x": 519,
-        "y": 1391,
+        "x": 769,
+        "y": 1305,
         "width": 77,
         "height": 123,
         "opacity": 1,
@@ -1953,8 +2133,8 @@
     },
     {
         "filename": "ni\u00f1os cantores.png",
-        "x": 913,
-        "y": 958,
+        "x": 1113,
+        "y": 974,
         "width": 392,
         "height": 365,
         "opacity": 1,
@@ -1970,10 +2150,10 @@
     },
     {
         "filename": "thriller.png",
-        "x": 887,
-        "y": 1221,
-        "width": 216,
-        "height": 235,
+        "x": 1205,
+        "y": 1201,
+        "width": 217,
+        "height": 237,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1985,8 +2165,8 @@
     },
     {
         "filename": "botonmute.png",
-        "x": 853,
-        "y": 1391,
+        "x": 1019,
+        "y": 1366,
         "width": 100,
         "height": 79,
         "opacity": 1,
@@ -2005,9 +2185,28 @@
         }
     },
     {
+        "filename": "tetaz.png",
+        "x": 1442,
+        "y": 1286,
+        "width": 91,
+        "height": 102,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "tetaz",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "DUENDECILLO",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Un duendecillo que polula por entre los cables del estudio de Neura. <br>Cuidado con sus impuestos si lo ven. <br>Igual le queda poco tiempo.",
+            "popupBodySize": "21px"
+        }
+    },
+    {
         "filename": "abuela.png",
-        "x": 1035,
-        "y": 1307,
+        "x": 1424,
+        "y": 1323,
         "width": 192,
         "height": 114,
         "opacity": 1,
@@ -2016,20 +2215,9 @@
         "name": "abuela"
     },
     {
-        "filename": "lobo despierto.png",
-        "x": 1362,
-        "y": 1516,
-        "width": 241,
-        "height": 113,
-        "opacity": 1,
-        "visible": false,
-        "zoom": false,
-        "name": "lobo despierto"
-    },
-    {
         "filename": "editores inclusivos.png",
-        "x": 43,
-        "y": 773,
+        "x": 42,
+        "y": 763,
         "width": 278,
         "height": 109,
         "opacity": 1,
@@ -2039,8 +2227,8 @@
     },
     {
         "filename": "postroncalidad.png",
-        "x": 508,
-        "y": 1497,
+        "x": 527,
+        "y": 1474,
         "width": 147,
         "height": 98,
         "opacity": 1,
@@ -2049,13 +2237,13 @@
         "name": "postroncalidad",
         "interaction": {
             "type": "redirect",
-            "url": "https://www.youtube.com/playlist?list=PLTKOvuIbXYqHGzpXqPA-OgC6E-8vu1oZR"
+            "url": "https://postroncalidad.netlify.app"
         }
     },
     {
         "filename": "ruben.png",
-        "x": 1163,
-        "y": 1659,
+        "x": 1549,
+        "y": 1666,
         "width": 161,
         "height": 124,
         "opacity": 1,
@@ -2073,9 +2261,24 @@
         }
     },
     {
+        "filename": "camionciruja.png",
+        "x": 700,
+        "y": 1386,
+        "width": 175,
+        "height": 160,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "camionciruja",
+        "interaction": {
+            "type": "audio",
+            "file": "cirujeo.mp3"
+        }
+    },
+    {
         "filename": "gran dt.png",
-        "x": 442,
-        "y": 1622,
+        "x": 441,
+        "y": 1612,
         "width": 147,
         "height": 75,
         "opacity": 1,
@@ -2094,8 +2297,8 @@
     },
     {
         "filename": "mandriles.png",
-        "x": 205,
-        "y": 1400,
+        "x": 204,
+        "y": 1390,
         "width": 360,
         "height": 304,
         "opacity": 1,
@@ -2109,7 +2312,7 @@
     },
     {
         "filename": "zombikuka.png",
-        "x": 647,
+        "x": 847,
         "y": 1401,
         "width": 196,
         "height": 171,
@@ -2120,8 +2323,8 @@
     },
     {
         "filename": "conito.png",
-        "x": 718,
-        "y": 1495,
+        "x": 895,
+        "y": 1490,
         "width": 52,
         "height": 70,
         "opacity": 1,
@@ -2131,10 +2334,10 @@
     },
     {
         "filename": "padawan 4.png",
-        "x": 584,
-        "y": 1378,
-        "width": 171,
-        "height": 240,
+        "x": 1525,
+        "y": 2258,
+        "width": 142,
+        "height": 208,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -2151,8 +2354,8 @@
     },
     {
         "filename": "carta biden.png",
-        "x": 527,
-        "y": 1589,
+        "x": 530,
+        "y": 1563,
         "width": 119,
         "height": 155,
         "opacity": 1,
@@ -2162,8 +2365,8 @@
     },
     {
         "filename": "goofy.png",
-        "x": 535,
-        "y": 1674,
+        "x": 534,
+        "y": 1664,
         "width": 112,
         "height": 221,
         "opacity": 1,
@@ -2173,8 +2376,8 @@
     },
     {
         "filename": "curling.png",
-        "x": 1005,
-        "y": 1304,
+        "x": 1414,
+        "y": 1318,
         "width": 200,
         "height": 167,
         "opacity": 1,
@@ -2183,20 +2386,9 @@
         "name": "curling"
     },
     {
-        "filename": "grillete.png",
-        "x": 950,
-        "y": 1458,
-        "width": 130,
-        "height": 48,
-        "opacity": 1,
-        "visible": true,
-        "zoom": false,
-        "name": "grillete"
-    },
-    {
         "filename": "saratoga.png",
-        "x": 784,
-        "y": 1406,
+        "x": 1135,
+        "y": 1405,
         "width": 54,
         "height": 81,
         "opacity": 1,
@@ -2212,7 +2404,7 @@
     },
     {
         "filename": "conito2.png",
-        "x": 768,
+        "x": 968,
         "y": 1469,
         "width": 44,
         "height": 60,
@@ -2223,8 +2415,8 @@
     },
     {
         "filename": "luna coin.png",
-        "x": 1048,
-        "y": 1483,
+        "x": 1424,
+        "y": 1471,
         "width": 61,
         "height": 50,
         "opacity": 1,
@@ -2242,8 +2434,8 @@
     },
     {
         "filename": "taser.png",
-        "x": 367,
-        "y": 1675,
+        "x": 325,
+        "y": 1655,
         "width": 107,
         "height": 92,
         "opacity": 1,
@@ -2259,25 +2451,25 @@
     },
     {
         "filename": "sonya cere.png",
-        "x": 231,
-        "y": 1794,
+        "x": 882,
+        "y": 1535,
         "width": 147,
         "height": 191,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "sonya cere",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"mJR-u7gqse8",
-            "startTime":"1:13:58",
-            "endTime":"1:14:19"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "mJR-u7gqse8",
+            "startTime": "1:13:58",
+            "endTime": "1:14:19"
         }
     },
     {
         "filename": "chabombas.png",
-        "x": 994,
-        "y": 1625,
+        "x": 1183,
+        "y": 1590,
         "width": 155,
         "height": 127,
         "opacity": 1,
@@ -2293,8 +2485,8 @@
     },
     {
         "filename": "bolsapan.png",
-        "x": 996,
-        "y": 1692,
+        "x": 1182,
+        "y": 1698,
         "width": 73,
         "height": 127,
         "opacity": 1,
@@ -2312,8 +2504,8 @@
     },
     {
         "filename": "martin4.png",
-        "x": 948,
-        "y": 1381,
+        "x": 1293,
+        "y": 1395,
         "width": 99,
         "height": 162,
         "opacity": 1,
@@ -2327,10 +2519,10 @@
     },
     {
         "filename": "peloenpolvo.png",
-        "x": 868,
-        "y": 1440,
-        "width": 102,
-        "height": 87,
+        "x": 1199,
+        "y": 1438,
+        "width": 84,
+        "height": 104,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -2344,8 +2536,8 @@
     },
     {
         "filename": "jodete lunatti.png",
-        "x": 770,
-        "y": 1474,
+        "x": 648,
+        "y": 1552,
         "width": 240,
         "height": 149,
         "opacity": 1,
@@ -2365,8 +2557,8 @@
     },
     {
         "filename": "congelado.png",
-        "x": 827,
-        "y": 1611,
+        "x": 1019,
+        "y": 1595,
         "width": 162,
         "height": 231,
         "opacity": 1,
@@ -2382,8 +2574,8 @@
     },
     {
         "filename": "dibujitos sofo.png",
-        "x": 1280,
-        "y": 1810,
+        "x": 1682,
+        "y": 1854,
         "width": 140,
         "height": 80,
         "opacity": 1,
@@ -2398,30 +2590,20 @@
         }
     },
     {
-        "filename": "PERLAS.png",
-        "x": 1185,
-        "y": 1730,
-        "width": 147,
-        "height": 114,
+        "filename": "perlas.png",
+        "x": 1562,
+        "y": 1773,
+        "width": 145,
+        "height": 113,
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "PERLAS",
-        "interaction": {
-            "type": "text",
-            "popupImage": "perlaslibro.png",
-            "popupTitle": "TE VOY A HACER PERLAS",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "El libro de ficcion que nadie estaba esperando, pero que todos nos tenemos que fumar.",
-            "enlargePopupImage": true,
-            "popupBodySize": "21px"
-        }
+        "name": "perlas"
     },
     {
         "filename": "retorno.png",
-        "x": 314,
-        "y": 1732,
+        "x": 313,
+        "y": 1722,
         "width": 133,
         "height": 97,
         "opacity": 1,
@@ -2441,25 +2623,25 @@
     },
     {
         "filename": "pacotillo.png",
-        "x": 404,
-        "y": 1742,
+        "x": 403,
+        "y": 1732,
         "width": 209,
         "height": 267,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "pacotillo",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"mJR-u7gqse8",
-            "startTime":"1:43:15",
-            "endTime":"1:44:36"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "mJR-u7gqse8",
+            "startTime": "1:43:15",
+            "endTime": "1:44:36"
         }
     },
     {
         "filename": "adorni boleta.png",
-        "x": 1176,
-        "y": 1892,
+        "x": 1491,
+        "y": 1971,
         "width": 258,
         "height": 107,
         "opacity": 1,
@@ -2478,8 +2660,8 @@
     },
     {
         "filename": "maximo el rockero.png",
-        "x": 998,
-        "y": 1782,
+        "x": 1322,
+        "y": 2057,
         "width": 242,
         "height": 153,
         "opacity": 1,
@@ -2495,8 +2677,8 @@
     },
     {
         "filename": "che tronco.png",
-        "x": 931,
-        "y": 1743,
+        "x": 1069,
+        "y": 1760,
         "width": 173,
         "height": 218,
         "opacity": 1,
@@ -2515,8 +2697,8 @@
     },
     {
         "filename": "microfono zombie.png",
-        "x": 956,
-        "y": 1870,
+        "x": 1437,
+        "y": 1793,
         "width": 158,
         "height": 204,
         "opacity": 1,
@@ -2530,8 +2712,8 @@
     },
     {
         "filename": "clarin.png",
-        "x": 1246,
-        "y": 1831,
+        "x": 1648,
+        "y": 1875,
         "width": 72,
         "height": 88,
         "opacity": 1,
@@ -2547,8 +2729,8 @@
     },
     {
         "filename": "chori.png",
-        "x": 596,
-        "y": 1517,
+        "x": 649,
+        "y": 1644,
         "width": 206,
         "height": 348,
         "opacity": 1,
@@ -2562,8 +2744,8 @@
     },
     {
         "filename": "spytech.png",
-        "x": 712,
-        "y": 1733,
+        "x": 894,
+        "y": 1721,
         "width": 164,
         "height": 154,
         "opacity": 1,
@@ -2579,7 +2761,7 @@
     },
     {
         "filename": "pelopincho sin stock.png",
-        "x": 1456,
+        "x": 1857,
         "y": 1443,
         "width": 121,
         "height": 64,
@@ -2590,7 +2772,7 @@
     },
     {
         "filename": "termo.png",
-        "x": 1469,
+        "x": 1870,
         "y": 1470,
         "width": 33,
         "height": 135,
@@ -2611,7 +2793,7 @@
     },
     {
         "filename": "audiencia.png",
-        "x": 1122,
+        "x": 1523,
         "y": 982,
         "width": 678,
         "height": 483,
@@ -2622,7 +2804,7 @@
     },
     {
         "filename": "espada3.png",
-        "x": 1631,
+        "x": 2032,
         "y": 1029,
         "width": 101,
         "height": 315,
@@ -2632,27 +2814,8 @@
         "name": "espada3"
     },
     {
-        "filename": "tetaz.png",
-        "x": 1061,
-        "y": 1394,
-        "width": 91,
-        "height": 102,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "tetaz",
-        "interaction": {
-            "type": "text",
-            "popupTitle": "DUENDECILLO",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "Un duendecillo que polula por entre los cables del estudio de Neura. <br>Cuidado con sus impuestos si lo ven. <br>Igual le queda poco tiempo.",
-            "popupBodySize": "21px"
-        }
-    },
-    {
         "filename": "mini corresponsal.png",
-        "x": 1600,
+        "x": 2001,
         "y": 1596,
         "width": 150,
         "height": 162,
@@ -2671,7 +2834,7 @@
     },
     {
         "filename": "sujeto 4.png",
-        "x": 1292,
+        "x": 1693,
         "y": 1444,
         "width": 190,
         "height": 207,
@@ -2686,7 +2849,7 @@
     },
     {
         "filename": "argenplata.png",
-        "x": 1355,
+        "x": 1756,
         "y": 1607,
         "width": 123,
         "height": 116,
@@ -2701,7 +2864,7 @@
     },
     {
         "filename": "zombiesurvivial.png",
-        "x": 1271,
+        "x": 1672,
         "y": 1592,
         "width": 103,
         "height": 116,
@@ -2712,7 +2875,7 @@
     },
     {
         "filename": "navidad venezuela.png",
-        "x": 1264,
+        "x": 1665,
         "y": 998,
         "width": 129,
         "height": 127,
@@ -2733,7 +2896,7 @@
     },
     {
         "filename": "malcom young.png",
-        "x": 1303,
+        "x": 1704,
         "y": 975,
         "width": 185,
         "height": 226,
@@ -2750,7 +2913,7 @@
     },
     {
         "filename": "privatice.png",
-        "x": 1443,
+        "x": 1844,
         "y": 971,
         "width": 94,
         "height": 167,
@@ -2771,7 +2934,7 @@
     },
     {
         "filename": "anima.png",
-        "x": 1665,
+        "x": 2066,
         "y": 991,
         "width": 143,
         "height": 117,
@@ -2786,7 +2949,7 @@
     },
     {
         "filename": "c3e9b3e4407f.png",
-        "x": 1688,
+        "x": 2089,
         "y": 1085,
         "width": 110,
         "height": 49,
@@ -2797,7 +2960,7 @@
     },
     {
         "filename": "carpetas.png",
-        "x": 1368,
+        "x": 1769,
         "y": 1316,
         "width": 95,
         "height": 78,
@@ -2808,7 +2971,7 @@
     },
     {
         "filename": "manzana.png",
-        "x": 1360,
+        "x": 1761,
         "y": 1248,
         "width": 80,
         "height": 81,
@@ -2825,7 +2988,7 @@
     },
     {
         "filename": "ayuda.png",
-        "x": 1393,
+        "x": 1794,
         "y": 1275,
         "width": 67,
         "height": 78,
@@ -2846,7 +3009,7 @@
     },
     {
         "filename": "zapatillabart.png",
-        "x": 1426,
+        "x": 1827,
         "y": 1330,
         "width": 44,
         "height": 64,
@@ -2857,7 +3020,7 @@
     },
     {
         "filename": "fatal error.png",
-        "x": 1546,
+        "x": 1947,
         "y": 887,
         "width": 127,
         "height": 114,
@@ -2873,7 +3036,7 @@
     {
         "filename": "crauninpe.png",
         "x": 0,
-        "y": 1251,
+        "y": 1247,
         "width": 229,
         "height": 200,
         "opacity": 1,
@@ -2892,7 +3055,7 @@
     },
     {
         "filename": "dengue.png",
-        "x": 1557,
+        "x": 1958,
         "y": 971,
         "width": 131,
         "height": 143,
@@ -2907,7 +3070,7 @@
     },
     {
         "filename": "mascara harto.png",
-        "x": 1082,
+        "x": 1282,
         "y": 1730,
         "width": 85,
         "height": 74,
@@ -2927,7 +3090,7 @@
     },
     {
         "filename": "salud oyentes.png",
-        "x": 1670,
+        "x": 2071,
         "y": 1279,
         "width": 136,
         "height": 100,
@@ -2950,7 +3113,7 @@
     },
     {
         "filename": "07cf982f48d1.png",
-        "x": 1765,
+        "x": 2166,
         "y": 1353,
         "width": 33,
         "height": 38,
@@ -2961,7 +3124,7 @@
     },
     {
         "filename": "81d3a8de4372.png",
-        "x": 1687,
+        "x": 2088,
         "y": 1345,
         "width": 40,
         "height": 48,
@@ -2972,7 +3135,7 @@
     },
     {
         "filename": "zucho.png",
-        "x": 1167,
+        "x": 1568,
         "y": 1212,
         "width": 92,
         "height": 124,
@@ -2992,7 +3155,7 @@
     },
     {
         "filename": "9906823a4a32.png",
-        "x": 1197,
+        "x": 1598,
         "y": 1206,
         "width": 63,
         "height": 47,
@@ -3003,8 +3166,8 @@
     },
     {
         "filename": "lagrimas de kukas.png",
-        "x": 1101,
-        "y": 1412,
+        "x": 1486,
+        "y": 1410,
         "width": 104,
         "height": 206,
         "opacity": 1,
@@ -3014,7 +3177,7 @@
     },
     {
         "filename": "espada2.png",
-        "x": 1295,
+        "x": 1696,
         "y": 1117,
         "width": 125,
         "height": 225,
@@ -3025,7 +3188,7 @@
     },
     {
         "filename": "freidora.png",
-        "x": 1223,
+        "x": 1624,
         "y": 1280,
         "width": 99,
         "height": 110,
@@ -3035,23 +3198,8 @@
         "name": "freidora"
     },
     {
-        "filename": "viudasnegras.png",
-        "x": 19,
-        "y": 1407,
-        "width": 153,
-        "height": 155,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "viudasnegras",
-        "interaction": {
-            "type": "audio",
-            "file": "chaparrito.mp3"
-        }
-    },
-    {
         "filename": "f09785394dfd.png",
-        "x": 1272,
+        "x": 1673,
         "y": 1342,
         "width": 48,
         "height": 55,
@@ -3062,8 +3210,8 @@
     },
     {
         "filename": "kiropractico.png",
-        "x": 1091,
-        "y": 1885,
+        "x": 1305,
+        "y": 1886,
         "width": 211,
         "height": 185,
         "opacity": 1,
@@ -3077,8 +3225,8 @@
     },
     {
         "filename": "thanos.png",
-        "x": 1038,
-        "y": 1953,
+        "x": 1048,
+        "y": 1946,
         "width": 79,
         "height": 126,
         "opacity": 1,
@@ -3092,7 +3240,7 @@
     },
     {
         "filename": "bandera italia.png",
-        "x": 1319,
+        "x": 1720,
         "y": 1145,
         "width": 168,
         "height": 136,
@@ -3109,7 +3257,7 @@
     },
     {
         "filename": "espada1.png",
-        "x": 1372,
+        "x": 1773,
         "y": 1078,
         "width": 155,
         "height": 294,
@@ -3126,7 +3274,7 @@
     },
     {
         "filename": "2c1dbdd046dc.png",
-        "x": 1476,
+        "x": 1877,
         "y": 1305,
         "width": 51,
         "height": 47,
@@ -3137,7 +3285,7 @@
     },
     {
         "filename": "5c8bb8884660.png",
-        "x": 1440,
+        "x": 1841,
         "y": 1199,
         "width": 80,
         "height": 58,
@@ -3148,7 +3296,7 @@
     },
     {
         "filename": "dark neura.png",
-        "x": 1414,
+        "x": 1815,
         "y": 1035,
         "width": 189,
         "height": 139,
@@ -3162,40 +3310,8 @@
         }
     },
     {
-        "filename": "cronosoro.png",
-        "x": 503,
-        "y": 1849,
-        "width": 218,
-        "height": 133,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "cronosoro",
-        "interaction": {
-            "type": "text",
-            "popupTitle": "CRONOS DORADO",
-            "popupImage": "cronos_.png",
-            "popupTitleFont": "Arial, sans-serif",
-            "popupTitleSize": "24px",
-            "popupBody": "Porque es la unica forma que esta cosa salga 56 palos.",
-            "enlargePopupImage": true,
-            "popupBodySize": "21px"
-        }
-    },
-    {
-        "filename": "escarabajo bombardero.png",
-        "x": 1538,
-        "y": 1033,
-        "width": 65,
-        "height": 76,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "escarbajo bombardero"
-    },
-    {
         "filename": "ranita.png",
-        "x": 1562,
+        "x": 1963,
         "y": 1703,
         "width": 70,
         "height": 59,
@@ -3206,7 +3322,7 @@
     },
     {
         "filename": "brazo armado.png",
-        "x": 1525,
+        "x": 1926,
         "y": 1279,
         "width": 68,
         "height": 71,
@@ -3221,8 +3337,8 @@
     },
     {
         "filename": "truchada.png",
-        "x": -13,
-        "y": 1720,
+        "x": 137,
+        "y": 2018,
         "width": 216,
         "height": 68,
         "opacity": 1,
@@ -3242,8 +3358,8 @@
     },
     {
         "filename": "benito.png",
-        "x": -20,
-        "y": 1485,
+        "x": -21,
+        "y": 1400,
         "width": 150,
         "height": 232,
         "opacity": 1,
@@ -3256,8 +3372,23 @@
         }
     },
     {
+        "filename": "viudasnegras.png",
+        "x": 0,
+        "y": 1647,
+        "width": 153,
+        "height": 155,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "viudasnegras",
+        "interaction": {
+            "type": "audio",
+            "file": "chaparrito.mp3"
+        }
+    },
+    {
         "filename": "ipad sarubbi.png",
-        "x": 1545,
+        "x": 1946,
         "y": 1085,
         "width": 166,
         "height": 219,
@@ -3272,7 +3403,7 @@
     },
     {
         "filename": "bandera arg.png",
-        "x": 1549,
+        "x": 1950,
         "y": 1166,
         "width": 140,
         "height": 112,
@@ -3287,7 +3418,7 @@
     },
     {
         "filename": "mate bantu.png",
-        "x": 1627,
+        "x": 2028,
         "y": 1217,
         "width": 43,
         "height": 93,
@@ -3298,8 +3429,8 @@
     },
     {
         "filename": "tiza.png",
-        "x": 174,
-        "y": 1734,
+        "x": 140,
+        "y": 1739,
         "width": 98,
         "height": 109,
         "opacity": 1,
@@ -3317,7 +3448,7 @@
     },
     {
         "filename": "bantu.png",
-        "x": 1593,
+        "x": 1994,
         "y": 1257,
         "width": 60,
         "height": 72,
@@ -3332,7 +3463,7 @@
     },
     {
         "filename": "banderin neura.png",
-        "x": 1541,
+        "x": 1942,
         "y": 1155,
         "width": 126,
         "height": 150,
@@ -3347,10 +3478,10 @@
     },
     {
         "filename": "TRONCO RECORDS.png",
-        "x": 1205,
-        "y": 1129,
-        "width": 133,
-        "height": 45,
+        "x": 1619,
+        "y": 1131,
+        "width": 110,
+        "height": 43,
         "opacity": 1,
         "visible": true,
         "zoom": false,
@@ -3358,8 +3489,8 @@
     },
     {
         "filename": "troncovicini.png",
-        "x": 418,
-        "y": 1100,
+        "x": 417,
+        "y": 1090,
         "width": 68,
         "height": 85,
         "opacity": 1,
@@ -3379,7 +3510,7 @@
     },
     {
         "filename": "cerenito.png",
-        "x": 1044,
+        "x": 1423,
         "y": 1531,
         "width": 68,
         "height": 90,
@@ -3399,7 +3530,7 @@
     },
     {
         "filename": "klingon.png",
-        "x": 1594,
+        "x": 1995,
         "y": 1394,
         "width": 83,
         "height": 106,
@@ -3410,8 +3541,8 @@
     },
     {
         "filename": "perrobombero.png",
-        "x": 117,
-        "y": 1515,
+        "x": 159,
+        "y": 1524,
         "width": 121,
         "height": 132,
         "opacity": 1,
@@ -3425,8 +3556,8 @@
     },
     {
         "filename": "pasaporto.png",
-        "x": 150,
-        "y": 1608,
+        "x": 207,
+        "y": 1638,
         "width": 107,
         "height": 131,
         "opacity": 1,
@@ -3444,8 +3575,8 @@
     },
     {
         "filename": "angel2.png",
-        "x": 256,
-        "y": 1655,
+        "x": 1040,
+        "y": 1468,
         "width": 100,
         "height": 113,
         "opacity": 1,
@@ -3461,8 +3592,8 @@
     },
     {
         "filename": "necro.png",
-        "x": 134,
-        "y": 1877,
+        "x": 289,
+        "y": 1815,
         "width": 104,
         "height": 114,
         "opacity": 1,
@@ -3477,9 +3608,25 @@
         }
     },
     {
+        "filename": "escarabajo bombardero.png",
+        "x": 1939,
+        "y": 1033,
+        "width": 65,
+        "height": 76,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "escarbajo bombardero",
+        "interaction": {
+            "type": "gifPlay",
+            "gif": "misiles.gif",
+            "duration": 1500
+        }
+    },
+    {
         "filename": "pilas.png",
-        "x": 603,
-        "y": 1467,
+        "x": 656,
+        "y": 1871,
         "width": 31,
         "height": 32,
         "opacity": 1,
@@ -3489,8 +3636,8 @@
     },
     {
         "filename": "mama mama.png",
-        "x": -29,
-        "y": 1768,
+        "x": -32,
+        "y": 1770,
         "width": 114,
         "height": 138,
         "opacity": 1,
@@ -3507,7 +3654,7 @@
     {
         "filename": "llamametralla.png",
         "x": -19,
-        "y": 1822,
+        "y": 1812,
         "width": 185,
         "height": 183,
         "opacity": 1,
@@ -3527,8 +3674,8 @@
     },
     {
         "filename": "BELLIBONI.png",
-        "x": 543,
-        "y": 1930,
+        "x": 566,
+        "y": 1861,
         "width": 86,
         "height": 130,
         "opacity": 1,
@@ -3546,8 +3693,8 @@
     },
     {
         "filename": "rosa negra.png",
-        "x": 1202,
-        "y": 2051,
+        "x": 1563,
+        "y": 2037,
         "width": 86,
         "height": 149,
         "opacity": 1,
@@ -3565,8 +3712,8 @@
     },
     {
         "filename": "Fuuuusion.png",
-        "x": 280,
-        "y": 1857,
+        "x": 1171,
+        "y": 1791,
         "width": 281,
         "height": 132,
         "opacity": 1,
@@ -3582,7 +3729,7 @@
     },
     {
         "filename": "culo de oro.png",
-        "x": 1498,
+        "x": 1899,
         "y": 1472,
         "width": 76,
         "height": 73,
@@ -3599,8 +3746,8 @@
     },
     {
         "filename": "oraculo.png",
-        "x": 612,
-        "y": 233,
+        "x": 613,
+        "y": 192,
         "width": 171,
         "height": 152,
         "opacity": 1,
@@ -3624,7 +3771,7 @@
     },
     {
         "filename": "pamela.png",
-        "x": 1193,
+        "x": 1594,
         "y": 1513,
         "width": 106,
         "height": 97,
@@ -3641,7 +3788,7 @@
     },
     {
         "filename": "lady market.png",
-        "x": 1566,
+        "x": 1967,
         "y": 1314,
         "width": 104,
         "height": 129,
@@ -3656,8 +3803,8 @@
     },
     {
         "filename": "bolsabatalla.png",
-        "x": -7,
-        "y": 823,
+        "x": -8,
+        "y": 813,
         "width": 144,
         "height": 124,
         "opacity": 1,
@@ -3667,8 +3814,8 @@
     },
     {
         "filename": "eabofni.png",
-        "x": 157,
-        "y": 867,
+        "x": 156,
+        "y": 857,
         "width": 155,
         "height": 76,
         "opacity": 1,
@@ -3686,8 +3833,8 @@
     },
     {
         "filename": "silenciogil.png",
-        "x": 151,
-        "y": 914,
+        "x": 150,
+        "y": 904,
         "width": 190,
         "height": 156,
         "opacity": 1,
@@ -3703,8 +3850,8 @@
     },
     {
         "filename": "palta.png",
-        "x": 1123,
-        "y": 1546,
+        "x": 1512,
+        "y": 1561,
         "width": 97,
         "height": 88,
         "opacity": 1,
@@ -3714,7 +3861,7 @@
     },
     {
         "filename": "tazasandercat.png",
-        "x": 1212,
+        "x": 1613,
         "y": 1617,
         "width": 67,
         "height": 62,
@@ -3725,8 +3872,8 @@
     },
     {
         "filename": "mahyra.png",
-        "x": 678,
-        "y": 926,
+        "x": 298,
+        "y": 829,
         "width": 159,
         "height": 202,
         "opacity": 1,
@@ -3747,8 +3894,8 @@
     },
     {
         "filename": "shinobi.png",
-        "x": 261,
-        "y": 179,
+        "x": 260,
+        "y": 169,
         "width": 79,
         "height": 76,
         "opacity": 1,
@@ -3762,7 +3909,7 @@
     },
     {
         "filename": "vincha karate.png",
-        "x": 1710,
+        "x": 2111,
         "y": 1110,
         "width": 98,
         "height": 47,
@@ -3773,7 +3920,7 @@
     },
     {
         "filename": "juiciojurado.png",
-        "x": 1147,
+        "x": 1548,
         "y": 1010,
         "width": 137,
         "height": 135,
@@ -3784,7 +3931,7 @@
     },
     {
         "filename": "3f16a34b4990.png",
-        "x": 1204,
+        "x": 1605,
         "y": 1075,
         "width": 69,
         "height": 68,
@@ -3795,7 +3942,7 @@
     },
     {
         "filename": "lobo dientes.png",
-        "x": 1429,
+        "x": 1830,
         "y": 1573,
         "width": 173,
         "height": 210,
@@ -3815,7 +3962,7 @@
     },
     {
         "filename": "tatu martin.png",
-        "x": 1330,
+        "x": 1731,
         "y": 1567,
         "width": 73,
         "height": 146,
@@ -3834,8 +3981,8 @@
     },
     {
         "filename": "pescamagic.png",
-        "x": 1303,
-        "y": 1682,
+        "x": 1690,
+        "y": 1691,
         "width": 118,
         "height": 120,
         "opacity": 1,
@@ -3855,8 +4002,8 @@
     },
     {
         "filename": "solanas.png",
-        "x": 1428,
-        "y": 1913,
+        "x": 1808,
+        "y": 1921,
         "width": 133,
         "height": 111,
         "opacity": 1,
@@ -3876,8 +4023,8 @@
     },
     {
         "filename": "fanta.png",
-        "x": 1634,
-        "y": 1694,
+        "x": 2033,
+        "y": 1704,
         "width": 181,
         "height": 81,
         "opacity": 1,
@@ -3893,8 +4040,8 @@
     },
     {
         "filename": "LEY  TRONCO.png",
-        "x": 1604,
-        "y": 1705,
+        "x": 2034,
+        "y": 1749,
         "width": 112,
         "height": 133,
         "opacity": 1,
@@ -3910,8 +4057,8 @@
     },
     {
         "filename": "danza.png",
-        "x": 1487,
-        "y": 1727,
+        "x": 1891,
+        "y": 1737,
         "width": 143,
         "height": 168,
         "opacity": 1,
@@ -3927,8 +4074,8 @@
     },
     {
         "filename": "jefe.png",
-        "x": 1387,
-        "y": 1725,
+        "x": 1785,
+        "y": 1718,
         "width": 136,
         "height": 186,
         "opacity": 1,
@@ -3944,8 +4091,8 @@
     },
     {
         "filename": "periodista.png",
-        "x": 1667,
-        "y": 1754,
+        "x": 1191,
+        "y": 1913,
         "width": 150,
         "height": 161,
         "opacity": 1,
@@ -3961,8 +4108,8 @@
     },
     {
         "filename": "alfrexona.png",
-        "x": 1681,
-        "y": 1827,
+        "x": 2077,
+        "y": 1823,
         "width": 134,
         "height": 147,
         "opacity": 1,
@@ -3976,7 +4123,7 @@
     },
     {
         "filename": "hey optimus prime.png",
-        "x": 1682,
+        "x": 2083,
         "y": 1926,
         "width": 190,
         "height": 190,
@@ -3993,8 +4140,8 @@
     },
     {
         "filename": "violines.png",
-        "x": 1367,
-        "y": 1950,
+        "x": 1750,
+        "y": 1964,
         "width": 128,
         "height": 154,
         "opacity": 1,
@@ -4008,7 +4155,7 @@
     },
     {
         "filename": "wok back.png",
-        "x": 1604,
+        "x": 2005,
         "y": 1864,
         "width": 108,
         "height": 160,
@@ -4019,7 +4166,7 @@
     },
     {
         "filename": "kici avion.png",
-        "x": 1505,
+        "x": 1906,
         "y": 1845,
         "width": 259,
         "height": 323,
@@ -4038,7 +4185,7 @@
     },
     {
         "filename": "wok.png",
-        "x": 1604,
+        "x": 2005,
         "y": 1864,
         "width": 108,
         "height": 160,
@@ -4055,8 +4202,8 @@
     },
     {
         "filename": "el ecce de la paciencia.png",
-        "x": 1255,
-        "y": 1920,
+        "x": 1636,
+        "y": 1951,
         "width": 199,
         "height": 304,
         "opacity": 1,
@@ -4074,8 +4221,8 @@
     },
     {
         "filename": "zombies.png",
-        "x": 1420,
-        "y": 1990,
+        "x": 1798,
+        "y": 1994,
         "width": 380,
         "height": 220,
         "opacity": 1,
@@ -4089,7 +4236,7 @@
     },
     {
         "filename": "alerta de sobre.png",
-        "x": 1637,
+        "x": 2038,
         "y": 2052,
         "width": 178,
         "height": 70,
@@ -4100,8 +4247,8 @@
     },
     {
         "filename": "esferico.png",
-        "x": 1094,
-        "y": 381,
+        "x": 1488,
+        "y": 379,
         "width": 62,
         "height": 63,
         "opacity": 1,
@@ -4117,7 +4264,7 @@
     },
     {
         "filename": "pauta.png",
-        "x": 1661,
+        "x": 2062,
         "y": 2134,
         "width": 139,
         "height": 67,
@@ -4136,7 +4283,7 @@
     },
     {
         "filename": "airhorn.png",
-        "x": 1269,
+        "x": 1670,
         "y": 1285,
         "width": 99,
         "height": 99,
@@ -4151,8 +4298,8 @@
     },
     {
         "filename": "palan.png",
-        "x": 671,
-        "y": 1877,
+        "x": 720,
+        "y": 1914,
         "width": 192,
         "height": 197,
         "opacity": 1,
@@ -4172,8 +4319,8 @@
     },
     {
         "filename": "eslabones.png",
-        "x": 480,
-        "y": 1993,
+        "x": 479,
+        "y": 1983,
         "width": 337,
         "height": 227,
         "opacity": 1,
@@ -4188,9 +4335,30 @@
         }
     },
     {
+        "filename": "cronosoro.png",
+        "x": 593,
+        "y": 2082,
+        "width": 218,
+        "height": 133,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "cronosoro",
+        "interaction": {
+            "type": "text",
+            "popupTitle": "CRONOS DORADO",
+            "popupImage": "cronos_.png",
+            "popupTitleFont": "Arial, sans-serif",
+            "popupTitleSize": "24px",
+            "popupBody": "Porque es la unica forma que esta cosa salga 56 palos.",
+            "enlargePopupImage": true,
+            "popupBodySize": "21px"
+        }
+    },
+    {
         "filename": "kansas.png",
-        "x": 757,
-        "y": 1822,
+        "x": 830,
+        "y": 1854,
         "width": 241,
         "height": 302,
         "opacity": 1,
@@ -4206,7 +4374,7 @@
     },
     {
         "filename": "cogidos.png",
-        "x": 1333,
+        "x": 1734,
         "y": 1080,
         "width": 81,
         "height": 94,
@@ -4221,7 +4389,7 @@
     },
     {
         "filename": "rejaroja.png",
-        "x": 1231,
+        "x": 1632,
         "y": 332,
         "width": 225,
         "height": 198,
@@ -4238,8 +4406,8 @@
     },
     {
         "filename": "minicam.png",
-        "x": -75,
-        "y": 1964,
+        "x": -76,
+        "y": 1954,
         "width": 165,
         "height": 105,
         "opacity": 1,
@@ -4255,8 +4423,8 @@
     },
     {
         "filename": "monkeyisland.png",
-        "x": 39,
-        "y": 1931,
+        "x": 55,
+        "y": 1897,
         "width": 437,
         "height": 196,
         "opacity": 1,
@@ -4270,8 +4438,8 @@
     },
     {
         "filename": "blackri.png",
-        "x": 323,
-        "y": 1996,
+        "x": 322,
+        "y": 1986,
         "width": 237,
         "height": 233,
         "opacity": 1,
@@ -4291,10 +4459,10 @@
     },
     {
         "filename": "cerraelorto.png",
-        "x": 107,
-        "y": 2041,
-        "width": 211,
-        "height": 164,
+        "x": 133,
+        "y": 2063,
+        "width": 176,
+        "height": 137,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -4306,8 +4474,8 @@
     },
     {
         "filename": "NO VEAN TELEVISION ABIERTA.png",
-        "x": 665,
-        "y": 2152,
+        "x": 865,
+        "y": 2141,
         "width": 534,
         "height": 59,
         "opacity": 1,
@@ -4317,8 +4485,8 @@
     },
     {
         "filename": "blank.png",
-        "x": 700,
-        "y": 2069,
+        "x": 900,
+        "y": 2058,
         "width": 466,
         "height": 37,
         "opacity": 1,
@@ -4328,8 +4496,8 @@
     },
     {
         "filename": "comprala.png",
-        "x": 701,
-        "y": 2069,
+        "x": 901,
+        "y": 2058,
         "width": 465,
         "height": 37,
         "opacity": 1,
@@ -4346,16 +4514,16 @@
                 "noledigankuka.png",
                 "pibekick.png",
                 "preguntovich.png",
-                "proyectovich.png"                
-                ],
+                "proyectovich.png"
+            ],
             "soundFile": "click.mp3",
             "displayDuration": 1000
         }
     },
     {
         "filename": "noledigankuka.png",
-        "x": 817,
-        "y": 2069,
+        "x": 1017,
+        "y": 2058,
         "width": 240,
         "height": 33,
         "opacity": 1,
@@ -4365,8 +4533,8 @@
     },
     {
         "filename": "pibekick.png",
-        "x": 772,
-        "y": 2070,
+        "x": 972,
+        "y": 2059,
         "width": 329,
         "height": 31,
         "opacity": 1,
@@ -4376,8 +4544,8 @@
     },
     {
         "filename": "cambiachipovich.png",
-        "x": 778,
-        "y": 2070,
+        "x": 978,
+        "y": 2059,
         "width": 318,
         "height": 30,
         "opacity": 1,
@@ -4387,8 +4555,8 @@
     },
     {
         "filename": "ajustovich.png",
-        "x": 802,
-        "y": 2070,
+        "x": 1002,
+        "y": 2059,
         "width": 266,
         "height": 32,
         "opacity": 1,
@@ -4398,8 +4566,8 @@
     },
     {
         "filename": "preguntovich.png",
-        "x": 821,
-        "y": 2071,
+        "x": 1021,
+        "y": 2060,
         "width": 240,
         "height": 27,
         "opacity": 1,
@@ -4409,8 +4577,8 @@
     },
     {
         "filename": "proyectovich.png",
-        "x": 800,
-        "y": 2070,
+        "x": 1000,
+        "y": 2059,
         "width": 276,
         "height": 31,
         "opacity": 1,
@@ -4420,8 +4588,8 @@
     },
     {
         "filename": "flanovich.png",
-        "x": 820,
-        "y": 2070,
+        "x": 1020,
+        "y": 2059,
         "width": 226,
         "height": 30,
         "opacity": 1,
@@ -4431,8 +4599,8 @@
     },
     {
         "filename": "no festejo.png",
-        "x": 586,
-        "y": 2069,
+        "x": 786,
+        "y": 2058,
         "width": 628,
         "height": 108,
         "opacity": 1,
@@ -4442,8 +4610,8 @@
     },
     {
         "filename": "peluditos.png",
-        "x": 1088,
-        "y": 1234,
+        "x": 1491,
+        "y": 1233,
         "width": 116,
         "height": 95,
         "opacity": 1,
@@ -4457,8 +4625,8 @@
     },
     {
         "filename": "charly.png",
-        "x": 724,
-        "y": 418,
+        "x": 860,
+        "y": 312,
         "width": 75,
         "height": 116,
         "opacity": 1,
@@ -4472,28 +4640,45 @@
     },
     {
         "filename": "invitadoespecial.png",
-        "x": 1563,
-        "y": 12,
-        "width": 127,
-        "height": 90,
+        "x": 1917,
+        "y": 19,
+        "width": 149,
+        "height": 105,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "invitadoespecial",
-        "interaction":{
-			"type": "text",
+        "interaction": {
+            "type": "text",
             "popupImage": "troy.png",
             "popupTitle": "INVITADO EXCLUSIVO",
             "popupTitleFont": "Arial, sans-serif",
             "popupTitleSize": "24px",
             "popupBody": "Quizas lo conozcan en roles como:<br><ul style='text-align: left;'><li>Panelista de Fantino</li><li>Comunicador</li><li>Historico Productor de Fantino</li><li>Socio de Neura</li><li>Comunicador con Trayectoria</li><li><s>Stripper</s> Streamer</li></ul>",
-            "popupBodySize": "21px" 
+            "popupBodySize": "21px"
+        }
+    },
+    {
+        "filename": "carmen.png",
+        "x": 2044,
+        "y": 8,
+        "width": 197,
+        "height": 137,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "carmen",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"DRtfW9TzUUU",
+            "startTime":"30:44",
+            "endTime":"33:05"
         }
     },
     {
         "filename": "otto.png",
-        "x": 1021,
-        "y": 177,
+        "x": 939,
+        "y": 164,
         "width": 175,
         "height": 204,
         "opacity": 1,
@@ -4507,7 +4692,7 @@
     },
     {
         "filename": "donaciones.png",
-        "x": 1216,
+        "x": 1416,
         "y": 520,
         "width": 307,
         "height": 165,
@@ -4518,8 +4703,8 @@
     },
     {
         "filename": "distractor.png",
-        "x": 1161,
-        "y": 1664,
+        "x": 1542,
+        "y": 1659,
         "width": 94,
         "height": 41,
         "opacity": 1,
@@ -4529,7 +4714,7 @@
     },
     {
         "filename": "edesur.png",
-        "x": 561,
+        "x": 761,
         "y": 949,
         "width": 141,
         "height": 131,
@@ -4544,7 +4729,7 @@
     },
     {
         "filename": "cormick.png",
-        "x": 1136,
+        "x": 1537,
         "y": 520,
         "width": 255,
         "height": 135,
@@ -4555,7 +4740,7 @@
     },
     {
         "filename": "pablo cornet.png",
-        "x": 987,
+        "x": 1388,
         "y": 522,
         "width": 503,
         "height": 101,
@@ -4570,7 +4755,7 @@
     },
     {
         "filename": "dos de oro.png",
-        "x": 1470,
+        "x": 1871,
         "y": 510,
         "width": 143,
         "height": 190,
@@ -4589,7 +4774,7 @@
     },
     {
         "filename": "juan de jesus.png",
-        "x": 954,
+        "x": 1355,
         "y": 483,
         "width": 612,
         "height": 65,
@@ -4604,8 +4789,8 @@
     },
     {
         "filename": "mosca kuka.png",
-        "x": 514,
-        "y": 859,
+        "x": 314,
+        "y": 800,
         "width": 58,
         "height": 46,
         "opacity": 1,
@@ -4619,8 +4804,8 @@
     },
     {
         "filename": "atenciongian.png",
-        "x": 11,
-        "y": 2025,
+        "x": 10,
+        "y": 2015,
         "width": 149,
         "height": 197,
         "opacity": 1,
@@ -4636,7 +4821,7 @@
     },
     {
         "filename": "blokum.png",
-        "x": 1339,
+        "x": 1740,
         "y": 1283,
         "width": 69,
         "height": 61,
@@ -4656,7 +4841,7 @@
     },
     {
         "filename": "KUKAS.png",
-        "x": 1681,
+        "x": 2082,
         "y": 1401,
         "width": 100,
         "height": 43,
@@ -4673,7 +4858,7 @@
     },
     {
         "filename": "SOMOS.png",
-        "x": 1435,
+        "x": 1836,
         "y": 1400,
         "width": 111,
         "height": 41,
@@ -4684,7 +4869,7 @@
     },
     {
         "filename": "NO.png",
-        "x": 1223,
+        "x": 1624,
         "y": 1394,
         "width": 53,
         "height": 43,
@@ -4695,8 +4880,8 @@
     },
     {
         "filename": "HERMAAAAANOOOOOO.png",
-        "x": 390,
-        "y": 205,
+        "x": 389,
+        "y": 195,
         "width": 272,
         "height": 170,
         "opacity": 1,

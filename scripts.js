@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
     const response = await fetch("images.json");
     const images = await response.json();
-    const baseWidth = 1800, baseHeight = 2200;
+    const baseWidth = 2200, baseHeight = 2200;
     images.forEach(image => {
       const img = document.createElement("img");
       img.src = `images/${image.filename}`;
@@ -1345,7 +1345,121 @@ function processAction(action, clickedImg) {
     
     // Start the interaction immediately.
     showNextImage();
-  }    
+  }else if (action.type === "sequence") {
+    // Canvas dimensions
+    const baseW = 2200, baseH = 2200;
+  
+    // Blank‐area rectangle (px) you provided
+    const blankX = 1967, blankY = 743;
+    const blankW = 136,  blankH =  99;
+  
+    // Convert to percentages for #frame (which is relative‐positioned)
+    const leftPct   = (blankX / baseW) * 100 + "%";
+    const topPct    = (blankY / baseH) * 100 + "%";
+    const widthPct  = (blankW / baseW) * 100 + "%";
+    const heightPct = (blankH / baseH) * 100 + "%";
+  
+    // Create overlay div immediately after clickedImg
+    const overlay = document.createElement("div");
+    Object.assign(overlay.style, {
+      position:      "absolute",
+      left:          leftPct,
+      top:           topPct,
+      width:         widthPct,
+      height:        heightPct,
+      pointerEvents: "auto",
+      // inherit the same z‐index as the clicked image
+      zIndex:        clickedImg.style.zIndex || "auto"
+    });
+    clickedImg.parentNode.insertBefore(overlay, clickedImg.nextSibling);
+  
+    // Prepare the <img> for the sequence frames
+    const seqImg = document.createElement("img");
+    Object.assign(seqImg.style, {
+      position:   "absolute",
+      left:       "0",
+      top:        "0",
+      width:      "100%",
+      height:     "100%",
+      objectFit:  "contain",
+      opacity:    "0",
+      transition: "opacity 0.5s ease"
+    });
+    overlay.appendChild(seqImg);
+  
+    // Sequence data & audio
+    const frames   = action.images || [];
+    const interval = action.interval || 2000;
+    let idx        = 0, timeoutId, cancelled = false;
+    const audio    = new Audio(`audio/${action.audio}`);
+    audio.play();
+  
+    // Cancellation: click outside, on overlay, or on seqImg
+    function cancelSeq() {
+      cancelled = true;
+      clearTimeout(timeoutId);
+      audio.pause(); audio.currentTime = 0;
+      if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+      document.removeEventListener("click", onClickOutside);
+    }
+    function onClickOutside(e) {
+      if (!overlay.contains(e.target)) cancelSeq();
+    }
+    // Delay so the initial click doesn’t immediately cancel
+    setTimeout(() => document.addEventListener("click", onClickOutside), 100);
+    overlay.addEventListener("click", cancelSeq);
+    seqImg.addEventListener("click", cancelSeq);
+    audio.addEventListener("ended", () => { if (!cancelled) cancelSeq(); });
+  
+    // Show each frame in turn
+    function showNext() {
+      if (cancelled || idx >= frames.length) return;
+      seqImg.src = `images/${frames[idx]}`;
+      seqImg.style.opacity = "1";
+      if (idx < frames.length - 1) {
+        timeoutId = setTimeout(() => {
+          seqImg.style.opacity = "0";
+          setTimeout(() => {
+            idx++;
+            showNext();
+          }, 500); // allow fade‑out
+        }, interval);
+      }
+    }
+    showNext();
+  }else if (action.type === "gifPlay") {
+    const frame = document.getElementById("frame");
+  
+    // 1) Create the GIF element (no width/height so it uses its natural size)
+    const overlayGif = document.createElement("img");
+    overlayGif.src    = `images/${action.gif}`;      // e.g. "animation.gif"
+    overlayGif.style.position = "absolute";
+    // Sit just above the clicked image
+    overlayGif.style.zIndex   = (parseInt(clickedImg.style.zIndex,10) || 1) + 1;
+    frame.appendChild(overlayGif);
+  
+    // 2) Once the GIF loads, compute its size and align lower‑right corners
+    overlayGif.onload = () => {
+      const frameRect = frame.getBoundingClientRect();
+      const imgRect   = clickedImg.getBoundingClientRect();
+      const gifW      = overlayGif.naturalWidth;
+      const gifH      = overlayGif.naturalHeight;
+  
+      // left = (image’s right edge relative to frame) − gif’s width
+      const leftPx = (imgRect.right - frameRect.left) - gifW;
+      // top  = (image’s bottom edge relative to frame) − gif’s height
+      const topPx  = (imgRect.bottom - frameRect.top) - gifH;
+  
+      overlayGif.style.left = leftPx + "px";
+      overlayGif.style.top  = topPx  + "px";
+    };
+  
+    // 3) Remove the GIF after the specified duration
+    const duration = action.duration || 1000; // default 1s
+    setTimeout(() => {
+      if (overlayGif.parentNode) frame.removeChild(overlayGif);
+    }, duration);
+  }
 }
 
 // Handle image interactions

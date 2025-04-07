@@ -17,7 +17,7 @@
   
   /* 3) #frame preserves a 1500×1792 aspect ratio, centered by flex parent */
   #frame {
-    aspect-ratio: 1800 / 2200;
+    aspect-ratio: 2200 / 2200;
     width: 90vw;          /* scales down on small devices */
     max-width: 2200px;    /* never exceed original width on large desktops */
     background-color: black;
