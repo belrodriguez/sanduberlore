@@ -1459,7 +1459,99 @@ function processAction(action, clickedImg) {
     setTimeout(() => {
       if (overlayGif.parentNode) frame.removeChild(overlayGif);
     }, duration);
-  }
+  }else if (action.type === "riseThenYoutube") {
+    const frame = document.getElementById("frame");
+    
+    // Create secondary image element (it is not preloaded in the collage)
+    const secImg = document.createElement("img");
+    secImg.src = `images/${action.secondaryImage}`; // e.g. "extra.png"
+    secImg.style.position = "absolute";
+    // Ensure it appears above the rest (increment z-index a little)
+    secImg.style.zIndex = (parseInt(clickedImg.style.zIndex, 10) || 1) + 1;
+    frame.appendChild(secImg);
+    
+    // When the secondary image loads, perform the animation
+    secImg.onload = () => {
+      // The canvas (frame) dimensions in its own coordinate system:
+      const frameWidth = frame.clientWidth;
+      const frameHeight = frame.clientHeight;
+      
+      // Our target is for the secondary image's bottom-right corner to align
+      // with the canvas's bottom-right corner.
+      const secW = secImg.naturalWidth;
+      const secH = secImg.naturalHeight;
+      const finalLeft = frameWidth - secW;  // so secImg.right = frameWidth
+      const finalTop  = frameHeight - secH; // so secImg.bottom = frameHeight
+      
+      // Starting point: the image begins entirely off-screen,
+      // positioned below (and a little to the right) the canvas's bottom-right.
+      // We want it to "rise" so that its bottom-right just touches the canvas's bottom-right.
+      // Use an offset if you want extra distance; default 20px extra.
+      const offset = action.offset !== undefined ? action.offset : 20;
+      const initLeft = finalLeft + offset;
+      const initTop = finalTop + offset;
+      
+      // Set starting position in pixels:
+      secImg.style.left = initLeft + "px";
+      secImg.style.top = initTop + "px";
+      
+      // Animate rising over 500 ms: from (initLeft, initTop) to (finalLeft, finalTop)
+      const riseDuration = 300;
+      const riseStart = performance.now();
+      
+      function animateRise(ts) {
+        let progress = (ts - riseStart) / riseDuration;
+        if (progress > 1) progress = 1;
+        const currentLeft = initLeft + (finalLeft - initLeft) * progress;
+        const currentTop  = initTop + (finalTop - initTop) * progress;
+        secImg.style.left = currentLeft + "px";
+        secImg.style.top  = currentTop + "px";
+        if (progress < 1) {
+          requestAnimationFrame(animateRise);
+        }
+      }
+      requestAnimationFrame(animateRise);
+      
+      // Play the rise audio concurrently
+      const riseAudio = new Audio(`audio/${action.audio}`);
+      riseAudio.play();
+      
+      // Once the audio finishes (after 1 second), start the fall animation.
+      riseAudio.addEventListener("ended", () => {
+        // Animate falling over 500 ms: from (finalLeft, finalTop) back to (initLeft, initTop)
+        const fallDuration = 300;
+        const fallStart = performance.now();
+        function animateFall(ts) {
+          let progress = (ts - fallStart) / fallDuration;
+          if (progress > 1) progress = 1;
+          const currentLeft = finalLeft + (initLeft - finalLeft) * progress;
+          const currentTop  = finalTop + (initTop - finalTop) * progress;
+          secImg.style.left = currentLeft + "px";
+          secImg.style.top  = currentTop + "px";
+          if (progress < 1) {
+            requestAnimationFrame(animateFall);
+          } else {
+            // Remove the secondary image when falling is complete
+            if (secImg.parentNode) {
+              secImg.parentNode.removeChild(secImg);
+            }
+            // Trigger YouTube interaction, as in your other branches:
+            const startSec = convertToSeconds(action.startTime);
+            youtubePlayer.src = `https://www.youtube.com/embed/${action.youtubeVideoId}?start=${startSec}&autoplay=1&enablejsapi=1`;
+            youtubeContainer.style.display = "block";
+            if (action.endTime) {
+              const duration = (convertToSeconds(action.endTime) - startSec) * 1000;
+              youtubeTimeout = setTimeout(() => {
+                youtubeContainer.style.display = "none";
+                youtubePlayer.src = "";
+              }, duration);
+            }
+          }
+        }
+        requestAnimationFrame(animateFall);
+      });
+    };
+  }  
 }
 
 // Handle image interactions

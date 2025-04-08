@@ -75,19 +75,19 @@
     },
     {
         "filename": "Cardozo.png",
-        "x": 1309,
-        "y": 344,
-        "width": 190,
-        "height": 202,
+        "x": 1305,
+        "y": 341,
+        "width": 194,
+        "height": 205,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "Cardozo",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"DRtfW9TzUUU",
-            "startTime":"54:35",
-            "endTime":"55:29"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "DRtfW9TzUUU",
+            "startTime": "54:35",
+            "endTime": "55:29"
         }
     },
     {
@@ -100,17 +100,17 @@
         "visible": true,
         "zoom": true,
         "name": "tuberias",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"6GpPT2zaPQk",
-            "startTime":"1:07:00",
-            "endTime":"1:08:37"
-        }        
+        "interaction": {
+            "type": "youtube",
+            "videoId": "6GpPT2zaPQk",
+            "startTime": "1:07:00",
+            "endTime": "1:08:37"
+        }
     },
     {
         "filename": "troncarcel.png",
-        "x": 1074,
-        "y": 406,
+        "x": 1089,
+        "y": 387,
         "width": 280,
         "height": 534,
         "opacity": 1,
@@ -540,11 +540,11 @@
         "visible": true,
         "zoom": true,
         "name": "facciones",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"R44ru-6ckiU",
-            "startTime":"30:46",
-            "endTime":"36:06"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "R44ru-6ckiU",
+            "startTime": "30:46",
+            "endTime": "36:06"
         }
     },
     {
@@ -619,17 +619,6 @@
         }
     },
     {
-        "filename": "comida perros.png",
-        "x": 384,
-        "y": 1253,
-        "width": 294,
-        "height": 168,
-        "opacity": 1,
-        "visible": true,
-        "zoom": false,
-        "name": "comida perros"
-    },
-    {
         "filename": "casita flaco.png",
         "x": 800,
         "y": 602,
@@ -699,8 +688,8 @@
     },
     {
         "filename": "adobe error.png",
-        "x": 297,
-        "y": 800,
+        "x": 296,
+        "y": 799,
         "width": 346,
         "height": 401,
         "opacity": 1,
@@ -726,11 +715,11 @@
         "visible": true,
         "zoom": true,
         "name": "rexonaman",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"6GpPT2zaPQk",
-            "startTime":"1:38:51",
-            "endTime":"1:41:11"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "6GpPT2zaPQk",
+            "startTime": "1:38:51",
+            "endTime": "1:41:11"
         }
     },
     {
@@ -743,11 +732,11 @@
         "visible": true,
         "zoom": true,
         "name": "wiwiwi",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"R44ru-6ckiU",
-            "startTime":"1:48:53",
-            "endTime":"1:52:20"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "R44ru-6ckiU",
+            "startTime": "1:48:53",
+            "endTime": "1:52:20"
         }
     },
     {
@@ -773,14 +762,42 @@
     },
     {
         "filename": "utep.png",
-        "x": 494,
-        "y": 1090,
+        "x": 316,
+        "y": 1085,
         "width": 91,
         "height": 50,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "utep"
+    },
+    {
+        "filename": "blem.png",
+        "x": 469,
+        "y": 1092,
+        "width": 181,
+        "height": 196,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "blem",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"vqM5oXLZaJo",
+            "startTime":"59:58",
+            "endTime":"1:00:22"
+        }
+    },
+    {
+        "filename": "comida perros.png",
+        "x": 384,
+        "y": 1253,
+        "width": 294,
+        "height": 168,
+        "opacity": 1,
+        "visible": true,
+        "zoom": false,
+        "name": "comida perros"
     },
     {
         "filename": "estevanez.png",
@@ -792,11 +809,11 @@
         "visible": true,
         "zoom": true,
         "name": "estevanez",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"6GpPT2zaPQk",
-            "startTime":"40:17",
-            "endTime":"40:53"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "6GpPT2zaPQk",
+            "startTime": "40:17",
+            "endTime": "40:53"
         }
     },
     {
@@ -828,8 +845,8 @@
     },
     {
         "filename": "hormiguita.png",
-        "x": 368,
-        "y": 959,
+        "x": 312,
+        "y": 952,
         "width": 196,
         "height": 101,
         "opacity": 1,
@@ -839,8 +856,8 @@
     },
     {
         "filename": "MedituPija.png",
-        "x": 464,
-        "y": 1065,
+        "x": 475,
+        "y": 990,
         "width": 132,
         "height": 26,
         "opacity": 1,
@@ -1029,10 +1046,10 @@
                 "flatline.gif",
                 "repost.png",
                 "heartbeat.gif"
-                ],
+            ],
             "interval": 2000,
-            "x":1967,         
-            "y":743
+            "x": 1967,
+            "y": 743
         }
     },
     {
@@ -1413,36 +1430,36 @@
     },
     {
         "filename": "rocky.png",
-        "x": 1400,
-        "y": 755,
+        "x": 1347,
+        "y": 759,
         "width": 240,
         "height": 524,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "rocky",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"go5ZVc6QMTs",
-            "startTime":"12:04",
-            "endTime":"16:16"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "go5ZVc6QMTs",
+            "startTime": "12:04",
+            "endTime": "16:16"
         }
     },
     {
         "filename": "meado.png",
-        "x": 1392,
-        "y": 1050,
+        "x": 1390,
+        "y": 1066,
         "width": 172,
         "height": 299,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "meado",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"mJR-u7gqse8",
-            "startTime":"1:17:15",
-            "endTime":"1:18:32"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "mJR-u7gqse8",
+            "startTime": "1:17:15",
+            "endTime": "1:18:32"
         }
     },
     {
@@ -1846,9 +1863,9 @@
         "visible": true,
         "zoom": true,
         "name": "sillandri",
-        "interaction":{
-            "type":"redirect",
-            "url":"https://x.com/LHDA16"
+        "interaction": {
+            "type": "redirect",
+            "url": "https://x.com/LHDA16"
         }
     },
     {
@@ -1861,10 +1878,10 @@
         "visible": true,
         "zoom": true,
         "name": "tito",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"go5ZVc6QMTs",
-            "startTime":"29:26"           
+        "interaction": {
+            "type": "youtube",
+            "videoId": "go5ZVc6QMTs",
+            "startTime": "29:26"
         }
     },
     {
@@ -1907,10 +1924,10 @@
         "visible": true,
         "zoom": true,
         "name": "asteroide",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"DRtfW9TzUUU",
-            "startTime":"1:26:35"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "DRtfW9TzUUU",
+            "startTime": "1:26:35"
         }
     },
     {
@@ -2098,10 +2115,10 @@
     },
     {
         "filename": "nosonmasquenosotros.png",
-        "x": 430,
-        "y": 1164,
-        "width": 324,
-        "height": 316,
+        "x": 460,
+        "y": 1204,
+        "width": 292,
+        "height": 272,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -2468,8 +2485,8 @@
     },
     {
         "filename": "chabombas.png",
-        "x": 1183,
-        "y": 1590,
+        "x": 1118,
+        "y": 1517,
         "width": 155,
         "height": 127,
         "opacity": 1,
@@ -2481,6 +2498,38 @@
             "videoId": "A0uMQnOVbb8",
             "startTime": "1:17:57",
             "endTime": "1:26:20"
+        }
+    },
+    {
+        "filename": "neura_.png",
+        "x": 1145,
+        "y": 1559,
+        "width": 268,
+        "height": 246,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "neura",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"vqM5oXLZaJo",
+            "startTime":"1:01:09"
+        }
+    },
+    {
+        "filename": "uter.png",
+        "x": 1397,
+        "y": 1692,
+        "width": 108,
+        "height": 124,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "uter",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"vqM5oXLZaJo",
+            "startTime":"1:17:48"
         }
     },
     {
@@ -2519,8 +2568,8 @@
     },
     {
         "filename": "peloenpolvo.png",
-        "x": 1199,
-        "y": 1438,
+        "x": 1213,
+        "y": 1419,
         "width": 84,
         "height": 104,
         "opacity": 1,
@@ -2792,11 +2841,32 @@
         }
     },
     {
+        "filename": "subzero adorni.png",
+        "x": 1467,
+        "y": 898,
+        "width": 243,
+        "height": 181,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "subzero adorni",
+        "interaction":{
+            "type": "riseThenYoutube",
+            "secondaryImage": "toasty.png",
+            "audio": "toasty.mp3",
+            "offset": 20,
+            "riseDuration": 300,
+            "fallDuration": 300,
+            "youtubeVideoId": "hQA-xBl8-G8",
+            "startTime": "00:00"
+        }
+    },
+    {
         "filename": "audiencia.png",
-        "x": 1523,
+        "x": 1522,
         "y": 982,
-        "width": 678,
-        "height": 483,
+        "width": 680,
+        "height": 484,
         "opacity": 1,
         "visible": true,
         "zoom": false,
@@ -3337,8 +3407,8 @@
     },
     {
         "filename": "truchada.png",
-        "x": 137,
-        "y": 2018,
+        "x": 191,
+        "y": 1978,
         "width": 216,
         "height": 68,
         "opacity": 1,
@@ -3575,8 +3645,8 @@
     },
     {
         "filename": "angel2.png",
-        "x": 1040,
-        "y": 1468,
+        "x": 1023,
+        "y": 1461,
         "width": 100,
         "height": 113,
         "opacity": 1,
@@ -4459,7 +4529,7 @@
     },
     {
         "filename": "cerraelorto.png",
-        "x": 133,
+        "x": 183,
         "y": 2063,
         "width": 176,
         "height": 137,
@@ -4668,11 +4738,11 @@
         "visible": true,
         "zoom": true,
         "name": "carmen",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"DRtfW9TzUUU",
-            "startTime":"30:44",
-            "endTime":"33:05"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "DRtfW9TzUUU",
+            "startTime": "30:44",
+            "endTime": "33:05"
         }
     },
     {
@@ -4803,9 +4873,26 @@
         }
     },
     {
+        "filename": "cuadrados rojos.png",
+        "x": -5,
+        "y": 2026,
+        "width": 123,
+        "height": 110,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "cuadrados rojos",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"vqM5oXLZaJo",
+            "startTime":"45:37",
+            "endTime":"46:06"
+        }
+    },
+    {
         "filename": "atenciongian.png",
-        "x": 10,
-        "y": 2015,
+        "x": 71,
+        "y": 2022,
         "width": 149,
         "height": 197,
         "opacity": 1,
