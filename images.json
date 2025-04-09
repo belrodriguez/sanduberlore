@@ -781,11 +781,11 @@
         "visible": true,
         "zoom": true,
         "name": "blem",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"vqM5oXLZaJo",
-            "startTime":"59:58",
-            "endTime":"1:00:22"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "vqM5oXLZaJo",
+            "startTime": "59:58",
+            "endTime": "1:00:22"
         }
     },
     {
@@ -907,8 +907,8 @@
     },
     {
         "filename": "joneshualas.png",
-        "x": 836,
-        "y": 1419,
+        "x": 828,
+        "y": 1417,
         "width": 107,
         "height": 47,
         "opacity": 1,
@@ -1358,10 +1358,8 @@
         "zoom": true,
         "name": "troncoroom",
         "interaction": {
-            "type": "youtube",
-            "videoId": "mJR-u7gqse8",
-            "startTime": "53:10",
-            "endTime": "55:59"
+            "type": "video",
+            "file":"troncoroom.mp4"
         }
     },
     {
@@ -1429,9 +1427,24 @@
         }
     },
     {
+        "filename": "flipper.png",
+        "x": 1341,
+        "y": 914,
+        "width": 178,
+        "height": 240,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "flipper",
+        "interaction":{
+            "type": "redirect",
+            "url": "https://www.instagram.com/clarckargentina/?hl=es"
+        }
+    },
+    {
         "filename": "rocky.png",
-        "x": 1347,
-        "y": 759,
+        "x": 1362,
+        "y": 751,
         "width": 240,
         "height": 524,
         "opacity": 1,
@@ -2029,6 +2042,23 @@
         }
     },
     {
+        "filename": "mayra.png",
+        "x": 76,
+        "y": 1459,
+        "width": 131,
+        "height": 103,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "mayra",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"NsEEFaSVs94",
+            "startTime":"48:23",
+            "endTime":"51:59"
+        }
+    },
+    {
         "filename": "gomitas.png",
         "x": 107,
         "y": 1555,
@@ -2115,10 +2145,10 @@
     },
     {
         "filename": "nosonmasquenosotros.png",
-        "x": 460,
-        "y": 1204,
-        "width": 292,
-        "height": 272,
+        "x": 430,
+        "y": 1164,
+        "width": 324,
+        "height": 316,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -2182,8 +2212,8 @@
     },
     {
         "filename": "botonmute.png",
-        "x": 1019,
-        "y": 1366,
+        "x": 1024,
+        "y": 1345,
         "width": 100,
         "height": 79,
         "opacity": 1,
@@ -2199,6 +2229,56 @@
             "popupBody": "\u00bfQuien no querria un boton para silenciar gente que simplemente no hace otra cosa mas que malgastar el tiempo de los demas?",
             "enlargePopupImage": true,
             "popupBodySize": "21px"
+        }
+    },
+    {
+        "filename": "carli.png",
+        "x": 1105,
+        "y": 1328,
+        "width": 334,
+        "height": 194,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "carli",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"Ydm8a7lmEnA",
+            "startTime":"00:00"
+        }
+    },
+    {
+        "filename": "boleta.png",
+        "x": 1358,
+        "y": 1329,
+        "width": 67,
+        "height": 50,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "boleta",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"NsEEFaSVs94",
+            "startTime":"1:13:06",
+            "endTime":"1:43:28"
+        }
+    },
+    {
+        "filename": "video.png",
+        "x": 1342,
+        "y": 1372,
+        "width": 55,
+        "height": 164,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "video",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"NsEEFaSVs94",
+            "startTime":"1:23:49",
+            "endTime":"1:25:00"
         }
     },
     {
@@ -2279,8 +2359,8 @@
     },
     {
         "filename": "camionciruja.png",
-        "x": 700,
-        "y": 1386,
+        "x": 683,
+        "y": 1381,
         "width": 175,
         "height": 160,
         "opacity": 1,
@@ -2404,8 +2484,8 @@
     },
     {
         "filename": "saratoga.png",
-        "x": 1135,
-        "y": 1405,
+        "x": 987,
+        "y": 1401,
         "width": 54,
         "height": 81,
         "opacity": 1,
@@ -2510,10 +2590,10 @@
         "visible": true,
         "zoom": true,
         "name": "neura",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"vqM5oXLZaJo",
-            "startTime":"1:01:09"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "vqM5oXLZaJo",
+            "startTime": "1:01:09"
         }
     },
     {
@@ -2526,10 +2606,10 @@
         "visible": true,
         "zoom": true,
         "name": "uter",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"vqM5oXLZaJo",
-            "startTime":"1:17:48"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "vqM5oXLZaJo",
+            "startTime": "1:17:48"
         }
     },
     {
@@ -2553,8 +2633,8 @@
     },
     {
         "filename": "martin4.png",
-        "x": 1293,
-        "y": 1395,
+        "x": 837,
+        "y": 1445,
         "width": 99,
         "height": 162,
         "opacity": 1,
@@ -2568,8 +2648,8 @@
     },
     {
         "filename": "peloenpolvo.png",
-        "x": 1213,
-        "y": 1419,
+        "x": 695,
+        "y": 1481,
         "width": 84,
         "height": 104,
         "opacity": 1,
@@ -2850,7 +2930,7 @@
         "visible": true,
         "zoom": true,
         "name": "subzero adorni",
-        "interaction":{
+        "interaction": {
             "type": "riseThenYoutube",
             "secondaryImage": "toasty.png",
             "audio": "toasty.mp3",
@@ -2860,6 +2940,17 @@
             "youtubeVideoId": "hQA-xBl8-G8",
             "startTime": "00:00"
         }
+    },
+    {
+        "filename": "\u00bfAsi que ganaste al mortal? Mira.png",
+        "x": 1469,
+        "y": 953,
+        "width": 239,
+        "height": 97,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "\u00bfAsi que ganaste al mortal? Mira"
     },
     {
         "filename": "audiencia.png",
@@ -3611,8 +3702,8 @@
     },
     {
         "filename": "perrobombero.png",
-        "x": 159,
-        "y": 1524,
+        "x": 160,
+        "y": 1548,
         "width": 121,
         "height": 132,
         "opacity": 1,
@@ -4882,11 +4973,11 @@
         "visible": true,
         "zoom": true,
         "name": "cuadrados rojos",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"vqM5oXLZaJo",
-            "startTime":"45:37",
-            "endTime":"46:06"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "vqM5oXLZaJo",
+            "startTime": "45:37",
+            "endTime": "46:06"
         }
     },
     {
