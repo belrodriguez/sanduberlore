@@ -1348,6 +1348,23 @@
         "name": "sillazos"
     },
     {
+        "filename": "fiacovich.png",
+        "x": 1957,
+        "y": 647,
+        "width": 144,
+        "height": 101,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "fiacovich",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"qD8RlSYfZc8",
+            "startTime":"1:41:20",
+            "endTime":"1:45:38"
+        }
+    },
+    {
         "filename": "troncoroom.png",
         "x": 2068,
         "y": 733,
@@ -1359,7 +1376,7 @@
         "name": "troncoroom",
         "interaction": {
             "type": "video",
-            "file":"troncoroom.mp4"
+            "file": "troncoroom.mp4"
         }
     },
     {
@@ -1436,7 +1453,7 @@
         "visible": true,
         "zoom": true,
         "name": "flipper",
-        "interaction":{
+        "interaction": {
             "type": "redirect",
             "url": "https://www.instagram.com/clarckargentina/?hl=es"
         }
@@ -1987,9 +2004,26 @@
         "name": "fabricas"
     },
     {
+        "filename": "Hijos de Butaaaa copy.png",
+        "x": 298,
+        "y": 1223,
+        "width": 188,
+        "height": 187,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "Hijos de Butaaaa copy",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"EB6kV2jt-lM",
+            "startTime":"30:05",
+            "endTime":"32:08"
+        }
+    },
+    {
         "filename": "carcel.png",
-        "x": 320,
-        "y": 1297,
+        "x": 272,
+        "y": 1340,
         "width": 194,
         "height": 166,
         "opacity": 1,
@@ -2051,11 +2085,11 @@
         "visible": true,
         "zoom": true,
         "name": "mayra",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"NsEEFaSVs94",
-            "startTime":"48:23",
-            "endTime":"51:59"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "NsEEFaSVs94",
+            "startTime": "48:23",
+            "endTime": "51:59"
         }
     },
     {
@@ -2134,8 +2168,8 @@
     },
     {
         "filename": "grillete.png",
-        "x": 1103,
-        "y": 1356,
+        "x": 1019,
+        "y": 1421,
         "width": 105,
         "height": 45,
         "opacity": 1,
@@ -2156,6 +2190,23 @@
         "interaction": {
             "type": "audio",
             "file": "nosonmasquenosotros.mp3"
+        }
+    },
+    {
+        "filename": "banco.png",
+        "x": 489,
+        "y": 1428,
+        "width": 271,
+        "height": 163,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "banco",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"EB6kV2jt-lM",
+            "startTime":"1:04:38",
+            "endTime":"1:12:25"
         }
     },
     {
@@ -2232,53 +2283,70 @@
         }
     },
     {
+        "filename": "tumba.png",
+        "x": 1109,
+        "y": 1262,
+        "width": 101,
+        "height": 171,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "tumba",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"qD8RlSYfZc8",
+            "startTime":"9:57",
+            "endTime":"19:37"
+        }
+    },
+    {
         "filename": "carli.png",
-        "x": 1105,
-        "y": 1328,
+        "x": 1130,
+        "y": 1329,
         "width": 334,
         "height": 194,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "carli",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"Ydm8a7lmEnA",
-            "startTime":"00:00"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "Ydm8a7lmEnA",
+            "startTime": "00:00"
         }
     },
     {
         "filename": "boleta.png",
-        "x": 1358,
-        "y": 1329,
+        "x": 1383,
+        "y": 1330,
         "width": 67,
         "height": 50,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "boleta",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"NsEEFaSVs94",
-            "startTime":"1:13:06",
-            "endTime":"1:43:28"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "NsEEFaSVs94",
+            "startTime": "1:13:06",
+            "endTime": "1:43:28"
         }
     },
     {
         "filename": "video.png",
-        "x": 1342,
-        "y": 1372,
+        "x": 1367,
+        "y": 1373,
         "width": 55,
         "height": 164,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "video",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"NsEEFaSVs94",
-            "startTime":"1:23:49",
-            "endTime":"1:25:00"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "NsEEFaSVs94",
+            "startTime": "1:23:49",
+            "endTime": "1:25:00"
         }
     },
     {
@@ -2324,8 +2392,8 @@
     },
     {
         "filename": "postroncalidad.png",
-        "x": 527,
-        "y": 1474,
+        "x": 577,
+        "y": 1594,
         "width": 147,
         "height": 98,
         "opacity": 1,
@@ -2484,8 +2552,8 @@
     },
     {
         "filename": "saratoga.png",
-        "x": 987,
-        "y": 1401,
+        "x": 976,
+        "y": 1405,
         "width": 54,
         "height": 81,
         "opacity": 1,
@@ -2565,10 +2633,10 @@
     },
     {
         "filename": "chabombas.png",
-        "x": 1118,
-        "y": 1517,
-        "width": 155,
-        "height": 127,
+        "x": 1133,
+        "y": 1534,
+        "width": 136,
+        "height": 112,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -2578,6 +2646,23 @@
             "videoId": "A0uMQnOVbb8",
             "startTime": "1:17:57",
             "endTime": "1:26:20"
+        }
+    },
+    {
+        "filename": "peyo.png",
+        "x": 1306,
+        "y": 1472,
+        "width": 154,
+        "height": 157,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "peyo",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"EB6kV2jt-lM",
+            "startTime":"1:15:18",
+            "endTime":"1:22:20"
         }
     },
     {
@@ -2648,8 +2733,8 @@
     },
     {
         "filename": "peloenpolvo.png",
-        "x": 695,
-        "y": 1481,
+        "x": 757,
+        "y": 1505,
         "width": 84,
         "height": 104,
         "opacity": 1,
@@ -2940,17 +3025,6 @@
             "youtubeVideoId": "hQA-xBl8-G8",
             "startTime": "00:00"
         }
-    },
-    {
-        "filename": "\u00bfAsi que ganaste al mortal? Mira.png",
-        "x": 1469,
-        "y": 953,
-        "width": 239,
-        "height": 97,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "\u00bfAsi que ganaste al mortal? Mira"
     },
     {
         "filename": "audiencia.png",
@@ -3590,8 +3664,8 @@
     },
     {
         "filename": "tiza.png",
-        "x": 140,
-        "y": 1739,
+        "x": 145,
+        "y": 1813,
         "width": 98,
         "height": 109,
         "opacity": 1,
@@ -3736,8 +3810,8 @@
     },
     {
         "filename": "angel2.png",
-        "x": 1023,
-        "y": 1461,
+        "x": 156,
+        "y": 1707,
         "width": 100,
         "height": 113,
         "opacity": 1,
@@ -3965,13 +4039,30 @@
     {
         "filename": "bolsabatalla.png",
         "x": -8,
-        "y": 813,
+        "y": 853,
         "width": 144,
         "height": 124,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "BATALLA CULTURAL"
+    },
+    {
+        "filename": "aerosol1.png",
+        "x": 1239,
+        "y": -65,
+        "width": 111,
+        "height": 140,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "aerosol1",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"qD8RlSYfZc8",
+            "startTime":"1:18:15",
+            "endTime":"1:19:34"
+        }
     },
     {
         "filename": "eabofni.png",
@@ -4496,9 +4587,26 @@
         }
     },
     {
+        "filename": "El lechero copy.png",
+        "x": 535,
+        "y": 2037,
+        "width": 146,
+        "height": 201,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "El lechero copy",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"EB6kV2jt-lM",
+            "startTime":"12:58",
+            "endTime":"14:07"
+        }
+    },
+    {
         "filename": "cronosoro.png",
-        "x": 593,
-        "y": 2082,
+        "x": 655,
+        "y": 2087,
         "width": 218,
         "height": 133,
         "opacity": 1,
@@ -4918,8 +5026,8 @@
         "filename": "dos de oro.png",
         "x": 1871,
         "y": 510,
-        "width": 143,
-        "height": 190,
+        "width": 131,
+        "height": 171,
         "opacity": 1,
         "visible": true,
         "zoom": true,
