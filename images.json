@@ -60,7 +60,7 @@
     },
     {
         "filename": "Thundera eye.png",
-        "x": 924,
+        "x": 927,
         "y": 219,
         "width": 810,
         "height": 822,
@@ -71,6 +71,23 @@
         "interaction": {
             "type": "audio",
             "file": "thunder.mp3"
+        }
+    },
+    {
+        "filename": "600k.png",
+        "x": 1410,
+        "y": 278,
+        "width": 143,
+        "height": 110,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "600k",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"I1rQbADQbMU",
+            "startTime":"1:38:24",
+            "endTime":"1:40:19"
         }
     },
     {
@@ -87,8 +104,26 @@
             "type": "youtube",
             "videoId": "DRtfW9TzUUU",
             "startTime": "54:35",
-            "endTime": "55:29"
+            "endTime": "55:30"
         }
+    },
+    {
+        "filename": "F.png",
+        "x": 1222,
+        "y": -18,
+        "width": 172,
+        "height": 153,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "F",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"zp06XL1_c1Y",
+            "startTime":"1:27:40",
+            "endTime":"1:28:12"
+        }
+
     },
     {
         "filename": "tuberias.png",
@@ -104,7 +139,7 @@
             "type": "youtube",
             "videoId": "6GpPT2zaPQk",
             "startTime": "1:07:00",
-            "endTime": "1:08:37"
+            "endTime": "1:08:38"
         }
     },
     {
@@ -121,7 +156,7 @@
             "type": "youtube",
             "videoId": "ygUQbkzc2R8",
             "startTime": "1:09:16",
-            "endTime": "1:09:44"
+            "endTime": "1:09:45"
         }
     },
     {
@@ -134,6 +169,23 @@
         "visible": true,
         "zoom": true,
         "name": "EMPATICEN LOCO"
+    },
+    {
+        "filename": "lenguetazo.png",
+        "x": 1036,
+        "y": 13,
+        "width": 145,
+        "height": 177,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "lenguetazo",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "ityNUJ2W4n4",
+            "startTime": "47:09",
+            "endTime": "51:57"
+        }
     },
     {
         "filename": "ayudenatronco.png",
@@ -188,7 +240,7 @@
             "type": "youtube",
             "videoId": "X7eZswujaAA",
             "startTime": "0:00",
-            "endTime": "1:49"
+            "endTime": "1:50"
         }
     },
     {
@@ -205,7 +257,7 @@
             "type": "youtube",
             "videoId": "ygUQbkzc2R8",
             "startTime": "1:43:36",
-            "endTime": "1:44:07"
+            "endTime": "1:44:08"
         }
     },
     {
@@ -293,7 +345,7 @@
             "type": "youtube",
             "videoId": "ygUQbkzc2R8",
             "startTime": "57:26",
-            "endTime": "58:11"
+            "endTime": "58:12"
         }
     },
     {
@@ -420,8 +472,7 @@
         "interaction": {
             "type": "youtube",
             "videoId": "Z8aqEPU3ayk",
-            "startTime": "00:00",
-            "endTime": ""
+            "startTime": "00:00"
         }
     },
     {
@@ -437,8 +488,7 @@
         "interaction": {
             "type": "youtube",
             "videoId": "FBBLvcY8Qts",
-            "startTime": "00:00",
-            "endTime": ""
+            "startTime": "00:00"
         }
     },
     {
@@ -500,7 +550,7 @@
             "type": "youtube",
             "videoId": "ygUQbkzc2R8",
             "startTime": "13:56",
-            "endTime": "15:16"
+            "endTime": "15:17"
         }
     },
     {
@@ -531,6 +581,58 @@
         }
     },
     {
+        "filename": "chouza.png",
+        "x": 1723,
+        "y": 298,
+        "width": 130,
+        "height": 68,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "chouza",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"zp06XL1_c1Y",
+            "startTime":"17:07",
+            "endTime":"19:12"
+        }
+    },
+    {
+        "filename": "mameluco.png",
+        "x": 731,
+        "y": 399,
+        "width": 357,
+        "height": 219,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "mameluco",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"zp06XL1_c1Y",
+            "startTime":"1:42:50",
+            "endTime":"1:48:53"
+        }
+    },
+    {
+        "filename": "mazinger.png",
+        "x": 738,
+        "y": 217,
+        "width": 237,
+        "height": 126,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "mazinger",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"ityNUJ2W4n4",
+            "startTime":"17:08",
+            "endTime":"22:25"
+        }
+
+    },
+    {
         "filename": "facciones.png",
         "x": 469,
         "y": 504,
@@ -544,7 +646,7 @@
             "type": "youtube",
             "videoId": "R44ru-6ckiU",
             "startTime": "30:46",
-            "endTime": "36:06"
+            "endTime": "36:07"
         }
     },
     {
@@ -719,7 +821,7 @@
             "type": "youtube",
             "videoId": "6GpPT2zaPQk",
             "startTime": "1:38:51",
-            "endTime": "1:41:11"
+            "endTime": "1:41:12"
         }
     },
     {
@@ -736,7 +838,7 @@
             "type": "youtube",
             "videoId": "R44ru-6ckiU",
             "startTime": "1:48:53",
-            "endTime": "1:52:20"
+            "endTime": "1:52:21"
         }
     },
     {
@@ -785,7 +887,7 @@
             "type": "youtube",
             "videoId": "vqM5oXLZaJo",
             "startTime": "59:58",
-            "endTime": "1:00:22"
+            "endTime": "1:00:23"
         }
     },
     {
@@ -813,7 +915,7 @@
             "type": "youtube",
             "videoId": "6GpPT2zaPQk",
             "startTime": "40:17",
-            "endTime": "40:53"
+            "endTime": "40:54"
         }
     },
     {
@@ -901,8 +1003,7 @@
         "interaction": {
             "type": "youtube",
             "videoId": "bPCZdj1cApE",
-            "startTime": "",
-            "endTime": ""
+            "startTime": "00:00"
         }
     },
     {
@@ -940,7 +1041,7 @@
             "type": "youtube",
             "videoId": "6yJVXFu-kqg",
             "startTime": "00:00",
-            "endTime": "02:18"
+            "endTime": "02:19"
         }
     },
     {
@@ -968,7 +1069,7 @@
     },
     {
         "filename": "telefono.png",
-        "x": 1539,
+        "x": 1536,
         "y": 259,
         "width": 149,
         "height": 227,
@@ -980,7 +1081,7 @@
             "type": "youtube",
             "videoId": "mJR-u7gqse8",
             "startTime": "1:26:13",
-            "endTime": "1:26:56"
+            "endTime": "1:26:57"
         }
     },
     {
@@ -1038,7 +1139,7 @@
         "opacity": 1,
         "visible": true,
         "zoom": false,
-        "name": "monitorsofo copy",
+        "name": "monitorsofo",
         "interaction": {
             "type": "sequence",
             "audio": "repost.mp3",
@@ -1050,6 +1151,23 @@
             "interval": 2000,
             "x": 1967,
             "y": 743
+        }
+    },
+    {
+        "filename": "fopea.png",
+        "x": 1163,
+        "y": 619,
+        "width": 211,
+        "height": 303,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "fopea",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"6GpPT2zaPQk",
+            "startTime":"1:50:03",
+            "endTime":"1:52:37"
         }
     },
     {
@@ -1152,7 +1270,7 @@
             "type": "youtube",
             "videoId": "YDPCzhKbXeA",
             "startTime": "1:12:47",
-            "endTime": "1:14:37"
+            "endTime": "1:14:38"
         }
     },
     {
@@ -1169,7 +1287,7 @@
             "type": "youtube",
             "videoId": "A4nAZVkwye8",
             "startTime": "1:04:53",
-            "endTime": "1:05:37"
+            "endTime": "1:05:38"
         }
     },
     {
@@ -1231,10 +1349,10 @@
     },
     {
         "filename": "O sooole miooo.png",
-        "x": 872,
-        "y": 329,
-        "width": 327,
-        "height": 147,
+        "x": 1116,
+        "y": 178,
+        "width": 256,
+        "height": 262,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1243,7 +1361,7 @@
             "type": "youtube",
             "videoId": "A1XrtfYJwqk",
             "startTime": "8:30",
-            "endTime": "9:35"
+            "endTime": "9:36"
         }
     },
     {
@@ -1300,6 +1418,23 @@
         }
     },
     {
+        "filename": "mano bendecida.png",
+        "x": 2138,
+        "y": 640,
+        "width": 66,
+        "height": 54,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "mano bendecida",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"zp06XL1_c1Y",
+            "startTime":"13:10",
+            "endTime":"14:56"
+        }
+    },
+    {
         "filename": "miniatura.png",
         "x": 2072,
         "y": 669,
@@ -1338,14 +1473,31 @@
     },
     {
         "filename": "sillazos.png",
-        "x": 1571,
-        "y": 681,
-        "width": 453,
-        "height": 113,
+        "x": 1647,
+        "y": 632,
+        "width": 346,
+        "height": 230,
         "opacity": 1,
         "visible": true,
         "zoom": false,
         "name": "sillazos"
+    },
+    {
+        "filename": "chicho.png",
+        "x": 1499,
+        "y": 648,
+        "width": 263,
+        "height": 298,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "chicho",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"I1rQbADQbMU",
+            "startTime":"15:52",
+            "endTime":"17:27"
+        }
     },
     {
         "filename": "fiacovich.png",
@@ -1357,11 +1509,11 @@
         "visible": true,
         "zoom": true,
         "name": "fiacovich",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"qD8RlSYfZc8",
-            "startTime":"1:41:20",
-            "endTime":"1:45:38"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "qD8RlSYfZc8",
+            "startTime": "1:41:20",
+            "endTime": "1:45:39"
         }
     },
     {
@@ -1423,7 +1575,7 @@
             "type": "youtube",
             "videoId": "A0uMQnOVbb8",
             "startTime": "41:02",
-            "endTime": "41:41"
+            "endTime": "41:42"
         }
     },
     {
@@ -1440,7 +1592,7 @@
             "type": "youtube",
             "videoId": "A4nAZVkwye8",
             "startTime": "15:25",
-            "endTime": "23:50"
+            "endTime": "23:51"
         }
     },
     {
@@ -1472,7 +1624,7 @@
             "type": "youtube",
             "videoId": "go5ZVc6QMTs",
             "startTime": "12:04",
-            "endTime": "16:16"
+            "endTime": "16:17"
         }
     },
     {
@@ -1489,7 +1641,7 @@
             "type": "youtube",
             "videoId": "mJR-u7gqse8",
             "startTime": "1:17:15",
-            "endTime": "1:18:32"
+            "endTime": "1:18:33"
         }
     },
     {
@@ -1517,7 +1669,7 @@
             "type": "youtube",
             "videoId": "qLUXpIwp5_w",
             "startTime": "01:14:27",
-            "endTime": "02:08:17"
+            "endTime": "02:08:18"
         }
     },
     {
@@ -1536,6 +1688,23 @@
         }
     },
     {
+        "filename": "lilias.png",
+        "x": 1219,
+        "y": 883,
+        "width": 179,
+        "height": 138,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "lilias",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"ityNUJ2W4n4",
+            "startTime":"9:44"
+            
+        }
+    },
+    {
         "filename": "tangueroalien.png",
         "x": 1000,
         "y": 702,
@@ -1548,8 +1717,7 @@
         "interaction": {
             "type": "youtube",
             "videoId": "a4uHPqdTrNk",
-            "startTime": "00:00",
-            "endTime": ""
+            "startTime": "00:00"
         }
     },
     {
@@ -1600,7 +1768,7 @@
             "type": "youtube",
             "videoId": "Hh8dMrYf_9g",
             "startTime": "30:22",
-            "endTime": "32:37"
+            "endTime": "32:38"
         }
     },
     {
@@ -1711,6 +1879,23 @@
         "name": "lab microdetalle"
     },
     {
+        "filename": "matafuego.png",
+        "x": 1063,
+        "y": 949,
+        "width": 97,
+        "height": 157,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "matafuego",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "0x2Du6GvmsQ",
+            "startTime": "1:34:51",
+            "endTime": "1:36:27"
+        }
+    },
+    {
         "filename": "jorge suspenso.png",
         "x": 2086,
         "y": 828,
@@ -1745,7 +1930,7 @@
             "type": "youtube",
             "videoId": "LqApjN4R7fM",
             "startTime": "15:25",
-            "endTime": "16:22"
+            "endTime": "16:23"
         }
     },
     {
@@ -1813,10 +1998,10 @@
     },
     {
         "filename": "thoughts and prayers.png",
-        "x": -1,
-        "y": 1101,
-        "width": 160,
-        "height": 118,
+        "x": 0,
+        "y": 1214,
+        "width": 140,
+        "height": 103,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -1869,7 +2054,7 @@
             "type": "youtube",
             "videoId": "2i40hCROLU8",
             "startTime": "00:02",
-            "endTime": "00:35"
+            "endTime": "00:36"
         }
     },
     {
@@ -1915,6 +2100,34 @@
         }
     },
     {
+        "filename": "akenaton.png",
+        "x": 182,
+        "y": 1305,
+        "width": 82,
+        "height": 119,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "akenaton"
+    },
+    {
+        "filename": "iconos.png",
+        "x": -15,
+        "y": 1069,
+        "width": 178,
+        "height": 145,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "iconos",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"0x2Du6GvmsQ",
+            "startTime":"30:07",
+            "endTime":"31:27"
+        }
+    },
+    {
         "filename": "nut.png",
         "x": 90,
         "y": 1133,
@@ -1946,10 +2159,10 @@
     },
     {
         "filename": "asteroide.png",
-        "x": 1237,
-        "y": -107,
-        "width": 225,
-        "height": 294,
+        "x": 2020,
+        "y": -54,
+        "width": 267,
+        "height": 268,
         "opacity": 1,
         "visible": true,
         "zoom": true,
@@ -2004,7 +2217,7 @@
         "name": "fabricas"
     },
     {
-        "filename": "Hijos de Butaaaa copy.png",
+        "filename": "coro.png",
         "x": 298,
         "y": 1223,
         "width": 188,
@@ -2012,12 +2225,12 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "Hijos de Butaaaa copy",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"EB6kV2jt-lM",
-            "startTime":"30:05",
-            "endTime":"32:08"
+        "name": "coro",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "EB6kV2jt-lM",
+            "startTime": "30:05",
+            "endTime": "32:09"
         }
     },
     {
@@ -2089,7 +2302,7 @@
             "type": "youtube",
             "videoId": "NsEEFaSVs94",
             "startTime": "48:23",
-            "endTime": "51:59"
+            "endTime": "52:00"
         }
     },
     {
@@ -2105,8 +2318,8 @@
     },
     {
         "filename": "geopolitica.png",
-        "x": -34,
-        "y": 1050,
+        "x": -11,
+        "y": 1021,
         "width": 173,
         "height": 85,
         "opacity": 1,
@@ -2117,17 +2330,6 @@
             "type": "audio",
             "file": "geopolitica.mp3"
         }
-    },
-    {
-        "filename": "akenaton.png",
-        "x": -11,
-        "y": 1195,
-        "width": 82,
-        "height": 119,
-        "opacity": 1,
-        "visible": true,
-        "zoom": true,
-        "name": "akenaton"
     },
     {
         "filename": "MERCH OFICIAL  DEL SUJETO 4.png",
@@ -2163,7 +2365,7 @@
             "type": "youtube",
             "videoId": "2LwXScbtDus",
             "startTime": "1:23:55",
-            "endTime": "1:24:50"
+            "endTime": "1:24:51"
         }
     },
     {
@@ -2202,11 +2404,11 @@
         "visible": true,
         "zoom": true,
         "name": "banco",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"EB6kV2jt-lM",
-            "startTime":"1:04:38",
-            "endTime":"1:12:25"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "EB6kV2jt-lM",
+            "startTime": "1:04:38",
+            "endTime": "1:12:26"
         }
     },
     {
@@ -2243,7 +2445,7 @@
             "type": "youtube",
             "videoId": "Ln6gpZXTqZI",
             "startTime": "11:54:24",
-            "endTime": "11:54:48"
+            "endTime": "11:54:49"
         }
     },
     {
@@ -2292,11 +2494,11 @@
         "visible": true,
         "zoom": true,
         "name": "tumba",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"qD8RlSYfZc8",
-            "startTime":"9:57",
-            "endTime":"19:37"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "qD8RlSYfZc8",
+            "startTime": "9:57",
+            "endTime": "19:38"
         }
     },
     {
@@ -2329,7 +2531,7 @@
             "type": "youtube",
             "videoId": "NsEEFaSVs94",
             "startTime": "1:13:06",
-            "endTime": "1:43:28"
+            "endTime": "1:43:29"
         }
     },
     {
@@ -2346,7 +2548,7 @@
             "type": "youtube",
             "videoId": "NsEEFaSVs94",
             "startTime": "1:23:49",
-            "endTime": "1:25:00"
+            "endTime": "1:25:01"
         }
     },
     {
@@ -2564,7 +2766,7 @@
             "type": "youtube",
             "videoId": "kGTiCRkaJx4",
             "startTime": "00:00:00",
-            "endTime": "00:00:45"
+            "endTime": "00:00:46"
         }
     },
     {
@@ -2611,7 +2813,24 @@
             "type": "youtube",
             "videoId": "tS9B3cJOI1M",
             "startTime": "1:03:50",
-            "endTime": "1:04:04"
+            "endTime": "1:04:05"
+        }
+    },
+    {
+        "filename": "carpetazos.png",
+        "x": 994,
+        "y": 1474,
+        "width": 151,
+        "height": 218,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "carpetazos",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "ityNUJ2W4n4",
+            "startTime": "1:34:29",
+            "endTime": "1:37:19"
         }
     },
     {
@@ -2628,7 +2847,7 @@
             "type": "youtube",
             "videoId": "mJR-u7gqse8",
             "startTime": "1:13:58",
-            "endTime": "1:14:19"
+            "endTime": "1:14:20"
         }
     },
     {
@@ -2645,7 +2864,7 @@
             "type": "youtube",
             "videoId": "A0uMQnOVbb8",
             "startTime": "1:17:57",
-            "endTime": "1:26:20"
+            "endTime": "1:26:21"
         }
     },
     {
@@ -2658,11 +2877,11 @@
         "visible": true,
         "zoom": true,
         "name": "peyo",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"EB6kV2jt-lM",
-            "startTime":"1:15:18",
-            "endTime":"1:22:20"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "EB6kV2jt-lM",
+            "startTime": "1:15:18",
+            "endTime": "1:22:21"
         }
     },
     {
@@ -2682,8 +2901,26 @@
         }
     },
     {
+        "filename": "linkedin.png",
+        "x": -7,
+        "y": 735,
+        "width": 96,
+        "height": 113,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "linkedin",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"0x2Du6GvmsQ",
+            "startTime":"1:46:25",
+            "endTime":"1:46:50"
+            
+        }
+    },
+    {
         "filename": "uter.png",
-        "x": 1397,
+        "x": 1388,
         "y": 1692,
         "width": 108,
         "height": 124,
@@ -2745,7 +2982,7 @@
             "type": "youtube",
             "videoId": "2LwXScbtDus",
             "startTime": "26:55",
-            "endTime": "31:04"
+            "endTime": "31:05"
         }
     },
     {
@@ -2783,7 +3020,7 @@
             "type": "youtube",
             "videoId": "Ln6gpZXTqZI",
             "startTime": "11:01:09",
-            "endTime": "11:54:56"
+            "endTime": "11:54:57"
         }
     },
     {
@@ -2800,7 +3037,7 @@
             "type": "youtube",
             "videoId": "A4nAZVkwye8",
             "startTime": "48:14",
-            "endTime": "49:12"
+            "endTime": "49:13"
         }
     },
     {
@@ -2849,7 +3086,7 @@
             "type": "youtube",
             "videoId": "mJR-u7gqse8",
             "startTime": "1:43:15",
-            "endTime": "1:44:36"
+            "endTime": "1:44:37"
         }
     },
     {
@@ -2886,7 +3123,7 @@
             "type": "youtube",
             "videoId": "Hh8dMrYf_9g",
             "startTime": "43:12",
-            "endTime": "44:36"
+            "endTime": "44:37"
         }
     },
     {
@@ -2938,7 +3175,7 @@
             "type": "youtube",
             "videoId": "A4nAZVkwye8",
             "startTime": "57:31",
-            "endTime": "58:07"
+            "endTime": "58:08"
         }
     },
     {
@@ -2970,7 +3207,7 @@
             "type": "youtube",
             "videoId": "YDPCzhKbXeA",
             "startTime": "6:56",
-            "endTime": "8:25"
+            "endTime": "8:26"
         }
     },
     {
@@ -3143,7 +3380,7 @@
             "type": "youtube",
             "videoId": "TWPSd2mu9Jk",
             "startTime": "3:46",
-            "endTime": "4:01"
+            "endTime": "4:02"
         }
     },
     {
@@ -3218,7 +3455,7 @@
             "type": "youtube",
             "videoId": "78fsQIONoJc",
             "startTime": "1:50:30",
-            "endTime": "2:01:20"
+            "endTime": "2:01:21"
         }
     },
     {
@@ -3460,8 +3697,8 @@
     },
     {
         "filename": "thanos.png",
-        "x": 1048,
-        "y": 1946,
+        "x": 654,
+        "y": 1896,
         "width": 79,
         "height": 126,
         "opacity": 1,
@@ -3486,8 +3723,8 @@
         "interaction": {
             "type": "youtube",
             "videoId": "d0BM1y0Dzr8",
-            "startTime": "",
-            "endTime": ""
+            "startTime": "00:00"
+            
         }
     },
     {
@@ -3504,7 +3741,7 @@
             "type": "youtube",
             "videoId": "gqcQ8_Cf0Ww",
             "startTime": "03:18:50",
-            "endTime": "03:23:39"
+            "endTime": "03:23:40"
         }
     },
     {
@@ -3822,13 +4059,30 @@
             "type": "youtube",
             "videoId": "ygUQbkzc2R8",
             "startTime": "26:11",
-            "endTime": "27:15"
+            "endTime": "27:16"
+        }
+    },
+    {
+        "filename": "huevo.png",
+        "x": 248,
+        "y": 1765,
+        "width": 173,
+        "height": 130,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "huevo",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "I1rQbADQbMU",
+            "startTime": "45:14",
+            "endTime": "46:41"
         }
     },
     {
         "filename": "necro.png",
-        "x": 289,
-        "y": 1815,
+        "x": 385,
+        "y": 1853,
         "width": 104,
         "height": 114,
         "opacity": 1,
@@ -3839,7 +4093,7 @@
             "type": "youtube",
             "videoId": "YDPCzhKbXeA",
             "startTime": "28:03",
-            "endTime": "31:51"
+            "endTime": "31:52"
         }
     },
     {
@@ -3860,8 +4114,8 @@
     },
     {
         "filename": "pilas.png",
-        "x": 656,
-        "y": 1871,
+        "x": 643,
+        "y": 1776,
         "width": 31,
         "height": 32,
         "opacity": 1,
@@ -3883,7 +4137,7 @@
             "type": "youtube",
             "videoId": "LqApjN4R7fM",
             "startTime": "36:55",
-            "endTime": "38:02"
+            "endTime": "38:03"
         }
     },
     {
@@ -3909,8 +4163,8 @@
     },
     {
         "filename": "BELLIBONI.png",
-        "x": 566,
-        "y": 1861,
+        "x": 562,
+        "y": 1870,
         "width": 86,
         "height": 130,
         "opacity": 1,
@@ -3959,7 +4213,7 @@
             "type": "youtube",
             "videoId": "Hh8dMrYf_9g",
             "startTime": "54:20",
-            "endTime": "56:36"
+            "endTime": "56:37"
         }
     },
     {
@@ -3976,13 +4230,13 @@
             "type": "youtube",
             "videoId": "A4nAZVkwye8",
             "startTime": "23:01",
-            "endTime": "23:11"
+            "endTime": "23:12"
         }
     },
     {
         "filename": "oraculo.png",
-        "x": 613,
-        "y": 192,
+        "x": 605,
+        "y": 200,
         "width": 171,
         "height": 152,
         "opacity": 1,
@@ -4018,7 +4272,7 @@
             "type": "youtube",
             "videoId": "nr_3WzIjQS0",
             "startTime": "00:00:00",
-            "endTime": "00:00:10"
+            "endTime": "00:00:11"
         }
     },
     {
@@ -4049,19 +4303,19 @@
     },
     {
         "filename": "aerosol1.png",
-        "x": 1239,
-        "y": -65,
-        "width": 111,
-        "height": 140,
+        "x": 533,
+        "y": -43,
+        "width": 139,
+        "height": 123,
         "opacity": 1,
         "visible": true,
         "zoom": true,
         "name": "aerosol1",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"qD8RlSYfZc8",
-            "startTime":"1:18:15",
-            "endTime":"1:19:34"
+        "interaction": {
+            "type": "youtube",
+            "videoId": "qD8RlSYfZc8",
+            "startTime": "1:18:15",
+            "endTime": "1:19:35"
         }
     },
     {
@@ -4097,7 +4351,7 @@
             "type": "youtube",
             "videoId": "ygUQbkzc2R8",
             "startTime": "1:15:07",
-            "endTime": "1:17:38"
+            "endTime": "1:17:39"
         }
     },
     {
@@ -4287,13 +4541,30 @@
             "type": "youtube",
             "videoId": "Hh8dMrYf_9g",
             "startTime": "1:39:08",
-            "endTime": "1:40:05"
+            "endTime": "1:40:06"
+        }
+    },
+    {
+        "filename": "thor.png",
+        "x": 2096,
+        "y": 1663,
+        "width": 126,
+        "height": 234,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "thor",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "ityNUJ2W4n4",
+            "startTime": "1:50:58",
+            "endTime": "1:52:06"
         }
     },
     {
         "filename": "LEY  TRONCO.png",
-        "x": 2034,
-        "y": 1749,
+        "x": 2024,
+        "y": 1754,
         "width": 112,
         "height": 133,
         "opacity": 1,
@@ -4304,7 +4575,7 @@
             "type": "youtube",
             "videoId": "YDPCzhKbXeA",
             "startTime": "1:43:26",
-            "endTime": "1:53:21"
+            "endTime": "1:53:22"
         }
     },
     {
@@ -4321,7 +4592,7 @@
             "type": "youtube",
             "videoId": "LqApjN4R7fM",
             "startTime": "1:00:01",
-            "endTime": "1:02:04"
+            "endTime": "1:02:05"
         }
     },
     {
@@ -4338,13 +4609,30 @@
             "type": "youtube",
             "videoId": "Hh8dMrYf_9g",
             "startTime": "57:45",
-            "endTime": "58:52"
+            "endTime": "58:53"
+        }
+    },
+    {
+        "filename": "yo no.png",
+        "x": 990,
+        "y": 1860,
+        "width": 252,
+        "height": 248,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "yo no",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "0x2Du6GvmsQ",
+            "startTime": "1:05:00",
+            "endTime": "1:24:36"
         }
     },
     {
         "filename": "periodista.png",
-        "x": 1191,
-        "y": 1913,
+        "x": 1203,
+        "y": 1906,
         "width": 150,
         "height": 161,
         "opacity": 1,
@@ -4355,7 +4643,7 @@
             "type": "youtube",
             "videoId": "A4nAZVkwye8",
             "startTime": "1:12:47",
-            "endTime": "1:17:11"
+            "endTime": "1:17:12"
         }
     },
     {
@@ -4387,7 +4675,7 @@
             "type": "youtube",
             "videoId": "IvTAHQCenss",
             "startTime": "30:24",
-            "endTime": "30:56"
+            "endTime": "30:57"
         }
     },
     {
@@ -4449,7 +4737,7 @@
             "type": "youtube",
             "videoId": "i6wAByt5l3Q",
             "startTime": "1:24:55",
-            "endTime": "1:27:54"
+            "endTime": "1:27:55"
         }
     },
     {
@@ -4511,7 +4799,7 @@
             "type": "youtube",
             "videoId": "Hh8dMrYf_9g",
             "startTime": "48:16",
-            "endTime": "49:03"
+            "endTime": "49:04"
         }
     },
     {
@@ -4583,11 +4871,11 @@
             "type": "youtube",
             "videoId": "ygUQbkzc2R8",
             "startTime": "24:04",
-            "endTime": "24:35"
+            "endTime": "24:36"
         }
     },
     {
-        "filename": "El lechero copy.png",
+        "filename": "reconocimiento.png",
         "x": 535,
         "y": 2037,
         "width": 146,
@@ -4595,12 +4883,12 @@
         "opacity": 1,
         "visible": true,
         "zoom": true,
-        "name": "El lechero copy",
-        "interaction":{
-            "type":"youtube",
-            "videoId":"EB6kV2jt-lM",
-            "startTime":"12:58",
-            "endTime":"14:07"
+        "name": "reconocimiento",
+        "interaction": {
+            "type": "youtube",
+            "videoId": "EB6kV2jt-lM",
+            "startTime": "12:58",
+            "endTime": "14:08"
         }
     },
     {
@@ -4626,8 +4914,8 @@
     },
     {
         "filename": "kansas.png",
-        "x": 830,
-        "y": 1854,
+        "x": 809,
+        "y": 1853,
         "width": 241,
         "height": 302,
         "opacity": 1,
@@ -4638,7 +4926,7 @@
             "type": "youtube",
             "videoId": "Ln6gpZXTqZI",
             "startTime": "9:42:43",
-            "endTime": "11:54:56"
+            "endTime": "11:54:57"
         }
     },
     {
@@ -4670,7 +4958,7 @@
             "type": "youtube",
             "videoId": "A4nAZVkwye8",
             "startTime": "8:42",
-            "endTime": "10:04"
+            "endTime": "10:05"
         }
     },
     {
@@ -4687,7 +4975,7 @@
             "type": "youtube",
             "videoId": "n3BKgnLjIwY",
             "startTime": "1:36:20",
-            "endTime": "1:36:48"
+            "endTime": "1:36:49"
         }
     },
     {
@@ -4728,8 +5016,8 @@
     },
     {
         "filename": "cerraelorto.png",
-        "x": 183,
-        "y": 2063,
+        "x": 266,
+        "y": 2066,
         "width": 176,
         "height": 137,
         "opacity": 1,
@@ -4739,6 +5027,23 @@
         "interaction": {
             "type": "audio",
             "file": "alberto.mp3"
+        }
+    },
+    {
+        "filename": "quirriliti.png",
+        "x": 138,
+        "y": 2083,
+        "width": 157,
+        "height": 137,
+        "opacity": 1,
+        "visible": true,
+        "zoom": true,
+        "name": "quirriliti",
+        "interaction":{
+            "type":"youtube",
+            "videoId":"I1rQbADQbMU",
+            "startTime":"43:15",
+            "endTime":"45:14"
         }
     },
     {
@@ -4894,7 +5199,7 @@
     },
     {
         "filename": "charly.png",
-        "x": 860,
+        "x": 832,
         "y": 312,
         "width": 75,
         "height": 116,
@@ -4941,13 +5246,13 @@
             "type": "youtube",
             "videoId": "DRtfW9TzUUU",
             "startTime": "30:44",
-            "endTime": "33:05"
+            "endTime": "33:06"
         }
     },
     {
         "filename": "otto.png",
-        "x": 939,
-        "y": 164,
+        "x": 934,
+        "y": 167,
         "width": 175,
         "height": 204,
         "opacity": 1,
@@ -5058,8 +5363,8 @@
     },
     {
         "filename": "mosca kuka.png",
-        "x": 314,
-        "y": 800,
+        "x": 339,
+        "y": 803,
         "width": 58,
         "height": 46,
         "opacity": 1,
@@ -5085,13 +5390,13 @@
             "type": "youtube",
             "videoId": "vqM5oXLZaJo",
             "startTime": "45:37",
-            "endTime": "46:06"
+            "endTime": "46:07"
         }
     },
     {
         "filename": "atenciongian.png",
-        "x": 71,
-        "y": 2022,
+        "x": 51,
+        "y": 2021,
         "width": 149,
         "height": 197,
         "opacity": 1,
@@ -5102,7 +5407,7 @@
             "type": "youtube",
             "videoId": "A4nAZVkwye8",
             "startTime": "39:44",
-            "endTime": "40:15"
+            "endTime": "40:16"
         }
     },
     {
@@ -5139,7 +5444,7 @@
             "type": "youtube",
             "videoId": "Ln6gpZXTqZI",
             "startTime": "4:28:32",
-            "endTime": "4:28:48"
+            "endTime": "4:28:49"
         }
     },
     {
